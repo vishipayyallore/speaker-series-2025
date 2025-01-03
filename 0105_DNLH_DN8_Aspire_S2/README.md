@@ -1,19 +1,17 @@
-# Kick start Your Journey with .NET 8 Aspire
+# .NET 8 Aspire - Local development with Docker, and Podman
 
 ## Date Time: 06-Oct-2024 at 09:00 AM IST
 
-## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915003](https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915003)
+## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915015](https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915015)
 
-## YouTube URL: [https://www.youtube.com/watch?v=kHctHNkBljs](https://www.youtube.com/watch?v=kHctHNkBljs)
-
-<!-- ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG) -->
+## YouTube URL: [https://www.youtube.com/watch?v=aV-e4CFMT_w](https://www.youtube.com/watch?v=aV-e4CFMT_w)
 
 ---
 
 ### Software/Tools
 
 > 1. OS: Windows 10/11 x64
-> 1. Python / .NET 8
+> 1. .NET 8 / AZ CLI / AZD CLI
 > 1. Visual Studio 2022
 > 1. Visual Studio Code
 
@@ -33,15 +31,6 @@
 ## What are we doing today?
 
 > 1. The Big Picture
-> 1. .NET Aspire overview
-> 1. Setup and tooling
-> 1. Build .NET Aspire solution - Web API
-> 1. Orchestration overview
-> 1. Service defaults
-> 1. Launch profiles
-> 1. .NET Aspire solution - Web API + Blazor Frontend
-> 1. Service discovery
-> 1. .NET Aspire solution - Web API Project + Blazor Frontend + Cache (Docker Container)
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/vishipayyallore/aspire-2024) of today's session for more details
