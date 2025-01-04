@@ -72,7 +72,7 @@ dotnet workload install aspire
 dotnet workload list
 dotnet new list
 dotnet new aspire-starter --help
-dotnet new aspire-starter -o AspireSample
+dotnet new aspire-starter -o AspireSample --use-redis-cache -f net9.0
 ```
 
 ![Create New Project](Documentation/Images/CreateNewProject.PNG)
@@ -96,23 +96,25 @@ dotnet new aspire-starter -o AspireSample
 
 > 1. Discussion and Demo
 
-![Session First Look](Documentation/Images/SessionFirstLook.PNG)
+![Service discovery](Documentation/Images/ServiceDiscovery.PNG)
 
 ## Containers with Docker and Podman
 
 ### Container in Docker
 
-![Sample 3](Documentation/Images/Sample3.PNG)
+![Redis Docker Container](Documentation/Images/Redis_Docker_Container.PNG)
 
 ### Container in Podman
 
-![Sample 3](Documentation/Images/Sample3.PNG)
+![Redis Podman Container](Documentation/Images/Redis_Podman_Container.PNG)
 
 ## Dashboard overview
 
 > 1. Discussion and Demo
 
-![Aspire Dashboard](Documentation/Images/Aspire_Dashboard.PNG)
+![Aspire Dashboard](Documentation/Images/Aspire_Dashboard_1.PNG)
+
+![Aspire Dashboard](Documentation/Images/Aspire_Dashboard_2.PNG)
 
 ## SUMMARY / RECAP / Q&A
 
