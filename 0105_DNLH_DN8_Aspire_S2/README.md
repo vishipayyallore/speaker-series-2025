@@ -31,6 +31,13 @@
 ## What are we doing today?
 
 > 1. The Big Picture
+> 1. Pre-requisites
+> 1. Previous sessions
+> 1. Aspire Orchestration, integrations, and Tooling
+> 1. Aspire solution with API, Web, and Redis Cache
+> 1. Executing the Aspire solution with Docker
+> 1. Executing the Aspire solution with Podman
+> 1. Aspire Dashboard
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-aspire-2025) of today's session for more details
