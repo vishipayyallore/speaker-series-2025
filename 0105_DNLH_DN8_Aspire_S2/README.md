@@ -1,4 +1,4 @@
-# .NET 8 Aspire - Local development with Docker, and Podman
+# .NET 9 Aspire - Local development with Docker, and Podman
 
 ## Date Time: 06-Oct-2024 at 09:00 AM IST
 
