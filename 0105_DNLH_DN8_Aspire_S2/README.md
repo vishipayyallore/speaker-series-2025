@@ -33,7 +33,7 @@
 > 1. The Big Picture
 > 1. SUMMARY / RECAP / Q&A
 
-### Please refer to the [**Source Code**](https://github.com/vishipayyallore/aspire-2024) of today's session for more details
+### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-aspire-2025) of today's session for more details
 
 ---
 
@@ -61,10 +61,21 @@ dotnet workload update
 dotnet workload install aspire
 ```
 
-## Build .NET Aspire solution - Web API
+## .NET Aspire solution - Web API Project + Blazor Frontend + Cache (Docker Container)
 
 > 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview>
 > 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=visual-studio>
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=vscode>
+
+```powershell
+dotnet workload list
+dotnet new list
+dotnet new aspire-starter --help
+dotnet new aspire-starter -o AspireSample
+```
+
+![Create New Project](Documentation/Images/CreateNewProject.PNG)
 
 ## Orchestration overview
 
@@ -81,21 +92,19 @@ dotnet workload install aspire
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/launch-profiles>
 
-## .NET Aspire solution - Web API + Blazor Frontend
-
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=visual-studio>
-
 ## Service discovery
 
 > 1. Discussion and Demo
 
-## .NET Aspire solution - Web API Project + Blazor Frontend + Cache (Docker Container)
-
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=visual-studio>
-
 ![Session First Look](Documentation/Images/SessionFirstLook.PNG)
+
+## Containers with Docker and Podman
+
+### Container in Docker
+
+![Sample 3](Documentation/Images/Sample3.PNG)
+
+### Container in Podman
 
 ![Sample 3](Documentation/Images/Sample3.PNG)
 
