@@ -1,19 +1,17 @@
-# Kick start Your Journey with .NET 8 Aspire
+# .NET 9 Aspire - Local development with Docker, and Podman
 
 ## Date Time: 06-Oct-2024 at 09:00 AM IST
 
-## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915003](https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915003)
+## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915015](https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915015)
 
-## YouTube URL: [https://www.youtube.com/watch?v=kHctHNkBljs](https://www.youtube.com/watch?v=kHctHNkBljs)
-
-<!-- ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG) -->
+## YouTube URL: [https://www.youtube.com/watch?v=aV-e4CFMT_w](https://www.youtube.com/watch?v=aV-e4CFMT_w)
 
 ---
 
 ### Software/Tools
 
 > 1. OS: Windows 10/11 x64
-> 1. Python / .NET 8
+> 1. .NET 8 / AZ CLI / AZD CLI
 > 1. Visual Studio 2022
 > 1. Visual Studio Code
 
@@ -33,18 +31,16 @@
 ## What are we doing today?
 
 > 1. The Big Picture
-> 1. .NET Aspire overview
-> 1. Setup and tooling
-> 1. Build .NET Aspire solution - Web API
-> 1. Orchestration overview
-> 1. Service defaults
-> 1. Launch profiles
-> 1. .NET Aspire solution - Web API + Blazor Frontend
-> 1. Service discovery
-> 1. .NET Aspire solution - Web API Project + Blazor Frontend + Cache (Docker Container)
+> 1. Pre-requisites
+> 1. Previous sessions
+> 1. Aspire Orchestration, integrations, and Tooling
+> 1. Aspire solution with API, Web, and Redis Cache
+> 1. Executing the Aspire solution with Docker
+> 1. Executing the Aspire solution with Podman
+> 1. Aspire Dashboard
 > 1. SUMMARY / RECAP / Q&A
 
-### Please refer to the [**Source Code**](https://github.com/vishipayyallore/aspire-2024) of today's session for more details
+### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-aspire-2025) of today's session for more details
 
 ---
 
@@ -72,10 +68,21 @@ dotnet workload update
 dotnet workload install aspire
 ```
 
-## Build .NET Aspire solution - Web API
+## .NET Aspire solution - Web API Project + Blazor Frontend + Cache (Docker Container)
 
 > 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview>
 > 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=visual-studio>
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=vscode>
+
+```powershell
+dotnet workload list
+dotnet new list
+dotnet new aspire-starter --help
+dotnet new aspire-starter -o AspireSample --use-redis-cache -f net9.0
+```
+
+![Create New Project](Documentation/Images/CreateNewProject.PNG)
 
 ## Orchestration overview
 
@@ -92,29 +99,29 @@ dotnet workload install aspire
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/launch-profiles>
 
-## .NET Aspire solution - Web API + Blazor Frontend
-
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=visual-studio>
-
 ## Service discovery
 
 > 1. Discussion and Demo
 
-## .NET Aspire solution - Web API Project + Blazor Frontend + Cache (Docker Container)
+![Service discovery](Documentation/Images/ServiceDiscovery.PNG)
 
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=visual-studio>
+## Containers with Docker and Podman
 
-![Session First Look](Documentation/Images/SessionFirstLook.PNG)
+### Container in Docker
 
-![Sample 3](Documentation/Images/Sample3.PNG)
+![Redis Docker Container](Documentation/Images/Redis_Docker_Container.PNG)
+
+### Container in Podman
+
+![Redis Podman Container](Documentation/Images/Redis_Podman_Container.PNG)
 
 ## Dashboard overview
 
 > 1. Discussion and Demo
 
-![Aspire Dashboard](Documentation/Images/Aspire_Dashboard.PNG)
+![Aspire Dashboard](Documentation/Images/Aspire_Dashboard_1.PNG)
+
+![Aspire Dashboard](Documentation/Images/Aspire_Dashboard_2.PNG)
 
 ## SUMMARY / RECAP / Q&A
 
