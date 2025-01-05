@@ -44,9 +44,9 @@
 ## 1. OpenAPI support in ASP.NET Core API
 
 > 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview>
+> 1. <https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/overview?view=aspnetcore-9.0>
 
-![Aspire Dashboard](Documentation/Images/Aspire_Dashboard_2.PNG)
+![Aspire Dashboard](Documentation/Images/OpenAPISupport.PNG)
 
 ## SUMMARY / RECAP / Q&A
 
