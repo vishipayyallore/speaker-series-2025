@@ -1,6 +1,6 @@
 # .NET 9 Aspire - Local development with Docker, and Podman
 
-## Date Time: 06-Oct-2024 at 09:00 AM IST
+## Date Time: 05-Jan-2025 at 09:00 AM IST
 
 ## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915015](https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915015)
 
