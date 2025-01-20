@@ -35,19 +35,6 @@
 >    - Pre-requisites
 >    - Previous Session(s)
 >    - Microsoft Learn Module(s)
-> 1. Retrieval without RAG
-> 1. Retrieval Augmented Generation (RAG)
->    - Key Components of RAG
->    - Benefits of RAG
->    - Example Workflow in Azure OpenAI
->    - Use Cases
-> 1. Provision Azure Resources
-> 1. Upload Your Data
-> 1. Deploy AI Models
-> 1. Create an Index
-> 1. RAG with your data in Azure AI Studio
-> 1. RAG with your data in Postman
-> 1. Implement RAG with Azure OpenAI Service in `C#`
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
