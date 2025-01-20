@@ -93,6 +93,27 @@
 
 ![Edit Knowledge Base](./Documentation/Images/Edit_KB.PNG)
 
+## 7. Train and test the knowledge base
+
+> 1. Discussion and Demo
+
+![Train and Test Knowledge Base](./Documentation/Images/Train_Test_KB.PNG)
+
+## 8. Deploy the knowledge base
+
+> 1. Discussion and Demo
+
+![Deploy Knowledge Base](./Documentation/Images/Deploy_KB.PNG)
+
+## 9. Test the deploy API using Postman
+
+> 1. Discussion and Demo
+> 1. <https://langsvc-ai102-dev-001.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=LearnFAQ&api-version=2021-10-01&deploymentName=production>
+
+![Deploy Knowledge Base](./Documentation/Images/Test_KB_In_Postman.PNG)
+
+## 9. Prepare to develop an app in Visual Studio Code
+
 ---
 
 ## SUMMARY / RECAP / Q&A
