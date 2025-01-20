@@ -1,10 +1,10 @@
-# AI-102 - Implement Retrieval-Augmented Generation (RAG) with Azure OpenAI Service
+# AI-102 - Building Question Answering Solutions with Azure AI Language
 
-## Date Time: 10-Dec-2024 at 05:00 PM IST
+## Date Time: 21-Jan-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/304539378](https://www.meetup.com/microsoft-reactor-bengaluru/events/304539378)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305161326](https://www.meetup.com/microsoft-reactor-bengaluru/events/305161326)
 
-## YouTube URL: [https://www.youtube.com/watch?v=cHgZU5dqjyc](https://www.youtube.com/watch?v=cHgZU5dqjyc)
+## YouTube URL: [https://www.youtube.com/watch?v=NYiRAMbK8Zw](https://www.youtube.com/watch?v=NYiRAMbK8Zw)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
