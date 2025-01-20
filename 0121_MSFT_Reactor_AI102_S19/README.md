@@ -60,9 +60,38 @@
 
 > 1. <https://aka.ms/OpenAI-RAG>
 
-## 2. Retrieval `without` RAG
+## 2. Understand question answering
 
 > 1. Discussion and Demo
+
+## 3. Compare question answering to Azure AI Language understanding
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/training/modules/create-question-answer-solution-ai-language/3-compare-to-language-understanding>
+
+## 4. Provision an Azure AI Language resource
+
+> 1. Discussion and Demo
+
+![AI Language With QA](./Documentation/Images/AILanguage_With_QA.PNG)
+
+## 5. Create a question answering project
+
+> 1. Discussion and Demo
+
+![QA Project Creation](./Documentation/Images/QnAProjectCreation.PNG)
+
+## 6. Add sources to the knowledge base
+
+> 1. Discussion and Demo
+
+![Add Source to Knowledge Base](./Documentation/Images/AddSources_KB.PNG)
+
+## 6. Edit the knowledge base
+
+> 1. Discussion and Demo
+
+![Edit Knowledge Base](./Documentation/Images/Edit_KB.PNG)
 
 ---
 
