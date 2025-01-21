@@ -1,10 +1,10 @@
-# AI-102 - Implement Retrieval-Augmented Generation (RAG) with Azure OpenAI Service
+# AI-102 - Building Question Answering Solutions with Azure AI Language
 
-## Date Time: 10-Dec-2024 at 05:00 PM IST
+## Date Time: 21-Jan-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/304539378](https://www.meetup.com/microsoft-reactor-bengaluru/events/304539378)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305161326](https://www.meetup.com/microsoft-reactor-bengaluru/events/305161326)
 
-## YouTube URL: [https://www.youtube.com/watch?v=cHgZU5dqjyc](https://www.youtube.com/watch?v=cHgZU5dqjyc)
+## YouTube URL: [https://www.youtube.com/watch?v=NYiRAMbK8Zw](https://www.youtube.com/watch?v=NYiRAMbK8Zw)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -35,22 +35,9 @@
 >    - Pre-requisites
 >    - Previous Session(s)
 >    - Microsoft Learn Module(s)
-> 1. Retrieval without RAG
-> 1. Retrieval Augmented Generation (RAG)
->    - Key Components of RAG
->    - Benefits of RAG
->    - Example Workflow in Azure OpenAI
->    - Use Cases
-> 1. Provision Azure Resources
-> 1. Upload Your Data
-> 1. Deploy AI Models
-> 1. Create an Index
-> 1. RAG with your data in Azure AI Studio
-> 1. RAG with your data in Postman
-> 1. Implement RAG with Azure OpenAI Service in `C#`
 > 1. SUMMARY / RECAP / Q&A
 
-### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
+### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai102-in-2025) of today's session for more details
 
 ---
 
@@ -73,127 +60,59 @@
 
 > 1. <https://aka.ms/OpenAI-RAG>
 
-## 2. Retrieval `without` RAG
+## 2. Understand question answering
 
 > 1. Discussion and Demo
 
-```text
-Tell me about India
-```
+## 3. Compare question answering to Azure AI Language understanding
 
-![Wihtout RAG Demo 1| 100x100](Documentation/Images/Without_RAG_1.PNG)
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/training/modules/create-question-answer-solution-ai-language/3-compare-to-language-understanding>
 
-## 3. Retrieval Augmented Generation (RAG)
-
-`Retrieval Augmented Generation (RAG)` is an advanced AI framework that enhances the capabilities of language models by combining `retrieval-based methods` with `generative models`. In essence, RAG integrates external knowledge sources into the generative process, making the model's responses more accurate, up-to-date, and relevant to specific contexts.
-
-### 3.1. Key Components of RAG
-
-#### **Retrieval**
-
-> - RAG systems query an external knowledge base, such as a document store, database, or search engine, to fetch the most relevant information.
-> - Tools like Azure Cognitive Search, vector databases, or embeddings-based search mechanisms are often used to identify and retrieve relevant documents or pieces of information.
-
-#### **Augmentation**
-
-> - The retrieved information is used as context for the language model.
-> - This augmentation ensures that the model's response is grounded in factual, retrieved data rather than relying solely on its pretrained knowledge.
-
-#### **Generation**
-
-- A generative language model (e.g., Azure OpenAI's GPT models) processes the retrieved context alongside the input query to produce a coherent and informed response.
-
-### 3.2. Benefits of RAG
-
-> 1. **Accuracy**: Ensures responses are based on the most relevant and up-to-date information.
-> 1. **Contextual Awareness**: Incorporates domain-specific or private knowledge sources that the model wouldn't have seen during its training.
-> 1. **Scalability**: Works well for large-scale deployments where models need to adapt to varied or niche information domains.
-> 1. **Cost Efficiency**: Reduces reliance on larger models by leveraging external knowledge effectively.
-
-### 3.3. Example Workflow in Azure OpenAI
-
-> 1. **User Query**: A user asks, _"What are the latest features of Azure OpenAI?"_.
-> 1. **Information Retrieval**: The system queries an indexed knowledge base containing Azure OpenAI documentation, release notes, and other materials.
-> 1. **Augmented Prompt**: The retrieved documents are appended to the query as part of the prompt.
-> 1. **Response Generation**: Azure OpenAI GPT generates a response based on both the query and the retrieved context.
-
-### 3.4. Use Cases
-
-> 1. **Customer Support**: Providing real-time, accurate answers using product manuals or troubleshooting guides.
-> 1. **Enterprise Knowledge Management**: Leveraging private, secure repositories to assist employees with organizational knowledge.
-> 1. **Research Assistance**: Summarizing and generating insights based on scientific papers or datasets.
-
-## 4. Provision Azure Resources
-
-> 1. Azure OpenAI Resource: For running GPT models.
-> 1. Azure AI Search Resource: For indexing and retrieving data.
-> 1. Azure Storage Account: For storing your dataset (e.g., brochures).
-
-## 5. Upload Your Data
-
-> 1. Store your data (e.g., PDF brochures) in an Azure Blob Storage container.
-> 1. Example: Create a container margies-travel and upload the brochures.
-
-## 6. Deploy AI Models
-
-> 1. Embedding Model (text-embedding-ada-002): Converts text into vectors for indexing.
-> 1. Generative Model (gpt-35-turbo-16k): Generates responses using your indexed data.
-
-## 7. Create an Index
-
-> 1. Use Azure AI Search to index the brochures:
->    - Set up a connection to your Blob Storage container.
->    - Use the embedding model to vectorize the text.
->    - Enable semantic ranking for better search relevance.
-> 1. Result: A searchable index (margies-index) is created.
-
-## 8. RAG with your data in Azure AI Studio
+## 4. Provision an Azure AI Language resource
 
 > 1. Discussion and Demo
 
-```text
-System Message: You are a helpful assistant assisting users with travel recommendations.
-User: I want to go to New York. Where should I stay?
-```
+![AI Language With QA](./Documentation/Images/AILanguage_With_QA.PNG)
 
-![RAG with Azure AI Studio | 100x100](Documentation/Images/RAGWith_AzureOpenAIStudio.PNG)
-
-## 9. RAG with your data in Postman
+## 5. Create a question answering project
 
 > 1. Discussion and Demo
 
-```text
-System Message: You are a helpful assistant assisting users with travel recommendations.
-User: I want to go to New York. Where should I stay?
-```
+![QA Project Creation](./Documentation/Images/QnAProjectCreation.PNG)
 
-![RAG with Azure AI Studio | 100x100](Documentation/Images/RAGWith_AzureOpen_Postman.PNG)
-
-## 10. Implement RAG with Azure OpenAI Service in `C#`
+## 6. Add sources to the knowledge base
 
 > 1. Discussion and Demo
 
-```text
-Tell me about Dubai
+![Add Source to Knowledge Base](./Documentation/Images/AddSources_KB.PNG)
 
-Tell me about Las Vegas
+## 6. Edit the knowledge base
 
-Tell me about Margies Travel Company
+> 1. Discussion and Demo
 
-Tell me about London
+![Edit Knowledge Base](./Documentation/Images/Edit_KB.PNG)
 
-Tell me about New York
+## 7. Train and test the knowledge base
 
-Tell me about San Francisco
-```
+> 1. Discussion and Demo
 
-![RAG | 100x100](Documentation/Images/RAGWithAzureOpenAI_1.PNG)
+![Train and Test Knowledge Base](./Documentation/Images/Train_Test_KB.PNG)
 
-```text
-Tell me about India
-```
+## 8. Deploy the knowledge base
 
-![RAG Demo 2| 100x100](Documentation/Images/RAGWithAzureOpenAI_2.PNG)
+> 1. Discussion and Demo
+
+![Deploy Knowledge Base](./Documentation/Images/Deploy_KB.PNG)
+
+## 9. Test the deploy API using Postman
+
+> 1. Discussion and Demo
+> 1. <https://langsvc-ai102-dev-001.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=LearnFAQ&api-version=2021-10-01&deploymentName=production>
+
+![Deploy Knowledge Base](./Documentation/Images/Test_KB_In_Postman.PNG)
+
+## 9. Prepare to develop an app in Visual Studio Code
 
 ---
 
