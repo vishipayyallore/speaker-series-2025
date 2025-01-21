@@ -72,6 +72,7 @@
 ## 4. Provision an Azure AI Language resource
 
 > 1. Discussion and Demo
+> 1. <https://language.cognitive.azure.com/home>
 
 ![AI Language With QA](./Documentation/Images/AILanguage_With_QA.PNG)
 
