@@ -113,7 +113,11 @@
 
 ![Deploy Knowledge Base](./Documentation/Images/Test_KB_In_Postman.PNG)
 
-## 9. Prepare to develop an app in Visual Studio Code
+## 10. C# Code
+
+> 1. Discussion and Demo
+
+![Code in C#](./Documentation/Images/CodeToCSharp.PNG)
 
 ---
 
