@@ -58,7 +58,7 @@
 
 ### 1.3. Microsoft Learn Module(s)
 
-> 1. <https://aka.ms/OpenAI-RAG>
+> 1. <https://aka.ms/Azure-AILanguage>
 
 ## 2. Understand question answering
 
@@ -72,6 +72,7 @@
 ## 4. Provision an Azure AI Language resource
 
 > 1. Discussion and Demo
+> 1. <https://language.cognitive.azure.com/home>
 
 ![AI Language With QA](./Documentation/Images/AILanguage_With_QA.PNG)
 
@@ -112,7 +113,11 @@
 
 ![Deploy Knowledge Base](./Documentation/Images/Test_KB_In_Postman.PNG)
 
-## 9. Prepare to develop an app in Visual Studio Code
+## 10. C# Code
+
+> 1. Discussion and Demo
+
+![Code in C#](./Documentation/Images/CodeToCSharp.PNG)
 
 ---
 
