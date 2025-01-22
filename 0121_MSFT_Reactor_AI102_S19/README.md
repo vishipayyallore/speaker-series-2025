@@ -58,7 +58,7 @@
 
 ### 1.3. Microsoft Learn Module(s)
 
-> 1. <https://aka.ms/OpenAI-RAG>
+> 1. <https://aka.ms/Azure-AILanguage>
 
 ## 2. Understand question answering
 
