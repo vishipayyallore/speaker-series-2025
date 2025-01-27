@@ -64,6 +64,12 @@
 
 This is the field of Natural Language Processing, or NLP. NLP encompasses a wide range of tasks, from simple text analysis to complex speech recognition. A key subset of NLP is Natural Language Understanding, or NLU. NLU is all about extracting the meaning from human language. It's not just about recognizing the words, but understanding what those words mean in context. Azure AI Language's Conversational Language Understanding, or CLU, is a specific NLU service on Azure. With CLU, you can train custom models to understand the intent behind user input and extract important details called entities. This allows your applications to have truly meaningful conversations with users.
 
+## 3. Understand prebuilt capabilities of the Azure AI Language service
+
+> 1. Discussion and Demo
+> 1. `Pre-trained features`: Azure AI Language offers several pre-trained features that are ready to use out-of-the-box. These features, such as sentiment analysis, language detection, and key phrase extraction, require no model training or data labeling. Simply send your text data to the service, and it will return the results, allowing you to quickly integrate these capabilities into your applications.
+> 1. `Custom features`: For more specialized needs, Azure AI Language allows you to create custom models. These features, such as custom text classification and custom named entity recognition, require you to label your own data, train a model, and deploy it before it can be used in your application. This approach provides greater flexibility and control, enabling you to tailor the model to your specific requirements and extract the precise information you need.
+
 ---
 
 ## SUMMARY / RECAP / Q&A
