@@ -70,6 +70,37 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 > 1. `Pre-trained features`: Azure AI Language offers several pre-trained features that are ready to use out-of-the-box. These features, such as sentiment analysis, language detection, and key phrase extraction, require no model training or data labeling. Simply send your text data to the service, and it will return the results, allowing you to quickly integrate these capabilities into your applications.
 > 1. `Custom features`: For more specialized needs, Azure AI Language allows you to create custom models. These features, such as custom text classification and custom named entity recognition, require you to label your own data, train a model, and deploy it before it can be used in your application. This approach provides greater flexibility and control, enabling you to tailor the model to your specific requirements and extract the precise information you need.
 
+## 4. Provision an Azure AI Language resource
+
+> 1. Discussion and Demo
+
+## x. Create a conversational language understanding project
+
+> 1. Discussion and Demo
+> 1. <https://language.cognitive.azure.com/>
+
+![Create CLU Project](./Documentation/Images/Create_CLU_Project.PNG)
+
+![Create CLU Project](./Documentation/Images/Create_CLU_Project_1.PNG)
+
+## x. Create intents
+
+> 1. Discussion and Demo
+
+![CLU Intents](./Documentation/Images/CLU_Intents_1.PNG)
+
+![CLU Intents](./Documentation/Images/CLU_Intents_2.PNG)
+
+## x. Label each intent with sample utterances
+
+> 1. Discussion and Demo
+
+![CLU Data Labeling](./Documentation/Images/CLU_DataLabeling_1.PNG)
+
+## x. Train and test the model
+
+> 1. Discussion and Demo
+
 ---
 
 ## SUMMARY / RECAP / Q&A
