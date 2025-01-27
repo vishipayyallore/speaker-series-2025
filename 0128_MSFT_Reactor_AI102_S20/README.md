@@ -60,6 +60,10 @@
 
 > 1. <https://aka.ms/AILanguage>
 
+## 2. Introduction
+
+This is the field of Natural Language Processing, or NLP. NLP encompasses a wide range of tasks, from simple text analysis to complex speech recognition. A key subset of NLP is Natural Language Understanding, or NLU. NLU is all about extracting the meaning from human language. It's not just about recognizing the words, but understanding what those words mean in context. Azure AI Language's Conversational Language Understanding, or CLU, is a specific NLU service on Azure. With CLU, you can train custom models to understand the intent behind user input and extract important details called entities. This allows your applications to have truly meaningful conversations with users.
+
 ---
 
 ## SUMMARY / RECAP / Q&A
