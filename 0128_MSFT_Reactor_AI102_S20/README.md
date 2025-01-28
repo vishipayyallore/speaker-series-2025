@@ -109,6 +109,18 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 ![CLU Model Performance](./Documentation/Images/CLU_ModelPerformance_2.PNG)
 
+## x. Deploying a model
+
+> 1. Discussion and Demo
+
+![CLU Deployment](./Documentation/Images/CLU_Deployment_1.PNG)
+
+## x. Testing deployments
+
+> 1. Discussion and Demo
+
+![CLU Testing](./Documentation/Images/CLU_Testing_1.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
