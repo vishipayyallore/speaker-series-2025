@@ -109,6 +109,16 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 ![CLU Model Performance](./Documentation/Images/CLU_ModelPerformance_2.PNG)
 
+### Understanding the Metrics
+
+> 1. `Precision`: Measures how often the model is correct when it predicts an intent. A high precision means the model has few false positives (predicting an intent incorrectly).
+>    - `Formula`: True Positives / (True Positives + False Positives)
+> 1. `Recall`: Measures how often the model correctly identifies an intent out of all the actual instances of that intent in the dataset. High recall means the model has few false negatives (missing an intent).
+>    - `Formula`: True Positives / (True Positives + False Negatives)
+> 1. `F1 Score`: The harmonic mean of precision and recall. It provides a balanced measure of the model's accuracy, especially when there's an imbalance between precision and recall.
+>    - `Formula`: 2 \* (Precision \* Recall) / (Precision + Recall)
+> 1. `Confusion Matrix`: A table that visualizes the performance of the model. It shows how often the model correctly predicted each intent (true positives), how often it incorrectly predicted an intent (false positives), and how often it failed to predict an intent (false negatives).
+
 ## x. Deploying a model
 
 > 1. Discussion and Demo
@@ -120,6 +130,8 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 > 1. Discussion and Demo
 
 ![CLU Testing](./Documentation/Images/CLU_Testing_1.PNG)
+
+## x. Add entities
 
 ---
 
