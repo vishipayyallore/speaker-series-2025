@@ -133,6 +133,10 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 ## x. Add entities
 
+> 1. Discussion and Demo
+
+![CLU Add Entity](./Documentation/Images/CLU_AddEntity_1.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
