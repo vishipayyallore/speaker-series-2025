@@ -101,6 +101,10 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 > 1. Discussion and Demo
 
+![CLU Training Jobs](./Documentation/Images/CLU_TrainingJobs_1.PNG)
+
+![CLU Training Jobs](./Documentation/Images/CLU_TrainingJobs_2.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
