@@ -143,6 +143,12 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 ![CLU App in C#](./Documentation/Images/CLU_App_In_CS.PNG)
 
+## x. Testing CLU using Postman
+
+> 1. Discussion and Demo
+
+![Testing CLU using Postman](./Documentation/Images/CLU_Using_Postman.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
