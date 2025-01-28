@@ -35,6 +35,18 @@
 >    - Pre-requisites
 >    - Previous Session(s)
 >    - Microsoft Learn Module(s)
+> 1. Introduction
+> 1. Understand prebuilt capabilities of the Azure AI Language service
+> 1. Provision an Azure AI Language resource
+> 1. Create a conversational language understanding project
+> 1. Create intents
+> 1. Label each intent with sample utterances
+> 1. Train and test the model
+> 1. Deploying a model
+> 1. Testing deployments
+> 1. Add entities
+> 1. Develop an app in VS 2022/Code
+> 1. Testing CLU using Postman
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
@@ -74,7 +86,7 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 > 1. Discussion and Demo
 
-## x. Create a conversational language understanding project
+## 5. Create a conversational language understanding project
 
 > 1. Discussion and Demo
 > 1. <https://language.cognitive.azure.com/>
@@ -83,7 +95,7 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 ![Create CLU Project](./Documentation/Images/Create_CLU_Project_1.PNG)
 
-## x. Create intents
+## 6. Create intents
 
 > 1. Discussion and Demo
 
@@ -91,13 +103,13 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 ![CLU Intents](./Documentation/Images/CLU_Intents_2.PNG)
 
-## x. Label each intent with sample utterances
+## 7. Label each intent with sample utterances
 
 > 1. Discussion and Demo
 
 ![CLU Data Labeling](./Documentation/Images/CLU_DataLabeling_1.PNG)
 
-## x. Train and test the model
+## 8. Train and test the model
 
 > 1. Discussion and Demo
 
@@ -119,31 +131,31 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 >    - `Formula`: 2 \* (Precision \* Recall) / (Precision + Recall)
 > 1. `Confusion Matrix`: A table that visualizes the performance of the model. It shows how often the model correctly predicted each intent (true positives), how often it incorrectly predicted an intent (false positives), and how often it failed to predict an intent (false negatives).
 
-## x. Deploying a model
+## 9. Deploying a model
 
 > 1. Discussion and Demo
 
 ![CLU Deployment](./Documentation/Images/CLU_Deployment_1.PNG)
 
-## x. Testing deployments
+## 10. Testing deployments
 
 > 1. Discussion and Demo
 
 ![CLU Testing](./Documentation/Images/CLU_Testing_1.PNG)
 
-## x. Add entities
+## 11. Add entities
 
 > 1. Discussion and Demo
 
 ![CLU Add Entity](./Documentation/Images/CLU_AddEntity_1.PNG)
 
-## x. Develop an app in VS 2022/Code
+## 12. Develop an app in VS 2022/Code
 
 > 1. Discussion and Demo
 
 ![CLU App in C#](./Documentation/Images/CLU_App_In_CS.PNG)
 
-## x. Testing CLU using Postman
+## 13. Testing CLU using Postman
 
 > 1. Discussion and Demo
 
