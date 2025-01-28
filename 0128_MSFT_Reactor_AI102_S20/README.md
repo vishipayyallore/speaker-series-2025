@@ -137,6 +137,12 @@ This is the field of Natural Language Processing, or NLP. NLP encompasses a wide
 
 ![CLU Add Entity](./Documentation/Images/CLU_AddEntity_1.PNG)
 
+## x. Develop an app in VS 2022/Code
+
+> 1. Discussion and Demo
+
+![CLU App in C#](./Documentation/Images/CLU_App_In_CS.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
