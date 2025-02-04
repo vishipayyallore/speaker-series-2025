@@ -91,6 +91,14 @@ To be done
 
 > 1. Discussion and Demo
 
+## 7. Label your data
+
+> 1. Discussion and Demo
+
+![TypesOfClasses](./Documentation/Images/TypesOfClasses.PNG)
+
+![DataLabeling](./Documentation/Images/DataLabeling.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
