@@ -1,6 +1,6 @@
 # AI-102 - Building Custom Text Classification Models with Azure AI Language
 
-## Date Time: 28-Jan-2025 at 03:30 PM IST
+## Date Time: 04-Feb-2025 at 03:30 PM IST
 
 ## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942](https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942)
 
