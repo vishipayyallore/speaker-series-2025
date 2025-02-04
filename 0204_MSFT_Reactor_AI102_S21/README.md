@@ -99,6 +99,34 @@ To be done
 
 ![DataLabeling](./Documentation/Images/DataLabeling.PNG)
 
+## 8. Train your model
+
+> 1. Discussion and Demo
+
+![TrainingTheModel](./Documentation/Images/TrainingTheModel.PNG)
+
+![TrainingTheModel](./Documentation/Images/TrainingTheModel_1.PNG)
+
+## 9. Evaluate your model
+
+> 1. Discussion and Demo
+
+![ModelPerformance](./Documentation/Images/ModelPerformance.PNG)
+
+## 10. Deploy your model
+
+> 1. Discussion and Demo
+
+![ModelDeployment](./Documentation/Images/ModelDeployment.PNG)
+
+## 11. Test in Postman
+
+> 1. Discussion and Demo
+
+## 12. App in VS Code / VS 2022
+
+> 1. Discussion and Demo
+
 ---
 
 ## SUMMARY / RECAP / Q&A
