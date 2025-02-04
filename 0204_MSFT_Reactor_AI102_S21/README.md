@@ -63,6 +63,34 @@
 
 ## 2. Introduction
 
+To be done
+
+## 3. Provision an Azure AI Language resource
+
+> 1. Discussion and Demo
+
+![Custom Text Classification](./Documentation/Images/LanguageService_CTClass.PNG)
+
+## 4. Roles for your user
+
+> 1. Discussion and Demo
+
+![Roles For User](./Documentation/Images/Roles_For_User.PNG)
+
+## 5. Upload sample articles
+
+> 1. Discussion and Demo
+
+### 5.1. Stroage Account Configuration
+
+### 5.2. Articles Uploaded
+
+![Articles Uploaded](./Documentation/Images/Articles_Uploaded.PNG)
+
+## 6. Create a custom text classification project
+
+> 1. Discussion and Demo
+
 ---
 
 ## SUMMARY / RECAP / Q&A
