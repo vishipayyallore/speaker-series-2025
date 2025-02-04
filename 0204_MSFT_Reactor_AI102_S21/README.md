@@ -1,10 +1,10 @@
-# AI-102 - Build a Conversational Language Understanding Model with Azure AI
+# AI-102 - Building Custom Text Classification Models with Azure AI Language
 
 ## Date Time: 28-Jan-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305178630](https://www.meetup.com/microsoft-reactor-bengaluru/events/305178630)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942](https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942)
 
-## YouTube URL: [https://www.youtube.com/watch?v=-52GQLl8p-4](https://www.youtube.com/watch?v=-52GQLl8p-4)
+## YouTube URL: [https://www.youtube.com/watch?v=BtnhSKjRNWg](https://www.youtube.com/watch?v=BtnhSKjRNWg)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
