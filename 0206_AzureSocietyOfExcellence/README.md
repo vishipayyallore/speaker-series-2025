@@ -1,10 +1,10 @@
-# AI-102 - Building Custom Text Classification Models with Azure AI Language
+# Building Custom AI Assistants Azure Services
 
-## Date Time: 04-Feb-2025 at 03:30 PM IST
+## Date Time: 06-Feb-2025 at 10:45 AM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942](https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942)
+## Event URL: [https://www.linkedin.com/feed/update/urn:li:activity:7290723380838735872](https://www.linkedin.com/feed/update/urn:li:activity:7290723380838735872)
 
-## YouTube URL: [https://www.youtube.com/watch?v=BtnhSKjRNWg](https://www.youtube.com/watch?v=BtnhSKjRNWg)
+<!-- ## YouTube URL: [https://www.youtube.com/watch?v=BtnhSKjRNWg](https://www.youtube.com/watch?v=BtnhSKjRNWg) -->
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -32,9 +32,6 @@
 ## What are we doing today?
 
 > 1. The Big Picture
->    - Pre-requisites
->    - Previous Session(s)
->    - Microsoft Learn Module(s)
 > 1. Introduction
 > 1. SUMMARY / RECAP / Q&A
 
@@ -46,86 +43,52 @@
 
 ---
 
-## 1. The Big Picture
+## 🚀 45-60 Minutes Demo Heavy Agenda
 
-### 1.1. Pre-requisites
+## 1. Quick Introduction (2 mins)
 
-> 1. Azure Subscription
-> 1. .NET 8 / Python
+> 1. What’s an AI Assistant?
+>    - Examples: Chatbots, Virtual Agents, Voice Assistants
+>    - Real-world use cases: Customer support, automation, personal productivity
+>    - **Example**: “Think about the last time you interacted with customer support online. Chances are, you spoke to an AI assistant without realizing it.
 
-### 1.2. Previous Session(s)
+## 2. Azure Services Overview (2 mins)
 
-> 1. <https://youtube.com/playlist?list=PLmsFUfdnGr3wmIh-glyiMkhHS6byEuI59&si=5vlmcUqOuWqFiCRR>
+> 1. Azure Cognitive Services: For vision, speech, and language APIs
+> 1. Azure OpenAI Service: For powerful language models like GPT
+> 1. Azure AI Studio: To build, fine-tune, and deploy custom models
 
-### 1.3. Microsoft Learn Module(s)
+## 3. ⚡Deep Dive into Azure AI Studio (5 mins)
 
-> 1. <https://aka.ms/AILanguage>
+> 1. Discussion and Demo
+> 1. Grounding data, Testing interactions, Role Play (What is TV?)
 
-## 2. Introduction
+## 4. ⚡Advanced Prompt Engineering (5 mins)
 
-To be done
+> 1. Discussion and Demo
+> 1. Using Studio, Postman, C#
 
-## 3. Provision an Azure AI Language resource
+## 5. ⚡Implement (RAG) with Azure OpenAI (10 mins)
+
+> 1. Discussion and Demo
+> 1. Think of RAG as giving GPT access to a library of knowledge.
+
+## 6. ⚡Building Question Answering Solutions (10 mins)
 
 > 1. Discussion and Demo
 
-![Custom Text Classification](./Documentation/Images/LanguageService_CTClass.PNG)
-
-## 4. Roles for your user
+## 7. ⚡Build a CLU Model with Azure AI Language (10 mins)
 
 > 1. Discussion and Demo
 
-![Roles For User](./Documentation/Images/Roles_For_User.PNG)
-
-## 5. Upload sample articles
+## 8. ⚡Building Custom Text Classification Models with Azure AI Language (10 mins)
 
 > 1. Discussion and Demo
 
-### 5.1. Stroage Account Configuration
-
-### 5.2. Articles Uploaded
-
-![Articles Uploaded](./Documentation/Images/Articles_Uploaded.PNG)
-
-## 6. Create a custom text classification project
+## 9. ⚡eShopSupport (.NET Aspire App) Showcase (10 mins)
 
 > 1. Discussion and Demo
-
-## 7. Label your data
-
-> 1. Discussion and Demo
-
-![TypesOfClasses](./Documentation/Images/TypesOfClasses.PNG)
-
-![DataLabeling](./Documentation/Images/DataLabeling.PNG)
-
-## 8. Train your model
-
-> 1. Discussion and Demo
-
-![TrainingTheModel](./Documentation/Images/TrainingTheModel.PNG)
-
-![TrainingTheModel](./Documentation/Images/TrainingTheModel_1.PNG)
-
-## 9. Evaluate your model
-
-> 1. Discussion and Demo
-
-![ModelPerformance](./Documentation/Images/ModelPerformance.PNG)
-
-## 10. Deploy your model
-
-> 1. Discussion and Demo
-
-![ModelDeployment](./Documentation/Images/ModelDeployment.PNG)
-
-## 11. Test in Postman
-
-> 1. Discussion and Demo
-
-## 12. App in VS Code / VS 2022
-
-> 1. Discussion and Demo
+> 1. <https://github.com/dotnet/eShopSupport>
 
 ---
 
