@@ -45,14 +45,14 @@
 
 ## 🚀 45-60 Minutes Demo Heavy Agenda
 
-## 1. Quick Introduction (2 mins)
+## 1. Quick Introduction (1 min)
 
 > 1. What’s an AI Assistant?
 >    - Examples: Chatbots, Virtual Agents, Voice Assistants
 >    - Real-world use cases: Customer support, automation, personal productivity
 >    - **Example**: “Think about the last time you interacted with customer support online. Chances are, you spoke to an AI assistant without realizing it.
 
-## 2. Azure Services Overview (2 mins)
+## 2. Azure Services Overview (1 min)
 
 > 1. Azure Cognitive Services: For vision, speech, and language APIs
 > 1. Azure OpenAI Service: For powerful language models like GPT
