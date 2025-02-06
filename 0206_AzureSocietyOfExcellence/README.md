@@ -43,6 +43,18 @@
 
 ---
 
+## The Big Picture
+
+### A. Pre-requisites
+
+> 1. Azure Subscription
+> 1. .NET 8 / Python
+
+### B. Previous Session(s)
+
+> 1. <https://github.com/vishipayyallore>
+> 1. <https://youtube.com/playlist?list=PLmsFUfdnGr3wmIh-glyiMkhHS6byEuI59&si=5vlmcUqOuWqFiCRR>
+
 ## 🚀 45-60 Minutes Demo Heavy Agenda
 
 ## 1. Quick Introduction (1 min)
