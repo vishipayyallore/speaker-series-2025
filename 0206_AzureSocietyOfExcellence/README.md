@@ -74,28 +74,35 @@
 
 > 1. Discussion and Demo
 > 1. Grounding data, Testing interactions, Role Play (What is TV?)
+> 1. <https://github.com/vishipayyallore/speaker-series-2024/tree/main/1022_MSFT_Reactor_AI102_S13>
 
 ## 4. ⚡Advanced Prompt Engineering (5 mins)
 
 > 1. Discussion and Demo
 > 1. Using Studio, Postman, C#
+> 1. <https://github.com/vishipayyallore/speaker-series-2024/tree/main/0709_MSFT_Reactor_AI102_S9>
+> 1. <https://github.com/vishipayyallore/speaker-series-2024/tree/main/0827_MSFT_Reactor_AI102_S12>
 
 ## 5. ⚡Implement (RAG) with Azure OpenAI (10 mins)
 
 > 1. Discussion and Demo
 > 1. Think of RAG as giving GPT access to a library of knowledge.
+> 1. <https://github.com/vishipayyallore/speaker-series-2024/tree/main/1210_MSFT_Reactor_AI102_S17>
 
 ## 6. ⚡Building Question Answering Solutions (10 mins)
 
 > 1. Discussion and Demo
+> 1. <https://github.com/vishipayyallore/speaker-series-2025/tree/main/0121_MSFT_Reactor_AI102_S19>
 
 ## 7. ⚡Build a CLU Model with Azure AI Language (10 mins)
 
 > 1. Discussion and Demo
+> 1. <https://github.com/vishipayyallore/speaker-series-2025/tree/main/0128_MSFT_Reactor_AI102_S20>
 
 ## 8. ⚡Building Custom Text Classification Models with Azure AI Language (10 mins)
 
 > 1. Discussion and Demo
+> 1. <https://github.com/vishipayyallore/speaker-series-2025/tree/main/0204_MSFT_Reactor_AI102_S21>
 
 ## 9. ⚡eShopSupport (.NET Aspire App) Showcase (10 mins)
 
