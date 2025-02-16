@@ -1,10 +1,8 @@
-# Building Custom AI Assistants Azure Services
+# Global AI Bootcamp 2025 Hyderabad - 1 March 2025
 
-## Date Time: 06-Feb-2025 at 10:45 AM IST
+## Date Time: 01-Mar-2025 at 09:30 AM IST
 
-## Event URL: [https://www.linkedin.com/feed/update/urn:li:activity:7290723380838735872](https://www.linkedin.com/feed/update/urn:li:activity:7290723380838735872)
-
-<!-- ## YouTube URL: [https://www.youtube.com/watch?v=BtnhSKjRNWg](https://www.youtube.com/watch?v=BtnhSKjRNWg) -->
+## Event URL: [https://www.meetup.com/global-ai-hyderabad/events/305665213](https://www.meetup.com/global-ai-hyderabad/events/305665213)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -32,7 +30,11 @@
 ## What are we doing today?
 
 > 1. The Big Picture
-> 1. Introduction
+> 1. Quick Introduction
+> 1. Live Demo (25 min) – Hands-on Walkthrough
+>    - Setup & Running eShopSupport Locally (5 min)
+>    - Exploring AI-Powered Features (15 min)
+>    - Extending the AI Capabilities (5 min)
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
@@ -45,69 +47,38 @@
 
 ## The Big Picture
 
-### A. Pre-requisites
+> 1. 🔹 Building AI-Powered Customer Support with .NET Aspire & OpenAI
 
-> 1. Azure Subscription
-> 1. .NET 8 / Python
+## 1️⃣ Quick Introduction (2-3 min)
 
-### B. Previous Session(s)
+> 1. What is `eShopSupport`? (A real-world AI-powered customer support demo)
+> 1. Key AI features in the app (`Text Classification, Sentiment Analysis, Summarization, Chatbot`)
+> 1. What you’ll see in the live demo
 
-> 1. <https://github.com/vishipayyallore>
-> 1. <https://youtube.com/playlist?list=PLmsFUfdnGr3wmIh-glyiMkhHS6byEuI59&si=5vlmcUqOuWqFiCRR>
+## 2️⃣ Live Demo (25 min) – Hands-on Walkthrough
 
-## 🚀 45-60 Minutes Demo Heavy Agenda
+### 🔹 Setup & Running eShopSupport Locally (5 min)
 
-## 1. Quick Introduction (1 min)
+> 1. Clone the repo & install dependencies
+> 1. Run the application using `.NET Aspire`
+> 1. Overview of the Aspire Dashboard
 
-> 1. What’s an AI Assistant?
->    - Examples: Chatbots, Virtual Agents, Voice Assistants
->    - Real-world use cases: Customer support, automation, personal productivity
->    - **Example**: “Think about the last time you interacted with customer support online. Chances are, you spoke to an AI assistant without realizing it.
+### 🔹 Exploring AI-Powered Features (15 min)
 
-## 2. Azure Services Overview (1 min)
+> 1. `Text Classification:` Auto-tagging support tickets
+> 1. `Sentiment Analysis:` Identifying customer emotions in messages
+> 1. `Summarization:` Generating quick insights from long conversations
+> 1. `Chatbot Interactions:` AI-powered chat with response suggestions
 
-> 1. Azure Cognitive Services: For vision, speech, and language APIs
-> 1. Azure OpenAI Service: For powerful language models like GPT
-> 1. Azure AI Studio: To build, fine-tune, and deploy custom models
+### 🔹 Extending the AI Capabilities (5 min)
 
-## 3. ⚡Deep Dive into Azure AI Studio (5 mins)
+> 1. Running small local AI models vs cloud-based models
+> 1. Customizing the AI pipeline for different use cases
 
-> 1. Discussion and Demo
-> 1. Grounding data, Testing interactions, Role Play (What is TV?)
-> 1. <https://github.com/vishipayyallore/speaker-series-2024/tree/main/1022_MSFT_Reactor_AI102_S13>
+## 3️⃣ Wrap-up & Q&A (2-3 min)
 
-## 4. ⚡Advanced Prompt Engineering (5 mins)
-
-> 1. Discussion and Demo
-> 1. Using Studio, Postman, C#
-> 1. <https://github.com/vishipayyallore/speaker-series-2024/tree/main/0709_MSFT_Reactor_AI102_S9>
-> 1. <https://github.com/vishipayyallore/speaker-series-2024/tree/main/0827_MSFT_Reactor_AI102_S12>
-
-## 5. ⚡Implement (RAG) with Azure OpenAI (10 mins)
-
-> 1. Discussion and Demo
-> 1. Think of RAG as giving GPT access to a library of knowledge.
-> 1. <https://github.com/vishipayyallore/speaker-series-2024/tree/main/1210_MSFT_Reactor_AI102_S17>
-
-## 6. ⚡Building Question Answering Solutions (10 mins)
-
-> 1. Discussion and Demo
-> 1. <https://github.com/vishipayyallore/speaker-series-2025/tree/main/0121_MSFT_Reactor_AI102_S19>
-
-## 7. ⚡Build a CLU Model with Azure AI Language (10 mins)
-
-> 1. Discussion and Demo
-> 1. <https://github.com/vishipayyallore/speaker-series-2025/tree/main/0128_MSFT_Reactor_AI102_S20>
-
-## 8. ⚡Building Custom Text Classification Models with Azure AI Language (10 mins)
-
-> 1. Discussion and Demo
-> 1. <https://github.com/vishipayyallore/speaker-series-2025/tree/main/0204_MSFT_Reactor_AI102_S21>
-
-## 9. ⚡eShopSupport (.NET Aspire App) Showcase (10 mins)
-
-> 1. Discussion and Demo
-> 1. <https://github.com/dotnet/eShopSupport>
+> 1. Key takeaways
+> 1. Where to explore more & contribute
 
 ---
 
