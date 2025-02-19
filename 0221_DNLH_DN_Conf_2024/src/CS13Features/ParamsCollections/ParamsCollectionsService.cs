@@ -24,7 +24,7 @@ internal static class ParamsCollectionsService
     static void ShowNumbersArray(params int[] numbers)
     {
         WriteLine("Showing numbers array:");
-        
+
         WriteLine(string.Join(" ", numbers));
     }
 
