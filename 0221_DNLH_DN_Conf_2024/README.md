@@ -1,10 +1,10 @@
 # .NET Conf 2024 - Dot Net Learners House Hyderabad
 
-## Date Time: 19-Jan-2025 at 09:00 AM IST
+## Date Time: 21-Feb-2025 at 09:00 AM IST
 
 ## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/303337086](https://www.meetup.com/dot-net-learners-house-hyderabad/events/303337086)
 
-## YouTube URL: [https://www.youtube.com/watch?v=aV-e4CFMT_w](https://www.youtube.com/watch?v=aV-e4CFMT_w)
+## YouTube URL: [https://www.youtube.com/watch?v=IyE1-7cXano](https://www.youtube.com/watch?v=IyE1-7cXano)
 
 ---
 
@@ -18,11 +18,10 @@
 ### Prior Knowledge
 
 > 1. Programming knowledge in C#
-> 1. Microservices / Distributed applications
 
 ## Technology Stack
 
-> 1. .NET 8, C#, Docker
+> 1. .NET 8/9, C#, Docker
 
 ## Information
 
@@ -41,7 +40,11 @@
 
 ---
 
-## 1. OpenAPI support in ASP.NET Core API
+## 1. Introduction
+
+> 1. Discussion and Demo
+
+## X. OpenAPI support in ASP.NET Core API
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/overview?view=aspnetcore-9.0>
