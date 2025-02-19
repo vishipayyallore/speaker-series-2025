@@ -6,6 +6,8 @@ internal static class ParamsCollectionsService
     {
         ForegroundColor = ConsoleColor.DarkCyan;
 
+        WriteLine("=== Params Collections Demo ===");
+
         ShowNumbersArray(21, 18, 93);
 
         ShowNumbersEnumerable(36, 87, 62, 37, 91, 38, 66);
@@ -21,60 +23,40 @@ internal static class ParamsCollectionsService
 
     static void ShowNumbersArray(params int[] numbers)
     {
-        Console.WriteLine("Showing numbers array:");
-
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            Console.Write(numbers[i]);
-            Console.Write(" ");
-        }
-        Console.WriteLine();
+        WriteLine("Showing numbers array:");
+        
+        WriteLine(string.Join(" ", numbers));
     }
 
     static void ShowNumbersEnumerable(params IEnumerable<int> numbers)
     {
-        Console.WriteLine("Showing numbers enumerable:");
-        for (int i = 0; i < numbers.Count(); i++)
-        {
-            Console.Write(numbers.ToList()[i]);
-            Console.Write(" ");
-        }
-        Console.WriteLine();
+        WriteLine("Showing numbers enumerable:");
+
+        WriteLine(string.Join(" ", numbers));
     }
 
     static void ShowNumbersList(params List<int> numbers)
     {
-        Console.WriteLine("Showing numbers list:");
-        for (int i = 0; i < numbers.Count; i++)
-        {
-            Console.Write(numbers[i]);
-            Console.Write(" ");
-        }
-        Console.WriteLine();
+        WriteLine("Showing numbers list:");
+
+        WriteLine(string.Join(" ", numbers));
     }
 
     static void ShowNumbersReadOnlySpan(params ReadOnlySpan<int> numbers)
     {
-        Console.WriteLine("Showing numbers read-only span:");
+        WriteLine("Showing numbers read-only span:");
         for (int i = 0; i < numbers.Length; i++)
         {
-            Console.Write(numbers[i]);
-            Console.Write(" ");
+            Write($"{numbers[i]} ");
         }
-        Console.WriteLine();
+        WriteLine();
     }
 
     static void ShowNumbersCustomCollection(params CustomCollection numbers)
     {
-        Console.WriteLine("Showing numbers custom collection:");
-        for (int i = 0; i < numbers.Count(); i++)
-        {
-            Console.Write(numbers.ToList()[i]);
-            Console.Write(" ");
-        }
-        Console.WriteLine();
+        WriteLine("Showing numbers custom collection:");
+
+        WriteLine(string.Join(" ", numbers));
     }
-
-
 
 }

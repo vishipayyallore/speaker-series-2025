@@ -48,7 +48,14 @@
 ## X. C# 13 Features
 
 > 1. Discussion and Demo
-> 1. params | New Escape sequence | Partial | field | 
+> 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13>
+> 1. params | New Escape sequence | Partial | field |
+
+### `params` collections
+
+> 1. Discussion and Demo
+
+![Params Collections | 100x100](./Documentation/Images/ParamsCollection.PNG)
 
 ## X. OpenAPI support in ASP.NET Core API
 
