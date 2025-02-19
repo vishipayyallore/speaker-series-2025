@@ -29,6 +29,12 @@
 
 ## What are we doing today?
 
+> 1. Introduction
+> 1. C# 13 Features
+>    - `params` collections
+>    - New `Escape` Sequence
+>    - `field` Keyword
+>    - Overload Resolution Priority
 > 1. OpenAPI support in ASP.NET Core API
 > 1. SUMMARY / RECAP / Q&A
 
@@ -45,31 +51,38 @@
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/overview>
 
-## X. C# 13 Features
+## 2. C# 13 Features
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13>
 > 1. params | New Escape sequence | Partial | field |
 
-### `params` collections
+### 2.1. `params` collections
 
 > 1. Discussion and Demo
 
-![Params Collections | 100x100](./Documentation/Images/ParamsCollection.PNG)
+![Params Collections](./Documentation/Images/ParamsCollection.PNG)
 
-### New Escape Sequence
+### 2.2. New `Escape` Sequence
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#new-escape-sequence>
 
-![New Escape Sequence | 100x100](./Documentation/Images/NewEscapeSequence.PNG)
+![New Escape Sequence](./Documentation/Images/NewEscapeSequence.PNG)
 
-### field Keyword
+### 2.3. `field` Keyword
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#the-field-keyword>
 
-![Field Keyword | 100x100](./Documentation/Images/FieldKeyword.PNG)
+![Field Keyword](./Documentation/Images/FieldKeyword.PNG)
+
+### 2.4. Overload Resolution Priority
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#the-field-keyword>
+
+![Overload Resolution Priority](./Documentation/Images/OverloadResolutionPriority.PNG)
 
 ## X. OpenAPI support in ASP.NET Core API
 
