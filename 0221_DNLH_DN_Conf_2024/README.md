@@ -57,6 +57,13 @@
 
 ![Params Collections | 100x100](./Documentation/Images/ParamsCollection.PNG)
 
+### New Escape Sequence
+
+> 1. Discussion and Demo
+
+![New Escape Sequence | 100x100](./Documentation/Images/NewEscapeSequence.PNG)
+
+
 ## X. OpenAPI support in ASP.NET Core API
 
 > 1. Discussion and Demo

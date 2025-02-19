@@ -1,3 +1,6 @@
 ﻿using CS13Features.ParamsCollections;
+using CS13Features.NewEscapeSequence;
 
-ParamsCollectionsService.ShowDemo();
+//ParamsCollectionsService.ShowDemo();
+
+NewEscapeSequenceService.ShowDemo();
