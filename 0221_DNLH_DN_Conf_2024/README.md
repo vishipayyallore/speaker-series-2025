@@ -48,7 +48,7 @@
 ## X. C# 13 Features
 
 > 1. Discussion and Demo
-
+> 1. params | New Escape sequence | Partial | field | 
 
 ## X. OpenAPI support in ASP.NET Core API
 
