@@ -60,9 +60,16 @@
 ### New Escape Sequence
 
 > 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#new-escape-sequence>
 
 ![New Escape Sequence | 100x100](./Documentation/Images/NewEscapeSequence.PNG)
 
+### field Keyword
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#the-field-keyword>
+
+![Field Keyword | 100x100](./Documentation/Images/FieldKeyword.PNG)
 
 ## X. OpenAPI support in ASP.NET Core API
 

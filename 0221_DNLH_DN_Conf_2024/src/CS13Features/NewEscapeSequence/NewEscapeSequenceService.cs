@@ -2,40 +2,40 @@
 
 internal static class NewEscapeSequenceService
 {
-    private static readonly Dictionary<string, string> colors = new()
+    private static readonly Dictionary<string, string> Colors = new()
     {
-            { "Red", "31" },
-            { "Green", "32" },
-            { "Blue", "34" },
-            { "Yellow", "33" },
-            { "Cyan", "36" }
-        };
+        { "Red", "31" },
+        { "Green", "32" },
+        { "Blue", "34" },
+        { "Yellow", "33" },
+        { "Cyan", "36" }
+    };
 
-    private static readonly Dictionary<string, string> styles = new()
+    private static readonly Dictionary<string, string> Styles = new()
     {
-            { "Bold", "1" },
-            { "Underline", "4" },
-            { "Reset", "0" }
-        };
+        { "Bold", "1" },
+        { "Underline", "4" },
+        { "Reset", "0" }
+    };
 
     public static void ShowDemo()
     {
-        //Pre .NET 9
-        WriteLine("Demonstrating all color & style using Old Escape Sequence:\n");
-        string redText = "\u001b[31mThis text is red!\u001b[0m";
-        string greenText = "\u001b[32mThis text is green!\u001b[0m";
+        WriteLine("\n=== Demonstrating Old Escape Sequences (Pre .NET 9) ===\n");
 
-        WriteLine(redText);
-        WriteLine(greenText);
+        // Old Escape Sequences (Pre .NET 9)
+        string redTextOld = "\u001b[31mThis text is red!\u001b[0m";
+        string greenTextOld = "\u001b[32mThis text is green!\u001b[0m";
 
-        // .NET 9
+        WriteLine(redTextOld);
+        WriteLine(greenTextOld);
+
+        // New Escape Sequences (.NET 9)
         ForegroundColor = ConsoleColor.DarkCyan;
+        WriteLine("\n\n=== Demonstrating New Escape Sequences (.NET 9) ===\n");
 
-        WriteLine("\n\nDemonstrating all color & style combinations using New Escape Sequence:\n");
-
-        foreach (var style in styles)
+        foreach (var style in Styles)
         {
-            foreach (var color in colors)
+            foreach (var color in Colors)
             {
                 string formattedText = GetFormattedText($"{style.Key} {color.Key}", color.Value, style.Value);
                 WriteLine(formattedText);
@@ -45,7 +45,7 @@ internal static class NewEscapeSequenceService
         ResetColor();
     }
 
-    static string GetFormattedText(string text, string colorCode, string styleCode)
+    private static string GetFormattedText(string text, string colorCode, string styleCode)
     {
         return $"\e[{styleCode};{colorCode}m{text}\e[0m";
     }
