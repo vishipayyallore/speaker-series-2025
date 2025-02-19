@@ -51,11 +51,10 @@
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/overview>
 
-## 2. C# 13 Features
+## 2. What is new in C# 13 Features
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13>
-> 1. params | New Escape sequence | Partial | field |
 
 ### 2.1. `params` collections
 
@@ -83,6 +82,11 @@
 > 1. <https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#the-field-keyword>
 
 ![Overload Resolution Priority](./Documentation/Images/OverloadResolutionPriority.PNG)
+
+## 3. What is new in .NET libraries for .NET 9
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries>
 
 ## X. OpenAPI support in ASP.NET Core API
 
