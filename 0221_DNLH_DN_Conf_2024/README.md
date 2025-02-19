@@ -30,11 +30,12 @@
 ## What are we doing today?
 
 > 1. Introduction
-> 1. C# 13 Features
+> 1. What is new in C# 13 Features
 >    - `params` collections
 >    - New `Escape` Sequence
 >    - `field` Keyword
 >    - Overload Resolution Priority
+> 1. What is new in .NET libraries
 > 1. OpenAPI support in ASP.NET Core API
 > 1. SUMMARY / RECAP / Q&A
 
@@ -46,7 +47,7 @@
 
 ---
 
-## 1. Introduction
+## 1. Introduction to .NET Conf 2024 / .NET 9
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/overview>
@@ -83,7 +84,7 @@
 
 ![Overload Resolution Priority](./Documentation/Images/OverloadResolutionPriority.PNG)
 
-## 3. What is new in .NET libraries for .NET 9
+## 3. What is new in .NET libraries
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries>
