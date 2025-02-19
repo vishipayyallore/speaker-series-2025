@@ -32,7 +32,7 @@
 > 1. OpenAPI support in ASP.NET Core API
 > 1. SUMMARY / RECAP / Q&A
 
-### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-aspire-2025) of today's session for more details
+### Please refer to the [**Source Code**](https://github.com/vishipayyallore/speaker-series-2025/tree/main/0221_DNLH_DN_Conf_2024/src) of today's session for more details
 
 ---
 
@@ -43,6 +43,12 @@
 ## 1. Introduction
 
 > 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/overview>
+
+## X. C# 13 Features
+
+> 1. Discussion and Demo
+
 
 ## X. OpenAPI support in ASP.NET Core API
 
