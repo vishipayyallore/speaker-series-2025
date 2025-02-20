@@ -89,6 +89,13 @@
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries>
 
+### 3.1. `Base64Url`
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries#base64url>
+
+![Base64Url](./Documentation/Images/Base64Url.PNG)
+
 ## X. OpenAPI support in ASP.NET Core API
 
 > 1. Discussion and Demo

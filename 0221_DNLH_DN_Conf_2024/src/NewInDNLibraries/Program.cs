@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using NewInDNLibraries.Base64UrlLib;
+using NewInDNLibraries.GuidVersion7;
+
+//Base64UrlService.ShowDemo();
+
+GuidVersion7Service.ShowDemo();
