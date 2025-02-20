@@ -96,6 +96,13 @@
 
 ![Base64Url](./Documentation/Images/Base64Url.PNG)
 
+### 3.2. `GuidVersion7`
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries#systemguid>
+
+![GuidVersion7](./Documentation/Images/GuidVersion7.PNG)
+
 ## X. OpenAPI support in ASP.NET Core API
 
 > 1. Discussion and Demo
