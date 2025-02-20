@@ -103,6 +103,13 @@
 
 ![GuidVersion7](./Documentation/Images/GuidVersion7.PNG)
 
+### 3.3. `TaskWhenEach`
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries#threading>
+
+![TaskWhenEach](./Documentation/Images/TaskWhenEach.PNG)
+
 ## X. OpenAPI support in ASP.NET Core API
 
 > 1. Discussion and Demo
