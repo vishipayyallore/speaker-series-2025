@@ -110,10 +110,10 @@
 
 ![TaskWhenEach](./Documentation/Images/TaskWhenEach.PNG)
 
-## X. OpenAPI support in ASP.NET Core API
+## 4. OpenAPI support in ASP.NET Core API
 
 > 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/overview?view=aspnetcore-9.0>
+> 1. <https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#openapi>
 
 ![Aspire Dashboard](Documentation/Images/OpenAPISupport.PNG)
 

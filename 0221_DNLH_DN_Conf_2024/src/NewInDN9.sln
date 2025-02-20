@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS13Features", "CS13Feature
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewInDNLibraries", "NewInDNLibraries\NewInDNLibraries.csproj", "{D8D280A9-954E-4400-9EC7-2591D63B608A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.API", "Products.API\Products.API.csproj", "{3E04A8C2-70DC-4295-A28F-00C205B88200}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D8D280A9-954E-4400-9EC7-2591D63B608A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8D280A9-954E-4400-9EC7-2591D63B608A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8D280A9-954E-4400-9EC7-2591D63B608A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E04A8C2-70DC-4295-A28F-00C205B88200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E04A8C2-70DC-4295-A28F-00C205B88200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E04A8C2-70DC-4295-A28F-00C205B88200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E04A8C2-70DC-4295-A28F-00C205B88200}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
