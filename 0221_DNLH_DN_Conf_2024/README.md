@@ -115,6 +115,18 @@
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#openapi>
 
+### 4.1. Open API Specification
+
+> 1. <https://localhost:7273/openapi/v1.json>
+
+![Open API Spec](Documentation/Images/OpenAPISpec.PNG)
+
+### 4.2. Open API and Swagger
+
+> 1. <https://localhost:7273/swagger/index.html>
+
+### 4.2. Open API and Scalar
+
 ![Aspire Dashboard](Documentation/Images/OpenAPISupport.PNG)
 
 ## SUMMARY / RECAP / Q&A
