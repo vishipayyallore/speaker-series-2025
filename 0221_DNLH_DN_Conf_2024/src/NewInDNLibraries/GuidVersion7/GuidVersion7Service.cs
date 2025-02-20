@@ -6,6 +6,8 @@ internal static class GuidVersion7Service
     {
         ForegroundColor = ConsoleColor.Green;
 
+        WriteLine("***** Generating GUIDs with Version 7 Demo *****\n");
+
         WriteLine("- GENERATING REGULAR GUIDs -");
         for (int i = 0; i < 5; i++)
         {
@@ -23,6 +25,8 @@ internal static class GuidVersion7Service
             var guid = Guid.CreateVersion7();
             WriteLine($"Version: {GetGuidVersion(guid)}, GUID: {guid}");
         }
+
+        WriteLine();
 
         ResetColor();
     }
