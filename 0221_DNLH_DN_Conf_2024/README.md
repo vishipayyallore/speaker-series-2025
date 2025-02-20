@@ -36,7 +36,13 @@
 >    - `field` Keyword
 >    - Overload Resolution Priority
 > 1. What is new in .NET libraries
+>    - `Base64Url`
+>    - `GuidVersion7`
+>    - `TaskWhenEach`
 > 1. OpenAPI support in ASP.NET Core API
+>    - Open API Specification
+>    - Open API and Swagger
+>    - Open API and Scalar
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/vishipayyallore/speaker-series-2025/tree/main/0221_DNLH_DN_Conf_2024/src) of today's session for more details
@@ -128,6 +134,8 @@
 ![OpenAPI with Swagger](Documentation/Images/OpenAPI_Swagger.PNG)
 
 ### 4.2. Open API and Scalar
+
+> 1. <https://localhost:7273/scalar/v1>
 
 ![OpenAPI with Scalar](Documentation/Images/OpenAPI_Scalar.PNG)
 
