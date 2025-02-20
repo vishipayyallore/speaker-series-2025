@@ -125,9 +125,11 @@
 
 > 1. <https://localhost:7273/swagger/index.html>
 
+![OpenAPI with Swagger](Documentation/Images/OpenAPI_Swagger.PNG)
+
 ### 4.2. Open API and Scalar
 
-![Aspire Dashboard](Documentation/Images/OpenAPISupport.PNG)
+![OpenAPI with Scalar](Documentation/Images/OpenAPI_Scalar.PNG)
 
 ## SUMMARY / RECAP / Q&A
 

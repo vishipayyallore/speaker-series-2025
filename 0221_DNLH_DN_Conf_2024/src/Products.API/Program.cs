@@ -1,3 +1,5 @@
+using Scalar.AspNetCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +15,9 @@ if (app.Environment.IsDevelopment())
 
     // For Swagger
     app.UseSwaggerUI(options => options.SwaggerEndpoint("/openapi/v1.json", "v1"));
+
+    // For Scalar
+    app.MapScalarApiReference();
 }
 
 app.UseHttpsRedirection();
@@ -47,6 +52,10 @@ app.MapGet("/api/products", () =>
 })
 .WithSummary("Get a list of all products")
 .WithName("GetProducts");
+
+// Redirect for OpenAPI view
+app.MapGet("/", () => Results.Redirect("/scalar/v1"))
+    .ExcludeFromDescription();
 
 app.Run();
 
