@@ -30,12 +30,19 @@
 ## What are we doing today?
 
 > 1. Introduction
-> 1. C# 13 Features
+> 1. What is new in C# 13 Features
 >    - `params` collections
 >    - New `Escape` Sequence
 >    - `field` Keyword
 >    - Overload Resolution Priority
+> 1. What is new in .NET libraries
+>    - `Base64Url`
+>    - `GuidVersion7`
+>    - `TaskWhenEach`
 > 1. OpenAPI support in ASP.NET Core API
+>    - Open API Specification
+>    - Open API and Swagger
+>    - Open API and Scalar
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/vishipayyallore/speaker-series-2025/tree/main/0221_DNLH_DN_Conf_2024/src) of today's session for more details
@@ -46,7 +53,7 @@
 
 ---
 
-## 1. Introduction
+## 1. Introduction to .NET Conf 2024 / .NET 9
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/overview>
@@ -83,17 +90,54 @@
 
 ![Overload Resolution Priority](./Documentation/Images/OverloadResolutionPriority.PNG)
 
-## 3. What is new in .NET libraries for .NET 9
+## 3. What is new in .NET libraries
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries>
 
-## X. OpenAPI support in ASP.NET Core API
+### 3.1. `Base64Url`
 
 > 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/overview?view=aspnetcore-9.0>
+> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries#base64url>
 
-![Aspire Dashboard](Documentation/Images/OpenAPISupport.PNG)
+![Base64Url](./Documentation/Images/Base64Url.PNG)
+
+### 3.2. `GuidVersion7`
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries#systemguid>
+
+![GuidVersion7](./Documentation/Images/GuidVersion7.PNG)
+
+### 3.3. `TaskWhenEach`
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/libraries#threading>
+
+![TaskWhenEach](./Documentation/Images/TaskWhenEach.PNG)
+
+## 4. OpenAPI support in ASP.NET Core API
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#openapi>
+
+### 4.1. Open API Specification
+
+> 1. <https://localhost:7273/openapi/v1.json>
+
+![Open API Spec](Documentation/Images/OpenAPISpec.PNG)
+
+### 4.2. Open API and Swagger
+
+> 1. <https://localhost:7273/swagger/index.html>
+
+![OpenAPI with Swagger](Documentation/Images/OpenAPI_Swagger.PNG)
+
+### 4.2. Open API and Scalar
+
+> 1. <https://localhost:7273/scalar/v1>
+
+![OpenAPI with Scalar](Documentation/Images/OpenAPI_Scalar.PNG)
 
 ## SUMMARY / RECAP / Q&A
 
