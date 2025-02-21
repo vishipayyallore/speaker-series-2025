@@ -17,8 +17,8 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
-		<!--<PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />-->
 		<PackageReference Include="Scalar.AspNetCore" Version="2.0.16" />
+		<!--<PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />-->
 	</ItemGroup>
 
 </Project>
