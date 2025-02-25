@@ -1,10 +1,10 @@
-# AI-102 - Building Custom Text Classification Models with Azure AI Language
+# AI-102 - Building Custom Named Entity Recognition Models with Azure AI Language
 
-## Date Time: 04-Feb-2025 at 03:30 PM IST
+## Date Time: 25-Feb-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942](https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277](https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277)
 
-## YouTube URL: [https://www.youtube.com/watch?v=BtnhSKjRNWg](https://www.youtube.com/watch?v=BtnhSKjRNWg)
+## YouTube URL: [https://www.youtube.com/watch?v=X0GDn-F1zGo](https://www.youtube.com/watch?v=X0GDn-F1zGo)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -59,73 +59,11 @@
 
 ### 1.3. Microsoft Learn Module(s)
 
-> 1. <https://aka.ms/AILanguage>
+> 1. <https://aka.ms/Entity-Recognition>
 
 ## 2. Introduction
 
 To be done
-
-## 3. Provision an Azure AI Language resource
-
-> 1. Discussion and Demo
-
-![Custom Text Classification](./Documentation/Images/LanguageService_CTClass.PNG)
-
-## 4. Roles for your user
-
-> 1. Discussion and Demo
-
-![Roles For User](./Documentation/Images/Roles_For_User.PNG)
-
-## 5. Upload sample articles
-
-> 1. Discussion and Demo
-
-### 5.1. Stroage Account Configuration
-
-### 5.2. Articles Uploaded
-
-![Articles Uploaded](./Documentation/Images/Articles_Uploaded.PNG)
-
-## 6. Create a custom text classification project
-
-> 1. Discussion and Demo
-
-## 7. Label your data
-
-> 1. Discussion and Demo
-
-![TypesOfClasses](./Documentation/Images/TypesOfClasses.PNG)
-
-![DataLabeling](./Documentation/Images/DataLabeling.PNG)
-
-## 8. Train your model
-
-> 1. Discussion and Demo
-
-![TrainingTheModel](./Documentation/Images/TrainingTheModel.PNG)
-
-![TrainingTheModel](./Documentation/Images/TrainingTheModel_1.PNG)
-
-## 9. Evaluate your model
-
-> 1. Discussion and Demo
-
-![ModelPerformance](./Documentation/Images/ModelPerformance.PNG)
-
-## 10. Deploy your model
-
-> 1. Discussion and Demo
-
-![ModelDeployment](./Documentation/Images/ModelDeployment.PNG)
-
-## 11. Test in Postman
-
-> 1. Discussion and Demo
-
-## 12. App in VS Code / VS 2022
-
-> 1. Discussion and Demo
 
 ---
 
