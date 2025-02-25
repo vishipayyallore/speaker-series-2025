@@ -1,8 +1,8 @@
-# AI-102 - Building Custom Text Classification Models with Azure AI Language
+# AI-102 - Building Custom Named Entity Recognition Models with Azure AI Language
 
-## Date Time: 04-Feb-2025 at 03:30 PM IST
+## Date Time: 25-Feb-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942](https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277](https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277)
 
 ## YouTube URL: [https://www.youtube.com/watch?v=BtnhSKjRNWg](https://www.youtube.com/watch?v=BtnhSKjRNWg)
 
