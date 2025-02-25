@@ -59,7 +59,7 @@
 
 ### 1.3. Microsoft Learn Module(s)
 
-> 1. <https://aka.ms/AILanguage>
+> 1. <https://aka.ms/Entity-Recognition>
 
 ## 2. Introduction
 
