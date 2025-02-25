@@ -91,6 +91,12 @@
 
 ![Roles For User](./Documentation/Images/Roles_For_User.PNG)
 
+## 7. Upload sample ads
+
+> 1. Discussion and Demo
+
+![Upload Data](./Documentation/Images/Upload_Data.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
