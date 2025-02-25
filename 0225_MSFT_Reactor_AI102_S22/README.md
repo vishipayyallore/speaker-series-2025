@@ -74,10 +74,22 @@
 
 ![Built-in-NER.PNG](./Documentation/Images/Built-in-NER.PNG)
 
-## 3. Understand custom named entity recognition
+## 4. Understand custom named entity recognition
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/training/modules/custom-name-entity-recognition/2-understand-custom-named>
+
+## 5. Provision an Azure AI Language resource
+
+> 1. Discussion and Demo
+
+![LanguageService NER](./Documentation/Images/LanguageService_NER.PNG)
+
+## 6. Roles for your user
+
+> 1. Discussion and Demo
+
+![Roles For User](./Documentation/Images/Roles_For_User.PNG)
 
 ---
 
