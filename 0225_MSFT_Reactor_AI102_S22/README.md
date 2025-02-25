@@ -63,7 +63,13 @@
 
 ## 2. Introduction
 
-To be done
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/training/modules/custom-name-entity-recognition/1-introduction>
+
+## 3. Understand custom named entity recognition
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-gb/training/modules/custom-name-entity-recognition/2-understand-custom-named>
 
 ---
 
