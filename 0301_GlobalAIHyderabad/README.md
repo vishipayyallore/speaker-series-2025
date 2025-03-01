@@ -45,6 +45,47 @@
 
 ---
 
+## Keynote - Mar-2025: From a Developer's Perspective
+
+### Our Progress Over Time
+
+> 1. A visual journey: from black-and-white screens to modern IDEs with advanced syntax highlighting.
+
+### GitHub Copilot in Action
+
+> 1. How it generates code and helps us understand our code better.
+
+### Expanding AI Use Cases
+
+> 1. Leveraging AI for Development, Media, DevOps, Customer Support, and more.
+
+### Accelerating Work with Chatbots Powered by RAG
+
+> 1. Demonstrating how Retrieval-Augmented Generation (RAG) can speed up workflows.
+
+### Streamlining Our Jobs with AI
+
+> 1. Using AI to simplify tasks while keeping security in focus.
+
+### Automating Repetitive Tasks
+
+> 1. Utilizing batch files, PowerShell scripts, etc., to reduce manual work.
+
+### Getting Started with AI
+
+> 1. Key resources and starting points: [Microsoft AI Developer Resources](https://developer.microsoft.com/en-us/ai).
+
+### Data-Driven Learning in AI
+
+> 1. How AI learns from our data to continuously improve and adapt.
+
+### The Future of AI-Driven Development
+
+> 1. Exploring emerging trends, innovations, and ethical considerations that will shape the next generation of developer tools and practices.
+> 1. A look at how the evolving AI landscape will further empower developers, and how we can prepare for these changes.
+
+---
+
 ## The Big Picture
 
 > 1. 🔹 Building AI-Powered Customer Support with .NET Aspire & OpenAI
