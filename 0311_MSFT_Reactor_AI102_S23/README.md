@@ -65,6 +65,12 @@
 
 To be done
 
+こんにちは
+你好
+नमस्ते
+Bonjour
+नमस्कार
+
 ## 3. Provision an Azure AI Language resource
 
 > 1. Discussion and Demo
