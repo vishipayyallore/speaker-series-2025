@@ -1,10 +1,10 @@
-# .NET Conf 2024 - Dot Net Learners House Hyderabad
+# 📢 Dot Net Learners House Meetup – Monthly Event - Mar 2025
 
-## Date Time: 21-Feb-2025 at 09:00 AM IST
+## Date Time: 16-Mar-2025 at 09:00 AM IST
 
-## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/303337086](https://www.meetup.com/dot-net-learners-house-hyderabad/events/303337086)
+## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/304750920](https://www.meetup.com/dot-net-learners-house-hyderabad/events/304750920)
 
-## YouTube URL: [https://www.youtube.com/watch?v=IyE1-7cXano](https://www.youtube.com/watch?v=IyE1-7cXano)
+## YouTube URL: [https://www.youtube.com/watch?v=rrZqYt2YDFM](https://www.youtube.com/watch?v=rrZqYt2YDFM)
 
 ---
 
