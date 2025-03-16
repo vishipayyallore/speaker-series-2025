@@ -50,6 +50,23 @@
 > 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9?tabs=windows>
 > 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9.1>
 
+## ⚡ Hands-On: Exploring .NET Aspire 9.0/9.1 Apps in `VS Code`
+
+> 1. Discussion and Demo
+> 1. Creation, Adding to existing Project, and Executing
+
+![VS Code Create New Aspire](./Documentation/Images/VSCode_CreateNewAspire.PNG)
+
+## Containers with Docker and Podman
+
+### Container in Docker
+
+![Redis Docker Container](Documentation/Images/Redis_Docker_Container.PNG)
+
+### Container in Podman
+
+![Redis Podman Container](Documentation/Images/Redis_Podman_Container.PNG)
+
 ### **⚡ Hands-On: Exploring .NET Aspire 9.1 (10 mins)**
 
 🔹 New .NET Aspire SDK & improved developer experience  
