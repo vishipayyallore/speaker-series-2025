@@ -30,6 +30,9 @@
 ## What are we doing today?
 
 > 1. Introduction to `JavaScript` applications inside .NET 9 Aspire
+> 1. `Angular` application inside .NET 9 Aspire
+> 1. `React.js` application inside .NET 9 Aspire
+> 1. `Vue` application inside .NET 9 Aspire
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/aspire-2025) of today's session for more details
@@ -45,6 +48,24 @@
 > 1. Discussion and Demo
 
 ![JS Apps | 100x100](./Documentation/Images/Program_JS_Apps.PNG)
+
+## 2. `Angular` application inside .NET 9 Aspire
+
+> 1. Discussion and Demo
+
+![Angular App Inside Aspire | 100x100](./Documentation/Images/AngularApp_In_Aspire.PNG)
+
+## 3. `React.js` application inside .NET 9 Aspire
+
+> 1. Discussion and Demo
+
+![React.js App Inside Aspire | 100x100](./Documentation/Images/ReactJSApp_In_Aspire.PNG)
+
+## 4. `Vue` application inside .NET 9 Aspire
+
+> 1. Discussion and Demo
+
+![Vue.js App Inside Aspire | 100x100](./Documentation/Images/VueApp_In_Aspire.PNG)
 
 ## SUMMARY / RECAP / Q&A
 
