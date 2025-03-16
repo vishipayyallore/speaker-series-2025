@@ -6,6 +6,8 @@
 
 ## YouTube URL: [https://www.youtube.com/watch?v=aV-e4CFMT_w](https://www.youtube.com/watch?v=aV-e4CFMT_w)
 
+![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
+
 ---
 
 ### Software/Tools
@@ -31,13 +33,6 @@
 ## What are we doing today?
 
 > 1. The Big Picture
-> 1. Pre-requisites
-> 1. Previous sessions
-> 1. Aspire Orchestration, integrations, and Tooling
-> 1. Aspire solution with API, Web, and Redis Cache
-> 1. Executing the Aspire solution with Docker
-> 1. Executing the Aspire solution with Podman
-> 1. Aspire Dashboard
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-aspire-2025) of today's session for more details
@@ -48,80 +43,47 @@
 
 ---
 
-## 1. The Big Picture
 
-> 1. Discussion and Demo
+## 🚀 **What's New in .NET Aspire 9.1: Hands-On Demos & Key Enhancements**
 
-## .NET Aspire overview
+### **⏳ Introduction (5 mins)**
 
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview>
+🔹 Overview of .NET Aspire 9.1  
+🔹 Key improvements in tooling, dashboard, and telemetry
 
-## Setup and tooling
+### **⚡ Hands-On: Exploring .NET Aspire 9.1 (10 mins)**
 
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/setup-tooling>
+🔹 New .NET Aspire SDK & improved developer experience  
+🔹 Updated Aspire templates & streamlined setup process
 
-```powershell
-dotnet workload list
-dotnet workload update
-dotnet workload install aspire
-```
+### **🎨 Enhancements in .NET Aspire Dashboard (10 mins)**
 
-## .NET Aspire solution - Web API Project + Blazor Frontend + Cache (Docker Container)
+🔹 Managing resource lifecycles (Start/Stop/Restart)  
+🔹 Console log improvements (color-coded logs)  
+🔹 Improved mobile-friendly & responsive UI
 
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview>
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=visual-studio>
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?pivots=vscode>
+### **🛠️ Hands-On: App Host & Resource Management (10 mins)**
 
-```powershell
-dotnet workload list
-dotnet new list
-dotnet new aspire-starter --help
-dotnet new aspire-starter -o AspireSample --use-redis-cache -f net9.0
-```
+🔹 Waiting for dependencies before startup  
+🔹 Implementing resource health checks with HTTP endpoints  
+🔹 Persistent containers & custom resource commands
 
-![Create New Project](Documentation/Images/CreateNewProject.PNG)
+### **🛠️ Hands-On: Working with MS SQL Server & Redis Locally (10 mins)**
 
-## Orchestration overview
+🔹 Running MS SQL Server in a container  
+🔹 Running Redis in a container  
+🔹 _(Stretch Goal)_: Integrating Azure OpenAI
 
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/app-host-overview>
+### **📊 Hands-On: Advanced Telemetry & Observability (10 mins)**
 
-## Service defaults
+🔹 Configuring telemetry filtering  
+🔹 Enabling browser telemetry  
+🔹 Combining telemetry from multiple resources
 
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/service-defaults>
+### **❓ Q&A & Closing Remarks (5 mins)**
 
-## Launch profiles
-
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/launch-profiles>
-
-## Service discovery
-
-> 1. Discussion and Demo
-
-![Service discovery](Documentation/Images/ServiceDiscovery.PNG)
-
-## Containers with Docker and Podman
-
-### Container in Docker
-
-![Redis Docker Container](Documentation/Images/Redis_Docker_Container.PNG)
-
-### Container in Podman
-
-![Redis Podman Container](Documentation/Images/Redis_Podman_Container.PNG)
-
-## Dashboard overview
-
-> 1. Discussion and Demo
-
-![Aspire Dashboard](Documentation/Images/Aspire_Dashboard_1.PNG)
-
-![Aspire Dashboard](Documentation/Images/Aspire_Dashboard_2.PNG)
+🔹 Summary of key takeaways  
+🔹 Resources for further learning
 
 ## SUMMARY / RECAP / Q&A
 
