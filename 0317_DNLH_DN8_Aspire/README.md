@@ -47,6 +47,7 @@
 
 > 1. 🔹 Overview of .NET Aspire 9.0 / 9.1
 > 1. 🔹 Key improvements in tooling, dashboard, and telemetry
+> 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/>
 > 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9?tabs=windows>
 > 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9.1>
 
@@ -66,6 +67,12 @@
 ### Container in Podman
 
 ![Redis Podman Container](Documentation/Images/Redis_Podman_Container.PNG)
+
+## Open API Support
+
+> 1. Discussion and Demo
+> 1. <https://localhost:7030/openapi/v1.json>
+> 1. <https://localhost:7030/swagger>
 
 ### **⚡ Hands-On: Exploring .NET Aspire 9.1 (10 mins)**
 
