@@ -1,10 +1,10 @@
-# .NET 9 Aspire - Local development with Docker, and Podman
+# Hands-On with .NET 9 Aspire 9
 
-## Date Time: 05-Jan-2025 at 09:00 AM IST
+## Date Time: 17-Mar-2025 at 09:30 PM IST
 
-## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915015](https://www.meetup.com/dot-net-learners-house-hyderabad/events/302915015)
+## Event URL: [https://dotnet.microsoft.com/en-us/live/on-dotnet-live](https://dotnet.microsoft.com/en-us/live/on-dotnet-live)
 
-## YouTube URL: [https://www.youtube.com/watch?v=aV-e4CFMT_w](https://www.youtube.com/watch?v=aV-e4CFMT_w)
+## YouTube URL: [https://www.youtube.com/watch?v=OXEAyLPty1g&list=PLdo4fOcmZ0oV2fcY7wsQHx4RNWXEDKgm4&index=1](https://www.youtube.com/watch?v=OXEAyLPty1g&list=PLdo4fOcmZ0oV2fcY7wsQHx4RNWXEDKgm4&index=1)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -13,7 +13,7 @@
 ### Software/Tools
 
 > 1. OS: Windows 10/11 x64
-> 1. .NET 8 / AZ CLI / AZD CLI
+> 1. .NET 8/9 / AZ CLI / AZD CLI
 > 1. Visual Studio 2022
 > 1. Visual Studio Code
 
@@ -24,7 +24,7 @@
 
 ## Technology Stack
 
-> 1. .NET 8, C#, Docker
+> 1. .NET 8/9, C#, Docker
 
 ## Information
 
@@ -43,13 +43,12 @@
 
 ---
 
+## ⏳ Introduction - What's New in .NET Aspire 9.0 / 9.1
 
-## 🚀 **What's New in .NET Aspire 9.1: Hands-On Demos & Key Enhancements**
-
-### **⏳ Introduction (5 mins)**
-
-🔹 Overview of .NET Aspire 9.1  
-🔹 Key improvements in tooling, dashboard, and telemetry
+> 1. 🔹 Overview of .NET Aspire 9.0 / 9.1
+> 1. 🔹 Key improvements in tooling, dashboard, and telemetry
+> 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9?tabs=windows>
+> 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9.1>
 
 ### **⚡ Hands-On: Exploring .NET Aspire 9.1 (10 mins)**
 
