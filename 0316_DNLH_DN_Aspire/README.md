@@ -29,7 +29,7 @@
 
 ## What are we doing today?
 
-> 1. Introduction
+> 1. Introduction to `JavaScript` applications inside .NET 9 Aspire
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/aspire-2025) of today's session for more details
@@ -40,10 +40,11 @@
 
 ---
 
-## 1. Introduction to .NET Conf 2024 / .NET 9
+## 1. Introduction to `JavaScript` applications inside .NET 9 Aspire
 
 > 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-gb/dotnet/core/whats-new/dotnet-9/overview>
+
+![JS Apps | 100x100](./Documentation/Images/Program_JS_Apps.PNG)
 
 ## SUMMARY / RECAP / Q&A
 
