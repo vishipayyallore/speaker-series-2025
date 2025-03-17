@@ -43,7 +43,7 @@
 
 ---
 
-## ⏳ Introduction - What's New in .NET Aspire 9.0 / 9.1
+## 1. ⏳ Introduction - What's New in .NET Aspire 9.0 / 9.1
 
 > 1. 🔹 Overview of .NET Aspire 9.0 / 9.1
 > 1. 🔹 Key improvements in tooling, dashboard, and telemetry
@@ -51,24 +51,69 @@
 > 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9?tabs=windows>
 > 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9.1>
 
-## ⚡ Hands-On: Exploring .NET Aspire 9.0/9.1 Apps in `VS Code`
+## 2. Upgrade to .NET Aspire 9.1
 
 > 1. Discussion and Demo
-> 1. Creation, Adding to existing Project, and Executing
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9?tabs=windows#upgrade-to-net-aspire-9>
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9.1#-upgrade-to-net-aspire-91>
 
-![VS Code Create New Aspire](./Documentation/Images/VSCode_CreateNewAspire.PNG)
+## 3. Tooling improvements
 
-## Containers with Docker and Podman
+> 1. Discussion and Demo
 
-### Container in Docker
+### 3.1. Containers with Docker and Podman
+
+#### Container in Docker
 
 ![Redis Docker Container](Documentation/Images/Redis_Docker_Container.PNG)
 
-### Container in Podman
+#### Container in Podman
 
 ![Redis Podman Container](Documentation/Images/Redis_Podman_Container.PNG)
 
-## Open API Support
+## 3.2.⚡ Hands-On: Exploring .NET Aspire 9.0/9.1 Apps in `VS Code`
+
+> 1. Discussion and Demo
+> 1. Creation, Adding to existing Project, and Executing
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/setup-tooling?tabs=windows&pivots=visual-studio>
+
+![VS Code Create New Aspire](./Documentation/Images/VSCode_CreateNewAspire.PNG)
+
+## 4. Improved onboarding experience
+
+> 1. Discussion and Demo
+
+![Improved Onboarding Aspire](./Documentation/Images/Improved_Onboarding.PNG)
+
+## 5. Dashboard UX enhancements
+
+> 1. Discussion and Demo
+
+### 5.1. Manage resource lifecycle
+
+> 1. Discussion and Demo - Live
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/dashboard/explore#stop-or-start-a-resource>
+
+### 5.2. Sensitive properties, volumes, and health checks in resource details
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9?tabs=windows#resource-health-checks>
+
+![Sensitive Information](./Documentation/Images/SensitiveInformation.PNG)
+
+### 5.3. Resource relationships
+
+> 1. Discussion and Demo
+
+![Resource relationships](./Documentation/Images/ResourceRelations.PNG)
+
+### 5.4. Localization overrides
+
+> 1. Discussion and Demo
+
+![Localization overrides](./Documentation/Images/ResourceLocalization.PNG)
+
+## X. Open API Support
 
 > 1. Discussion and Demo
 > 1. <https://localhost:7030/openapi/v1.json>
