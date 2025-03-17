@@ -49,7 +49,7 @@
 > 1. Hands-On: Advanced Telemetry & Observability
 > 1. SUMMARY / RECAP / Q&A
 
-### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-aspire-2025) of today's session for more details
+### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/dotnet-aspire-9.1-demoss) of today's session for more details
 
 ---
 
