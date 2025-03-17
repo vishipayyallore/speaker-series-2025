@@ -32,7 +32,21 @@
 
 ## What are we doing today?
 
-> 1. The Big Picture
+> 1. Introduction - What's New in .NET Aspire 9.0 / 9.1
+> 1. Upgrade to .NET Aspire 9.0/9.1
+> 1. Tooling improvements
+>    - Containers with Docker and Podman
+>    - Hands-On: Exploring .NET Aspire 9.0/9.1 Apps in `VS Code`
+> 1. Improved onboarding experience
+> 1. Dashboard UX enhancements
+>    - Manage resource lifecycle
+>    - Sensitive properties, volumes, and health checks in resource details
+>    - Resource relationships
+>    - Localization overrides
+>    - Resource Management
+> 1. Hands-On: Working with MS SQL Server & Redis Locally
+> 1. JavaScript (Angular, React.js, and Vue.js) Applications inside .NET Aspire 9.0/9.1
+> 1. Hands-On: Advanced Telemetry & Observability
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-aspire-2025) of today's session for more details
@@ -51,17 +65,17 @@
 > 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9?tabs=windows>
 > 1. 🔹 <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9.1>
 
-## 2. Upgrade to .NET Aspire 9.1
+## 2. ⚡ Upgrade to .NET Aspire 9.0/9.1
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9?tabs=windows#upgrade-to-net-aspire-9>
 > 1. <https://learn.microsoft.com/en-us/dotnet/aspire/whats-new/dotnet-aspire-9.1#-upgrade-to-net-aspire-91>
 
-## 3. Tooling improvements
+## 3. ⚡ Tooling improvements
 
 > 1. Discussion and Demo
 
-### 3.1. Containers with Docker and Podman
+### ⚡ 3.1. Containers with Docker and Podman
 
 #### Container in Docker
 
@@ -71,7 +85,7 @@
 
 ![Redis Podman Container](Documentation/Images/Redis_Podman_Container.PNG)
 
-## 3.2.⚡ Hands-On: Exploring .NET Aspire 9.0/9.1 Apps in `VS Code`
+### 3.2.⚡ Hands-On: Exploring .NET Aspire 9.0/9.1 Apps in `VS Code`
 
 > 1. Discussion and Demo
 > 1. Creation, Adding to existing Project, and Executing
@@ -79,13 +93,13 @@
 
 ![VS Code Create New Aspire](./Documentation/Images/VSCode_CreateNewAspire.PNG)
 
-## 4. Improved onboarding experience
+## 4. ⚡ Improved onboarding experience
 
 > 1. Discussion and Demo
 
 ![Improved Onboarding Aspire](./Documentation/Images/Improved_Onboarding.PNG)
 
-## 5. Dashboard UX enhancements
+## 5. 🎨 Dashboard UX enhancements
 
 > 1. Discussion and Demo
 
@@ -113,7 +127,28 @@
 
 ![Localization overrides](./Documentation/Images/ResourceLocalization.PNG)
 
-## X. Open API Support
+### 5.5. 🛠️ Resource Management
+
+> 🔹 Waiting for dependencies before startup  
+> 🔹 Implementing resource health checks with HTTP endpoints  
+> 🔹 Persistent containers & custom resource commands
+
+![Resources State](Documentation/Images/ResoureState.PNG)
+
+## 6. 🛠️ Hands-On: Working with MS SQL Server & Redis Locally
+
+🔹 Running MS SQL Server in a container  
+🔹 Running Redis in a container
+
+## 7. 📊 JavaScript (Angular, React.js, and Vue.js) Applications inside .NET Aspire 9.0/9.1
+
+> 🔹 Discussion and Demo
+
+## 8. 📊 Hands-On: Advanced Telemetry & Observability
+
+> 🔹 Configuring telemetry filtering
+
+## 9. Open API Support
 
 > 1. Discussion and Demo
 > 1. <https://localhost:7030/openapi/v1.json>
@@ -123,44 +158,9 @@
 
 ![Open API with Swagger](Documentation/Images/OpenAPI_Swagger.PNG)
 
-![Resources State](Documentation/Images/ResoureState.PNG)
-
-### **⚡ Hands-On: Exploring .NET Aspire 9.1 (10 mins)**
-
-🔹 New .NET Aspire SDK & improved developer experience  
-🔹 Updated Aspire templates & streamlined setup process
-
-### **🎨 Enhancements in .NET Aspire Dashboard (10 mins)**
-
-🔹 Managing resource lifecycles (Start/Stop/Restart)  
-🔹 Console log improvements (color-coded logs)  
-🔹 Improved mobile-friendly & responsive UI
-
-### **🛠️ Hands-On: App Host & Resource Management (10 mins)**
-
-🔹 Waiting for dependencies before startup  
-🔹 Implementing resource health checks with HTTP endpoints  
-🔹 Persistent containers & custom resource commands
-
-### **🛠️ Hands-On: Working with MS SQL Server & Redis Locally (10 mins)**
-
-🔹 Running MS SQL Server in a container  
-🔹 Running Redis in a container  
-🔹 _(Stretch Goal)_: Integrating Azure OpenAI
-
-### **📊 Hands-On: Advanced Telemetry & Observability (10 mins)**
-
-🔹 Configuring telemetry filtering  
-🔹 Enabling browser telemetry  
-🔹 Combining telemetry from multiple resources
-
-### **❓ Q&A & Closing Remarks (5 mins)**
+### 10.❓ Q&A & Closing Remarks (5 mins)\*\*
 
 🔹 Summary of key takeaways  
 🔹 Resources for further learning
-
-## SUMMARY / RECAP / Q&A
-
-> 1. SUMMARY / RECAP / Q&A
 
 ---
