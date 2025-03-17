@@ -78,6 +78,8 @@
 
 ![Open API with Swagger](Documentation/Images/OpenAPI_Swagger.PNG)
 
+![Resources State](Documentation/Images/ResoureState.PNG)
+
 ### **⚡ Hands-On: Exploring .NET Aspire 9.1 (10 mins)**
 
 🔹 New .NET Aspire SDK & improved developer experience  
