@@ -74,6 +74,10 @@
 > 1. <https://localhost:7030/openapi/v1.json>
 > 1. <https://localhost:7030/swagger>
 
+![Open API Spec](Documentation/Images/OpenAPISpec.PNG)
+
+![Open API with Swagger](Documentation/Images/OpenAPI_Swagger.PNG)
+
 ### **⚡ Hands-On: Exploring .NET Aspire 9.1 (10 mins)**
 
 🔹 New .NET Aspire SDK & improved developer experience  
