@@ -31,8 +31,15 @@
 
 ## What are we doing today?
 
-> 1. The Big Picture
-> 1. SUMMARY / RECAP / Q&A
+> 🚀 1. Introduction
+> 🛠 2. Project Setup
+> 📂 3. Folder Structure
+> 🔗 4. Modular Design
+> 📌 5. App Initialization
+> 📌 6. Blueprint Structure
+> ▶️ 7. Running the App and show Navigation
+> 💬 8. Showing the Chat Interface in Action
+> 🔄 9. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
 
