@@ -1,10 +1,12 @@
-# Global AI Bootcamp 2025 Hyderabad - 1 March 2025
+# Global AI Hyderabad - Monthly Online Event - Mar 2025
 
-## Date Time: 01-Mar-2025 at 09:30 AM IST
+## Date Time: 23-Mar-2025 at 09:00 AM IST
 
-## Event URL: [https://www.meetup.com/global-ai-hyderabad/events/305665213](https://www.meetup.com/global-ai-hyderabad/events/305665213)
+## Event URL: [https://www.meetup.com/global-ai-hyderabad/events/306606120](https://www.meetup.com/global-ai-hyderabad/events/306606120)
 
-![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
+## YouTube: [https://www.youtube.com/watch?v=RUeaM9Rix60](https://www.youtube.com/watch?v=RUeaM9Rix60)
+
+<!-- ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG) -->
 
 ---
 
@@ -30,11 +32,6 @@
 ## What are we doing today?
 
 > 1. The Big Picture
-> 1. Quick Introduction
-> 1. Live Demo (25 min) – Hands-on Walkthrough
->    - Setup & Running eShopSupport Locally (5 min)
->    - Exploring AI-Powered Features (15 min)
->    - Extending the AI Capabilities (5 min)
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
@@ -45,83 +42,73 @@
 
 ---
 
-## Keynote - Mar-2025: From a Developer's Perspective
+## 1. Introduction
 
-### Our Progress Over Time
+> 1. Discussion and Demo
 
-> 1. A visual journey: from black-and-white screens to modern IDEs with advanced syntax highlighting.
+![Singl Turn Chat BOT](./Documentation/Images/STChatBOT.PNG)
 
-### GitHub Copilot in Action
+## 2. Project Setup
 
-> 1. How it generates code and helps us understand our code better.
+> 1. Discussion and Demo
+> 1. Create a virtual environment and install dependencies.
 
-### Expanding AI Use Cases
+## 3. Folder Structure
 
-> 1. Leveraging AI for Development, Media, DevOps, Customer Support, and more.
+- Explain the folder structure (briefly, using a simplified diagram).
 
-### Accelerating Work with Chatbots Powered by RAG
+```text
+openai-chat-flask/
+├── app.py                  # Application entry point
+├── requirements.txt        # Dependencies
+├── .env                    # Environment variables
+├── README.md               # Documentation
+└── website/                # Main Flask package
+    ├── __init__.py         # App factory (configures app, database, registers blueprints)
+    ├── data/               # Database-related code
+    │   ├── __init__.py     # (Optional) Exposes models
+    │   └── models.py       # SQLAlchemy models (e.g., ChatHistory)
+    ├── api/                # API endpoints
+    │   ├── __init__.py     # Imports blueprint from chat.py
+    │   └── chat.py         # Chat API route that interacts with OpenAI
+    ├── views/              # View (template) routes
+    │   ├── __init__.py     # Imports blueprint from home.py
+    │   └── home.py         # Routes for Home, ST Chat Bot, and History pages
+    ├── static/             # Static assets (CSS, images)
+    │   ├── favicon.ico
+    │   └── globalstyles.css
+    └── templates/          # Jinja2 templates
+        ├── base.html       # Base layout (includes navbar and footer)
+        ├── navbar.html     # Navbar (included in base.html)
+        ├── Footer.html     # Footer (included in base.html)
+        ├── home.html       # Home page overview
+        ├── stchatbot.html  # Single Turn Chat Bot page (chat interface)
+        └── history.html    # Search History page (placeholder or history display)
+```
 
-> 1. Demonstrating how Retrieval-Augmented Generation (RAG) can speed up workflows.
+## 4. App Initialization
 
-### Streamlining Our Jobs with AI
+### 4.1. What Is an App Factory?
 
-> 1. Using AI to simplify tasks while keeping security in focus.
+An app factory is a function (commonly named create_app()) that sets up and returns a fully configured Flask application instance. This pattern allows you to configure your application dynamically, register blueprints (which help separate different parts of your app), and initialize extensions (like SQLAlchemy) all in one place.
 
-### Automating Repetitive Tasks
+### 4.2. Role of app.py
 
-> 1. Utilizing batch files, PowerShell scripts, etc., to reduce manual work.
+app.py serves as the entry point of your application. Its main job is to call the app factory and start the server. This keeps the configuration logic (like registering blueprints, setting up the database, and loading environment variables) separate from the code that actually runs the server.
 
-### Getting Started with AI
+## 1. Blueprint Structure
 
-> 1. Key resources and starting points: [Microsoft AI Developer Resources](https://developer.microsoft.com/en-us/ai).
+- Explain how you separated view routes, API endpoints, and models.
+- Walk through key files (e.g., `website/__init__.py`, `website/views/home.py`, and `website/api/chat.py`).
 
-### Data-Driven Learning in AI
+## 1. Running the App:
 
-> 1. How AI learns from our data to continuously improve and adapt.
+- Demonstrate starting the Flask app and navigating between routes (Home, ST Chat Bot, History).
 
-### The Future of AI-Driven Development
+## 1. Live Demo:
 
-> 1. Exploring emerging trends, innovations, and ethical considerations that will shape the next generation of developer tools and practices.
-> 1. A look at how the evolving AI landscape will further empower developers, and how we can prepare for these changes.
-
----
-
-## The Big Picture
-
-> 1. 🔹 Building AI-Powered Customer Support with .NET Aspire & OpenAI
-
-## 1️⃣ Quick Introduction (2-3 min)
-
-> 1. What is `eShopSupport`? (A real-world AI-powered customer support demo)
-> 1. Key AI features in the app (`Text Classification, Sentiment Analysis, Summarization, Chatbot`)
-> 1. What you’ll see in the live demo
-
-## 2️⃣ Live Demo (25 min) – Hands-on Walkthrough
-
-### 🔹 Setup & Running eShopSupport Locally (5 min)
-
-> 1. Clone the repo & install dependencies
-> 1. Run the application using `.NET Aspire`
-> 1. Overview of the Aspire Dashboard
-
-### 🔹 Exploring AI-Powered Features (15 min)
-
-> 1. `Text Classification:` Auto-tagging support tickets
-> 1. `Sentiment Analysis:` Identifying customer emotions in messages
-> 1. `Summarization:` Generating quick insights from long conversations
-> 1. `Chatbot Interactions:` AI-powered chat with response suggestions
-
-### 🔹 Extending the AI Capabilities (5 min)
-
-> 1. Running small local AI models vs cloud-based models
-> 1. Customizing the AI pipeline for different use cases
-
-## 3️⃣ Wrap-up & Q&A (2-3 min)
-
-> 1. Key takeaways
-> 1. Where to explore more & contribute
-
----
+- Show the chat interface in action and interact with the OpenAI API.
+- Optionally, discuss the benefits of the modular design.
 
 ## SUMMARY / RECAP / Q&A
 
