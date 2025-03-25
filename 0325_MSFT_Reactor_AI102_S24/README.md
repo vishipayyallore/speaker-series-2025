@@ -80,6 +80,12 @@
 
 > 1. Discussion and Demo
 
+## 5. Use the Azure AI Speech to Text API
+
+> 1. Discussion and Demo
+
+
+
 ---
 
 ## SUMMARY / RECAP / Q&A
