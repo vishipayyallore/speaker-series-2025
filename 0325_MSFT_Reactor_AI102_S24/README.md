@@ -4,7 +4,7 @@
 
 ## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/306320052](https://www.meetup.com/microsoft-reactor-bengaluru/events/306320052)
 
-## YouTube URL: [https://www.youtube.com/watch?v=_oBotkrgZQk](https://www.youtube.com/watch?v=_oBotkrgZQk)
+## YouTube URL: [https://www.youtube.com/watch?v=\_oBotkrgZQk](https://www.youtube.com/watch?v=_oBotkrgZQk)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -63,69 +63,14 @@
 
 ## 2. Introduction
 
-To be done
-
-## 3. Provision an Azure AI Language resource
-
-> 1. Discussion and Demo
-
-![Custom Text Classification](./Documentation/Images/LanguageService_CTClass.PNG)
-
-## 4. Roles for your user
-
-> 1. Discussion and Demo
-
-![Roles For User](./Documentation/Images/Roles_For_User.PNG)
-
-## 5. Upload sample articles
-
-> 1. Discussion and Demo
-
-### 5.1. Stroage Account Configuration
-
-### 5.2. Articles Uploaded
-
-![Articles Uploaded](./Documentation/Images/Articles_Uploaded.PNG)
-
-## 6. Create a custom text classification project
-
-> 1. Discussion and Demo
-
-## 7. Label your data
-
-> 1. Discussion and Demo
-
-![TypesOfClasses](./Documentation/Images/TypesOfClasses.PNG)
-
-![DataLabeling](./Documentation/Images/DataLabeling.PNG)
-
-## 8. Train your model
-
-> 1. Discussion and Demo
-
-![TrainingTheModel](./Documentation/Images/TrainingTheModel.PNG)
-
-![TrainingTheModel](./Documentation/Images/TrainingTheModel_1.PNG)
-
-## 9. Evaluate your model
-
-> 1. Discussion and Demo
-
-![ModelPerformance](./Documentation/Images/ModelPerformance.PNG)
-
-## 10. Deploy your model
-
-> 1. Discussion and Demo
-
-![ModelDeployment](./Documentation/Images/ModelDeployment.PNG)
-
-## 11. Test in Postman
-
-> 1. Discussion and Demo
-
-## 12. App in VS Code / VS 2022
-
-> 1. Discussion and Demo
+> 1. Azure AI Speech provides powerful APIs for building speech-enabled applications.
+> 1. It includes Speech-to-Text, Text-to-Speech, Speech Translation, Speaker Recognition, and Intent Recognition.
+> 1. These capabilities help applications understand, process, and generate natural speech.
+> 1. Today's session focuses on **speech recognition (Speech-to-Text) and speech synthesis (Text-to-Speech)**.
+> 1. Learn how to convert spoken input into text and generate natural-sounding speech output.
+> 1. Explore custom voice configurations using Speech Synthesis Markup Language (SSML).
+> 1. Azure AI Speech enables interactive voice assistants, automated transcription, and multilingual applications.
+> 1. Businesses can leverage these features to improve accessibility, automate workflows, and enhance user experiences.
 
 ---
 
