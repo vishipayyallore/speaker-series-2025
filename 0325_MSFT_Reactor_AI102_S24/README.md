@@ -1,10 +1,10 @@
-# AI-102 - Building Custom Text Classification Models with Azure AI Language
+# AI-102 - Creating Speech-Enabled Apps with Azure AI Services
 
-## Date Time: 04-Feb-2025 at 03:30 PM IST
+## Date Time: 25-Mar-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942](https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/306320052](https://www.meetup.com/microsoft-reactor-bengaluru/events/306320052)
 
-## YouTube URL: [https://www.youtube.com/watch?v=BtnhSKjRNWg](https://www.youtube.com/watch?v=BtnhSKjRNWg)
+## YouTube URL: [https://www.youtube.com/watch?v=_oBotkrgZQk](https://www.youtube.com/watch?v=_oBotkrgZQk)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
