@@ -61,7 +61,11 @@
 
 > 1. <https://aka.ms/AILanguage>
 
-## 2. Introduction
+## 2. Reference(s)
+
+> 1. <https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text>
+
+## 3. Introduction
 
 > 1. Azure AI Speech provides powerful APIs for building speech-enabled applications.
 > 1. It includes Speech-to-Text, Text-to-Speech, Speech Translation, Speaker Recognition, and Intent Recognition.
@@ -71,6 +75,10 @@
 > 1. Explore custom voice configurations using Speech Synthesis Markup Language (SSML).
 > 1. Azure AI Speech enables interactive voice assistants, automated transcription, and multilingual applications.
 > 1. Businesses can leverage these features to improve accessibility, automate workflows, and enhance user experiences.
+
+## 4. Provision an Azure resource for speech
+
+> 1. Discussion and Demo
 
 ---
 
