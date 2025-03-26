@@ -84,7 +84,21 @@
 
 > 1. Discussion and Demo
 
+![Speech To Text Postman](./Documentation/Images/SpeechToText_Postman.PNG)
 
+## 6. Use the text to speech API
+
+> 1. Discussion and Demo
+
+![Text To Speech Postman](./Documentation/Images/TextToSpeech_Postman.PNG)
+
+### Using `CURL`
+
+```powershell
+curl --location --request POST "https://swedencentral.tts.speech.microsoft.com/cognitiveservices/v1" --header "Ocp-Apim-Subscription-Key: $OcpApimSubscriptionKey" --header "Content-Type: application/ssml+xml" --header "X-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3" --header "User-Agent: curl" --data-raw "<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-US-AvaMultilingualNeural'>my voice is my passport verify me</voice></speak>" --output output.mp3
+```
+
+![Text To Speech curl](./Documentation/Images/TextToSpeech_Curl.PNG)
 
 ---
 
