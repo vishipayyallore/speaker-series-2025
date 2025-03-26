@@ -1,10 +1,10 @@
-# AI-102 - Building Custom Text Classification Models with Azure AI Language
+# AI-102 - Creating Speech-Enabled Apps with Azure AI Services
 
-## Date Time: 04-Feb-2025 at 03:30 PM IST
+## Date Time: 25-Mar-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942](https://www.meetup.com/microsoft-reactor-bengaluru/events/305749942)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/306320052](https://www.meetup.com/microsoft-reactor-bengaluru/events/306320052)
 
-## YouTube URL: [https://www.youtube.com/watch?v=BtnhSKjRNWg](https://www.youtube.com/watch?v=BtnhSKjRNWg)
+## YouTube URL: [https://www.youtube.com/watch?v=\_oBotkrgZQk](https://www.youtube.com/watch?v=_oBotkrgZQk)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -61,71 +61,44 @@
 
 > 1. <https://aka.ms/AILanguage>
 
-## 2. Introduction
+## 2. Reference(s)
 
-To be done
+> 1. <https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text>
 
-## 3. Provision an Azure AI Language resource
+## 3. Introduction
 
-> 1. Discussion and Demo
+> 1. Azure AI Speech provides powerful APIs for building speech-enabled applications.
+> 1. It includes Speech-to-Text, Text-to-Speech, Speech Translation, Speaker Recognition, and Intent Recognition.
+> 1. These capabilities help applications understand, process, and generate natural speech.
+> 1. Today's session focuses on **speech recognition (Speech-to-Text) and speech synthesis (Text-to-Speech)**.
+> 1. Learn how to convert spoken input into text and generate natural-sounding speech output.
+> 1. Explore custom voice configurations using Speech Synthesis Markup Language (SSML).
+> 1. Azure AI Speech enables interactive voice assistants, automated transcription, and multilingual applications.
+> 1. Businesses can leverage these features to improve accessibility, automate workflows, and enhance user experiences.
 
-![Custom Text Classification](./Documentation/Images/LanguageService_CTClass.PNG)
-
-## 4. Roles for your user
-
-> 1. Discussion and Demo
-
-![Roles For User](./Documentation/Images/Roles_For_User.PNG)
-
-## 5. Upload sample articles
-
-> 1. Discussion and Demo
-
-### 5.1. Stroage Account Configuration
-
-### 5.2. Articles Uploaded
-
-![Articles Uploaded](./Documentation/Images/Articles_Uploaded.PNG)
-
-## 6. Create a custom text classification project
+## 4. Provision an Azure resource for speech
 
 > 1. Discussion and Demo
 
-## 7. Label your data
+## 5. Use the Azure AI Speech to Text API
 
 > 1. Discussion and Demo
 
-![TypesOfClasses](./Documentation/Images/TypesOfClasses.PNG)
+![Speech To Text Postman](./Documentation/Images/SpeechToText_Postman.PNG)
 
-![DataLabeling](./Documentation/Images/DataLabeling.PNG)
-
-## 8. Train your model
+## 6. Use the text to speech API
 
 > 1. Discussion and Demo
 
-![TrainingTheModel](./Documentation/Images/TrainingTheModel.PNG)
+![Text To Speech Postman](./Documentation/Images/TextToSpeech_Postman.PNG)
 
-![TrainingTheModel](./Documentation/Images/TrainingTheModel_1.PNG)
+### Using `CURL`
 
-## 9. Evaluate your model
+```powershell
+curl --location --request POST "https://swedencentral.tts.speech.microsoft.com/cognitiveservices/v1" --header "Ocp-Apim-Subscription-Key: $OcpApimSubscriptionKey" --header "Content-Type: application/ssml+xml" --header "X-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3" --header "User-Agent: curl" --data-raw "<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-US-AvaMultilingualNeural'>my voice is my passport verify me</voice></speak>" --output output.mp3
+```
 
-> 1. Discussion and Demo
-
-![ModelPerformance](./Documentation/Images/ModelPerformance.PNG)
-
-## 10. Deploy your model
-
-> 1. Discussion and Demo
-
-![ModelDeployment](./Documentation/Images/ModelDeployment.PNG)
-
-## 11. Test in Postman
-
-> 1. Discussion and Demo
-
-## 12. App in VS Code / VS 2022
-
-> 1. Discussion and Demo
+![Text To Speech curl](./Documentation/Images/TextToSpeech_Curl.PNG)
 
 ---
 
