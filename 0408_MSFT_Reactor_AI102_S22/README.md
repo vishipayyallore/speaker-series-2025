@@ -1,6 +1,6 @@
 # AI-102 - Building Custom Named Entity Recognition Models with Azure AI Language
 
-## Date Time: 25-Feb-2025 at 03:30 PM IST
+## Date Time: 08-Apr-2025 at 03:30 PM IST
 
 ## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277](https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277)
 
