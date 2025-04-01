@@ -97,6 +97,34 @@
 
 ![Upload Data](./Documentation/Images/Upload_Data.PNG)
 
+## 8. Create a custom named entity recognition project
+
+> 1. Discussion and Demo
+
+![Custom NER Project](./Documentation/Images/CustomNERProject.PNG)
+
+## 9. Label your data
+
+> 1. Discussion and Demo
+
+## 10. Train your model
+
+> 1. Discussion and Demo
+
+## 11. Evaluate your model
+
+> 1. Discussion and Demo
+
+## 12. Deploy your model
+
+> 1. Discussion and Demo
+
+## 13. Custom NER capabilities using `C#`
+
+> 1. Discussion and Demo
+
+![Custom NER Project with CS](./Documentation/Images/CustomNERWithCS.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
