@@ -137,6 +137,12 @@
 
 ![Custom NER Project with CS](./Documentation/Images/CustomNERWithCS.PNG)
 
+## 14. Custom NER capabilities using `Python`
+
+> 1. Discussion and Demo
+
+![Custom NER Project with Python](./Documentation/Images/CustomNERWithPy.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
