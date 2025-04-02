@@ -1,6 +1,6 @@
 # AI-102 - Building Custom Named Entity Recognition Models with Azure AI Language
 
-## Date Time: 25-Feb-2025 at 03:30 PM IST
+## Date Time: 08-Apr-2025 at 03:30 PM IST
 
 ## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277](https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277)
 
@@ -38,7 +38,7 @@
 > 1. Introduction
 > 1. SUMMARY / RECAP / Q&A
 
-### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
+### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
 
 ---
 
@@ -96,6 +96,34 @@
 > 1. Discussion and Demo
 
 ![Upload Data](./Documentation/Images/Upload_Data.PNG)
+
+## 8. Create a custom named entity recognition project
+
+> 1. Discussion and Demo
+
+![Custom NER Project](./Documentation/Images/CustomNERProject.PNG)
+
+## 9. Label your data
+
+> 1. Discussion and Demo
+
+## 10. Train your model
+
+> 1. Discussion and Demo
+
+## 11. Evaluate your model
+
+> 1. Discussion and Demo
+
+## 12. Deploy your model
+
+> 1. Discussion and Demo
+
+## 13. Custom NER capabilities using `C#`
+
+> 1. Discussion and Demo
+
+![Custom NER Project with CS](./Documentation/Images/CustomNERWithCS.PNG)
 
 ---
 
