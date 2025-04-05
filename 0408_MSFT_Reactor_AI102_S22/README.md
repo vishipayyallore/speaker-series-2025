@@ -35,7 +35,19 @@
 >    - Pre-requisites
 >    - Previous Session(s)
 >    - Microsoft Learn Module(s)
-> 1. Introduction
+> 1. Introduction to NER
+> 1. Built-in named entity recognition
+> 1. Understand custom named entity recognition
+> 1. Provision an Azure AI Language resource
+> 1. Roles for your user on Storage Account
+> 1. Upload sample ads
+> 1. Create a custom named entity recognition project
+> 1. Label your data
+> 1. Train your model
+> 1. Evaluate your model
+> 1. Deploy your model
+> 1. Custom NER capabilities using `C#`
+> 1. Custom NER capabilities using `Python`
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
@@ -61,7 +73,7 @@
 
 > 1. <https://aka.ms/Entity-Recognition>
 
-## 2. Introduction
+## 2. Introduction to NER
 
 > 1. Discussion and Demo
 > 1. <https://learn.microsoft.com/en-gb/training/modules/custom-name-entity-recognition/1-introduction>
@@ -85,7 +97,7 @@
 
 ![LanguageService NER](./Documentation/Images/LanguageService_NER.PNG)
 
-## 6. Roles for your user
+## 6. Roles for your user on Storage Account
 
 > 1. Discussion and Demo
 
@@ -124,6 +136,12 @@
 > 1. Discussion and Demo
 
 ![Custom NER Project with CS](./Documentation/Images/CustomNERWithCS.PNG)
+
+## 14. Custom NER capabilities using `Python`
+
+> 1. Discussion and Demo
+
+![Custom NER Project with Python](./Documentation/Images/CustomNERWithPy.PNG)
 
 ---
 
