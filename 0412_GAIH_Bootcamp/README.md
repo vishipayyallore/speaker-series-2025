@@ -41,7 +41,7 @@
 
 ---
 
-## Keynote - Mar-2025: From a Developer's Perspective
+## Keynote - Apr-2025: From a Developer's Perspective
 
 ### Our Progress Over Time
 
@@ -82,40 +82,80 @@
 
 ---
 
-## The Big Picture
+## 1. Mastering Prompt Engineering with Azure OpenAI Service
 
-> 1. 🔹 Building AI-Powered Customer Support with .NET Aspire & OpenAI
+> 1. Discussing the importance of prompt engineering in AI applications.
+> 1. Key strategies for effective prompt design.
+> 1. Real-world examples of prompt engineering in action.
 
-## 1️⃣ Quick Introduction (2-3 min)
+## 2. 30,000 foot view of Azure OpenAI
 
-> 1. What is `eShopSupport`? (A real-world AI-powered customer support demo)
-> 1. Key AI features in the app (`Text Classification, Sentiment Analysis, Summarization, Chatbot`)
-> 1. What you’ll see in the live demo
+> 1. Discussion and Demo
 
-## 2️⃣ Live Demo (25 min) – Hands-on Walkthrough
+### 2.1. What is Azure OpenAI Service?
 
-### 🔹 Setup & Running eShopSupport Locally (5 min)
+> 1. Discussion and Demo
+> 1. [https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
 
-> 1. Clone the repo & install dependencies
-> 1. Run the application using `.NET Aspire`
-> 1. Overview of the Aspire Dashboard
+### 2.2. Azure OpenAI Service quotas and limits
 
-### 🔹 Exploring AI-Powered Features (15 min)
+> 1. Discussion and Demo
+> 1. [https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quotas-limits](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quotas-limits)
 
-> 1. `Text Classification:` Auto-tagging support tickets
-> 1. `Sentiment Analysis:` Identifying customer emotions in messages
-> 1. `Summarization:` Generating quick insights from long conversations
-> 1. `Chatbot Interactions:` AI-powered chat with response suggestions
+### 2.3. Azure OpenAI Service models
 
-### 🔹 Extending the AI Capabilities (5 min)
+> 1. Discussion and Demo
+> 1. [https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models)
 
-> 1. Running small local AI models vs cloud-based models
-> 1. Customizing the AI pipeline for different use cases
+## 3. Access Azure OpenAI Service
 
-## 3️⃣ Wrap-up & Q&A (2-3 min)
+> 1. Discussion and Demo
 
-> 1. Key takeaways
-> 1. Where to explore more & contribute
+### 3.1. Creating Azure Open AI using Azure Portal
+
+> 1. Discussion and Demo
+
+### 3.2. Creating Azure Open AI using az CLI
+
+> 1. Discussion and Demo
+> 1. <https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability/?azure-portal=true>
+
+```powershell
+$aoaiName = "azoai-ai102-dev-" + (Get-Random)
+$resourceGroup = "rg-ai102-dev-001"
+$subscriptionID = "YourSubscriptionId"
+
+az account show
+
+az account list-locations --output table
+
+az cognitiveservices account list --subscription $subscriptionID --output table
+
+az cognitiveservices account create -n $aoaiName -g $resourceGroup -l eastus --kind OpenAI --sku s0 --subscription $subscriptionID
+```
+
+## 4. Use Azure OpenAI Foundry
+
+> 1. Discussion and Demo
+> 1. Deploying OpenAI models using Azure OpenAI Foundry.
+
+## 5. Chat playground
+
+> 1. Discussion and Demo
+> 1. Using the chat playground to interact with OpenAI models.
+
+## 6. Chat using Rest API
+
+> 1. Discussion and Demo
+> 1. [https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart)
+
+## 6. Chat using `C#`
+
+> 1. Discussion and Demo
+
+## 7. Chat using `Python`
+
+> 1. Discussion and Demo
 
 ---
 
