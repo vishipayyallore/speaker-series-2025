@@ -88,37 +88,47 @@
 > 1. Key strategies for effective prompt design.
 > 1. Real-world examples of prompt engineering in action.
 
-## 2. 30,000 foot view of Azure OpenAI
+### Key Takeaways
 
-> 1. Discussion and Demo
+- **Prompt engineering** is a critical skill for optimizing AI model outputs.
+- Effective prompts are clear, specific, and provide necessary context.
+- Iterative testing and refinement are essential for success.
+
+---
+
+## 2. 30,000 Foot View of Azure OpenAI
+
+> 1. Overview and demonstration of Azure OpenAI Service capabilities.
 
 ### 2.1. What is Azure OpenAI Service?
 
-> 1. Discussion and Demo
-> 1. [https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
+> 1. Azure OpenAI Service enables developers to integrate advanced AI models into their applications.
+> 1. [Learn more](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
 
-### 2.2. Azure OpenAI Service quotas and limits
+### 2.2. Azure OpenAI Service Quotas and Limits
 
-> 1. Discussion and Demo
-> 1. [https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quotas-limits](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quotas-limits)
+> 1. Understanding service quotas and limitations.
+> 1. [Learn more](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quotas-limits)
 
-### 2.3. Azure OpenAI Service models
+### 2.3. Azure OpenAI Service Models
 
-> 1. Discussion and Demo
-> 1. [https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models)
+> 1. Overview of available models and their use cases.
+> 1. [Learn more](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models)
+
+---
 
 ## 3. Access Azure OpenAI Service
 
-> 1. Discussion and Demo
+> 1. Step-by-step guide to accessing Azure OpenAI Service.
 
-### 3.1. Creating Azure Open AI using Azure Portal
+### 3.1. Creating Azure OpenAI Using Azure Portal
 
-> 1. Discussion and Demo
+> 1. Demonstration of creating Azure OpenAI resources via the Azure Portal.
 
-### 3.2. Creating Azure Open AI using az CLI
+### 3.2. Creating Azure OpenAI Using Azure CLI
 
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability/?azure-portal=true>
+> 1. Demonstration of creating Azure OpenAI resources using Azure CLI.
+> 1. [Learn more](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability/?azure-portal=true)
 
 ```powershell
 $aoaiName = "azoai-ai102-dev-" + (Get-Random)
@@ -134,174 +144,74 @@ az cognitiveservices account list --subscription $subscriptionID --output table
 az cognitiveservices account create -n $aoaiName -g $resourceGroup -l eastus --kind OpenAI --sku s0 --subscription $subscriptionID
 ```
 
+---
+
 ## 4. Use Azure OpenAI Foundry
 
-> 1. Discussion and Demo
-> 1. Deploying OpenAI models using Azure OpenAI Foundry.
+> 1. Deploying and managing OpenAI models using Azure OpenAI Foundry.
 
-## 10. Tokens Tokens Tokens and more Tokens
+---
 
-> 1. Discussion and Demo
+## 5. Tokens and Their Importance
 
-**References:**
+> 1. Understanding tokenization and its impact on AI model performance.
+> 1. [Tokenization Tool](https://platform.openai.com/tokenizer)
 
-> 1. [https://platform.openai.com/tokenizer](https://platform.openai.com/tokenizer)
+---
 
-## 2. What is Prompt Engineering ?
+## 6. Techniques in Prompt Engineering
 
-Prompt engineering is an essential practice when working with language models like those offered by Azure OpenAI. It revolves around the concept of creating, refining, and optimizing input prompts to elicit specific and desired outputs from these models. Here's a breakdown of what it entails:
+### Core Techniques
 
-### Core Concept
+- **Single Turn**: Crafting prompts for one-off tasks.
+- **Iterative**: Refining prompts through multiple iterations.
+- **Conversational**: Maintaining context across multiple interactions.
+- **Role Play**: Assigning roles to guide model behavior.
+- **Zero Shot**: Providing no examples in the prompt.
+- **Single Shot**: Providing one example in the prompt.
+- **Few Shots**: Providing multiple examples in the prompt.
+- **Chain of Thought (CoT)**: Breaking down problems into logical steps.
 
-At its core, prompt engineering involves carefully crafting the input that you provide to a language model. The aim is to guide the model's output, making it more accurate, relevant, and aligned with the desired outcome.
+---
 
-### Importance
+## 7. Best Practices for Prompt Engineering
 
-Since language models generate text based on the prompts they receive, the quality, structure, and clarity of the prompt significantly affect the output. This is why prompt engineering is crucial for tasks that require high precision and contextual relevance.
+### Key Guidelines
 
-## 3. Components of Effective Prompt Engineering
+- **Be Explicit**: Clearly define the task and expected output.
+- **Test and Iterate**: Continuously refine prompts based on results.
+- **Leverage Context**: Provide relevant background information.
+- **Monitor and Adjust**: Regularly evaluate and tweak prompts.
 
-### Clarity
+---
 
-The prompt should be clear and unambiguous. This ensures that the model understands the task and generates relevant outputs.
+## 8. Chat Playground
 
-### Specificity
+> 1. Hands-on demonstration of interacting with OpenAI models using the chat playground.
 
-Providing detailed instructions within the prompt can help the model focus on what is most important, reducing the likelihood of irrelevant or off-topic responses.
+---
 
-### Context
+## 9. Chat Using APIs and SDKs
 
-Adding context to the prompt can significantly improve the model’s ability to generate appropriate responses. Context can include background information, examples, or specific constraints.
+### 9.1. Using REST API
 
-### Formatting
+> 1. Demonstration of integrating OpenAI models via REST API.
+> 1. [Quickstart Guide](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart)
 
-Specifying the format of the desired output, such as bullet points, paragraphs, or specific structures, can help guide the model to produce text that is easier to use.
+### 9.2. Using C#
 
-## 4. Techniques in Prompt Engineering
+> 1. Demonstration of integrating OpenAI models using C#.
 
-### Single Turn
+### 9.3. Using Python
 
-> 1. Discussion and Demo
-
-### Iterative
-
-> 1. Discussion and Demo
-
-### Conversational
-
-> 1. Discussion and Demo
-> 1. Memory / Context between Completions VS Chat
-
-### Role play
-
-> 1. Discussion and Demo
-> 1. `Cardiologist` versus `Assistant`
-> 1. Prompt: What is `TV`?
-
-### Zero Shot
-
-> 1. Discussion and Demo
-
-### Single Shot
-
-> 1. Discussion and Demo
-
-### Few Shots
-
-> 1. Discussion and Demo
-
-### CoT
-
-> 1. Chain of Thought (CoT) is a problem-solving approach that involves breaking down a complex problem into a series of smaller, logical steps or intermediate reasoning points. This method helps ensure a clear and systematic progression from the initial conditions to the final solution, enhancing accuracy and understanding by explicitly documenting the thought process at each stage.
-> 1. Prompt designed to encourage the use of Chain of Thought (CoT) reasoning.
-
-```text
-"Please solve the following problem using a Chain of Thought (CoT) approach, which involves breaking the problem down into smaller, logical steps to ensure a clear and systematic progression to the solution. Show each intermediate step and explain your reasoning."
-
-Example Problem: "A bakery had 50 cupcakes. They sold 15 in the morning and then baked 20 more in the afternoon. How many cupcakes do they have now?"
-
-**Expected CoT Response:**
-
-1. Start with the initial number of cupcakes: 50.
-2. Subtract the number of cupcakes sold in the morning: \( 50 - 15 = 35 \).
-3. Add the number of cupcakes baked in the afternoon: \( 35 + 20 = 55 \).
-4. The bakery now has 55 cupcakes.
-```
-
-```text
-Q: Roger has 5 tennis balls. He buys 2 more cans of
-tennis balls. Each can has 3 tennis balls. How many
-tennis balls does he have now?
-
-A: Roger started with 5 balls. 2 cans of 3 tennis balls
-each is 6 tennis balls. 5 + 6 = 11. The answer is 11.
-
-Q: The cafeteria had 23 apples. If they used 20 to
-make lunch and bought 6 more, how many apples
-do they have?
-```
-
-## 5. Best Practices for Text-Based Prompt Engineering
-
-### Be Explicit
-
-The more explicit and detailed your prompt, the better the model can align its output with your expectations.
-
-### Test and Iterate
-
-Start with a basic prompt and refine it based on the results. Use iterative testing to improve the model’s performance.
-
-### Leverage Context
-
-Whenever possible, include context that can help the model understand the nuances of the task.
-
-### Monitor and Adjust
-
-Regularly monitor the outputs and adjust your prompts to address any inaccuracies or undesired behaviors.
-
-> Prompt engineering in the context of Azure OpenAI is about using these techniques to maximize the efficiency and effectiveness of AI-driven text generation, making it a powerful tool for developers and content creators alike.
-
-## Prompts for reference
-
-```text
-Input: Please write a Happy Birthday wishes for my Mother
-
-Input: Give the top 5 food items from South India
-
-Input: Give the top 5 Populated states in India
-
-Inputs:
-1. Which is the tallest building in the world
-2. Which is the tallest building in Hyderabad
-
-Input: Tell me two jokes about simple people
-
-Write a promotional email for a new wildlife rescue, including the following: - Rescue name is Contoso - It specializes in elephants, as well as zebras and giraffes - Call for donations to be given at our website \n Include a list of the current animals we have at our rescue after the signature, in the form of a table. These animals include elephants, zebras, gorillas, lizards, and jackrabbits.
-```
-
-## 5. Chat playground
-
-> 1. Discussion and Demo
-> 1. Using the chat playground to interact with OpenAI models.
-
-## 6. Chat using Rest API
-
-> 1. Discussion and Demo
-> 1. [https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart)
-
-## 6. Chat using `C#`
-
-> 1. Discussion and Demo
-
-## 7. Chat using `Python`
-
-> 1. Discussion and Demo
+> 1. Demonstration of integrating OpenAI models using Python.
 
 ---
 
 ## SUMMARY / RECAP / Q&A
 
-> 1. SUMMARY / RECAP / Q&A
-> 2. Any open queries, I will get back through meetup chat/twitter.
+> 1. Recap of key topics covered.
+> 2. Open Q&A session for participants.
+> 3. Follow-up queries will be addressed via meetup chat or Twitter.
 
 ---
