@@ -290,6 +290,18 @@ A: Roger started with 5 balls. 2 cans of 3 tennis balls each is 6 tennis balls. 
 Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more, how many apples do they have?
 ```
 
+```text
+# Example 9: Sample Prompt for Social Media Post
+Create a Twitter post for "101 Dosa Center". Highlight the following:
+- Home-made spices
+- Generous use of butter
+- Dosas made with love
+- Keep the tone warm and inviting.
+
+Example:
+"Craving something delicious? 🍽️ At 101 Dosa Center, we bring you dosas made with love, home-made spices, and lots of butter! 🧈✨ Taste the tradition in every bite. ❤️ #DosaLovers #FoodieHeaven"
+```
+
 ---
 
 ## 9. Chat Playground
@@ -322,3 +334,7 @@ Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more,
 > 3. Follow-up queries will be addressed via meetup chat or Twitter.
 
 ---
+
+```
+
+```
