@@ -220,6 +220,49 @@ Translate the following sentence into French:
 "The weather is beautiful today."
 ```
 
+```text
+# Example 6: Zero Shot Prompt
+What is the capital of France?
+```
+
+```text
+# Example 7: Single Shot Prompt
+Q: What is the capital of France?
+A: The capital of France is Paris.
+
+Q: What is the capital of Germany?
+```
+
+```text
+# Example 8: Few Shots Prompt
+Q: What is the capital of France?
+A: The capital of France is Paris.
+
+Q: What is the capital of Germany?
+A: The capital of Germany is Berlin.
+
+Q: What is the capital of Italy?
+```
+
+```text
+# Example 9: Chain of Thought (CoT) Prompt
+Please solve the following problem using a Chain of Thought (CoT) approach, which involves breaking the problem down into smaller, logical steps to ensure a clear and systematic progression to the solution. Show each intermediate step and explain your reasoning.
+
+Example Problem: "A bakery had 50 cupcakes. They sold 15 in the morning and then baked 20 more in the afternoon. How many cupcakes do they have now?"
+
+**Expected CoT Response:**
+
+1. Start with the initial number of cupcakes: 50.
+2. Subtract the number of cupcakes sold in the morning: \( 50 - 15 = 35 \).
+3. Add the number of cupcakes baked in the afternoon: \( 35 + 20 = 55 \).
+4. The bakery now has 55 cupcakes.
+
+Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now?
+A: Roger started with 5 balls. 2 cans of 3 tennis balls each is 6 tennis balls. 5 + 6 = 11. The answer is 11.
+
+Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more, how many apples do they have?
+```
+
 ---
 
 ## 9. Chat Playground
@@ -252,4 +295,3 @@ Translate the following sentence into French:
 > 3. Follow-up queries will be addressed via meetup chat or Twitter.
 
 ---
-````
