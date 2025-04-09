@@ -30,8 +30,35 @@
 ## What are we doing today?
 
 > 1. The Big Picture
-> 1. Quick Introduction
+> 1. Mastering Prompt Engineering with Azure OpenAI Service
+>    - Importance of prompt engineering in AI applications.
+>    - Key strategies for effective prompt design.
+>    - Real-world examples of prompt engineering in action.
+> 1. 30,000 Foot View of Azure OpenAI
+>    - Overview and demonstration of Azure OpenAI Service capabilities.
+>    - Understanding service quotas and limitations.
+>    - Overview of available models and their use cases.
+> 1. Access Azure OpenAI Service
+>    - Step-by-step guide to accessing Azure OpenAI Service.
+>    - Creating Azure OpenAI resources via Azure Portal and Azure CLI.
+> 1. Use Azure OpenAI Foundry
+>    - Deploying and managing OpenAI models using Azure OpenAI Foundry.
+> 1. Tokens and Their Importance
+>    - Understanding tokenization and its impact on AI model performance.
+> 1. Techniques in Prompt Engineering
+>    - Core techniques: Single Turn, Iterative, Conversational, Role Play, Zero Shot, Single Shot, Few Shots, Chain of Thought (CoT).
+> 1. Best Practices for Prompt Engineering
+>    - Key guidelines: Be Explicit, Test and Iterate, Leverage Context, Monitor and Adjust.
+> 1. Sample Prompts
+>    - A collection of sample prompts for demonstration purposes.
+> 1. Chat Playground
+>    - Hands-on demonstration of interacting with OpenAI models using the chat playground.
+> 1. Chat Using APIs and SDKs
+>    - Using REST API, C#, and Python to integrate OpenAI models.
 > 1. SUMMARY / RECAP / Q&A
+>    - Recap of key topics covered.
+>    - Open Q&A session for participants.
+>    - Follow-up queries will be addressed via meetup chat or Twitter.
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
 
@@ -273,18 +300,18 @@ Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more,
 
 ## 10. Chat Using APIs and SDKs
 
-### 10.1. Using REST API
+### 10.1. Using `REST API`
 
 > 1. Demonstration of integrating OpenAI models via REST API.
 > 1. [Quickstart Guide](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart)
 
-### 10.2. Using C#
+### 10.2. Using `C#`
 
 > 1. Demonstration of integrating OpenAI models using C#.
 
-### 10.3. Using Python
+### 10.3. Using `Python`
 
-> 1. Demonstration of integrating OpenAI models using Python.
+> 1. Demonstration of integrating OpenAI models using `Python`.
 
 ---
 
