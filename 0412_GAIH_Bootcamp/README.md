@@ -1,8 +1,8 @@
-# Global AI Bootcamp 2025 Hyderabad - 1 March 2025
+# Global AI Bootcamp 2025 Hyderabad - 12 April 2025
 
-## Date Time: 01-Mar-2025 at 09:30 AM IST
+## Date Time: 12-Apr-2025 at 09:30 AM IST
 
-## Event URL: [https://www.meetup.com/global-ai-hyderabad/events/305665213](https://www.meetup.com/global-ai-hyderabad/events/305665213)
+## Event URL: [https://www.meetup.com/global-ai-hyderabad/events/306095644](https://www.meetup.com/global-ai-hyderabad/events/306095644)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -31,10 +31,6 @@
 
 > 1. The Big Picture
 > 1. Quick Introduction
-> 1. Live Demo (25 min) – Hands-on Walkthrough
->    - Setup & Running eShopSupport Locally (5 min)
->    - Exploring AI-Powered Features (15 min)
->    - Extending the AI Capabilities (5 min)
 > 1. SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
