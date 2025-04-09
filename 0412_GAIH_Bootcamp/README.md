@@ -185,24 +185,61 @@ az cognitiveservices account create -n $aoaiName -g $resourceGroup -l eastus --k
 
 ---
 
-## 8. Chat Playground
+## 8. Sample Prompts
+
+> 1. A collection of sample prompts for demonstration purposes.
+
+### Example Prompts
+
+```text
+# Example 1: Summarization Prompt
+Summarize the following text in 50 words or less:
+"Artificial Intelligence (AI) is a branch of computer science that aims to create machines that can perform tasks that would typically require human intelligence. Examples include learning, reasoning, problem-solving, and language understanding. AI is increasingly being used in various industries to improve efficiency and decision-making."
+```
+
+```text
+# Example 2: Sentiment Analysis Prompt
+Analyze the sentiment of the following text and classify it as Positive, Negative, or Neutral:
+"The product quality is excellent, and the customer service was outstanding."
+```
+
+```text
+# Example 3: Role Play Prompt
+You are a customer support agent. Respond to the following customer query:
+"I received a damaged product. Can I get a replacement?"
+```
+
+```text
+# Example 4: Code Generation Prompt
+Generate a Python function to calculate the factorial of a number using recursion.
+```
+
+```text
+# Example 5: Translation Prompt
+Translate the following sentence into French:
+"The weather is beautiful today."
+```
+
+---
+
+## 9. Chat Playground
 
 > 1. Hands-on demonstration of interacting with OpenAI models using the chat playground.
 
 ---
 
-## 9. Chat Using APIs and SDKs
+## 10. Chat Using APIs and SDKs
 
-### 9.1. Using REST API
+### 10.1. Using REST API
 
 > 1. Demonstration of integrating OpenAI models via REST API.
 > 1. [Quickstart Guide](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart)
 
-### 9.2. Using C#
+### 10.2. Using C#
 
 > 1. Demonstration of integrating OpenAI models using C#.
 
-### 9.3. Using Python
+### 10.3. Using Python
 
 > 1. Demonstration of integrating OpenAI models using Python.
 
@@ -215,3 +252,4 @@ az cognitiveservices account create -n $aoaiName -g $resourceGroup -l eastus --k
 > 3. Follow-up queries will be addressed via meetup chat or Twitter.
 
 ---
+````
