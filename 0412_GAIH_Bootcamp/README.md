@@ -291,7 +291,7 @@ Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more,
 ```
 
 ```text
-# Example 9: Sample Prompt for Social Media Post
+# Example 10: Sample Prompt for Social Media Post
 Create a Twitter post for "101 Dosa Center". Highlight the following:
 - Home-made spices
 - Generous use of butter
