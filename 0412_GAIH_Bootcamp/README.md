@@ -321,11 +321,13 @@ Example:
 
 > 1. Demonstration of integrating OpenAI models using C#.
 
+## ![Chat using Playground](./Documentation/Images/Chat_Using_PlayGround.PNG)
+
 ### 10.3. Using `Python`
 
 > 1. Demonstration of integrating OpenAI models using `Python`.
 
----
+## ![Chat using REST API](./Documentation/Images/Chat_Using_RESTAPI.PNG)
 
 ## SUMMARY / RECAP / Q&A
 
