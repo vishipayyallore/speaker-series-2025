@@ -308,7 +308,7 @@ Example:
 
 > 1. Hands-on demonstration of interacting with OpenAI models using the chat playground.
 
----
+## ![Chat using Playground](./Documentation/Images/Chat_Using_PlayGround.PNG)
 
 ## 10. Chat Using APIs and SDKs
 
@@ -317,15 +317,58 @@ Example:
 > 1. Demonstration of integrating OpenAI models via REST API.
 > 1. [Quickstart Guide](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart)
 
+## ![Chat using REST API](./Documentation/Images/Chat_Using_RESTAPI.PNG)
+
 ### 10.2. Using `C#`
 
 > 1. Demonstration of integrating OpenAI models using C#.
 
+```text
+You are an AI assistant # Saved inside .txt
+
+Write an intro for a new wildlife Rescue
+```
+
+```text
+You are an AI assistant helping to write emails
+
+Write a promotional email for a new wildlife rescue, including the following:
+- Rescue name is Contoso
+- It specializes in elephants
+- Call for donations to be given at our website
+
+Write a promotional email for a new wildlife rescue, including the following: - Rescue name is Contoso - It specializes in elephants - Call for donations to be given at our website
+```
+
+```text
+You are an AI assistant helping to write emails
+
+Write a promotional email for a new wildlife rescue, including the following:
+- Rescue name is Contoso
+- It specializes in elephants, as well as zebras and giraffes
+- Call for donations to be given at our website
+\n Include a list of the current animals we have at our rescue after the signature, in the form of a table. These animals include elephants, zebras, gorillas, lizards, and jackrabbits.
+
+Write a promotional email for a new wildlife rescue, including the following: - Rescue name is Contoso - It specializes in elephants, as well as zebras and giraffes - Call for donations to be given at our website \n Include a list of the current animals we have at our rescue after the signature, in the form of a table. These animals include elephants, zebras, gorillas, lizards, and jackrabbits.
+```
+
+```text
+You are an AI assistant that helps write promotional emails to generate interest in a new business. Your tone is light, chit-chat oriented and you always include at least two jokes.
+
+Write a promotional email for a new wildlife rescue, including the following:
+- Rescue name is Contoso
+- It specializes in elephants, as well as zebras and giraffes
+- Call for donations to be given at our website
+\n Include a list of the current animals we have at our rescue after the signature, in the form of a table. These animals include elephants, zebras, gorillas, lizards, and jackrabbits.
+
+Write a promotional email for a new wildlife rescue, including the following: - Rescue name is Contoso - It specializes in elephants, as well as zebras and giraffes - Call for donations to be given at our website \n Include a list of the current animals we have at our rescue after the signature, in the form of a table. These animals include elephants, zebras, gorillas, lizards, and jackrabbits.
+```
+
+## ![Chat using C#](./Documentation/Images/Chat_Using_CSharp.PNG)
+
 ### 10.3. Using `Python`
 
 > 1. Demonstration of integrating OpenAI models using `Python`.
-
----
 
 ## SUMMARY / RECAP / Q&A
 
