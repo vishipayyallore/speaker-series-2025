@@ -364,7 +364,19 @@ Write a promotional email for a new wildlife rescue, including the following:
 Write a promotional email for a new wildlife rescue, including the following: - Rescue name is Contoso - It specializes in elephants, as well as zebras and giraffes - Call for donations to be given at our website \n Include a list of the current animals we have at our rescue after the signature, in the form of a table. These animals include elephants, zebras, gorillas, lizards, and jackrabbits.
 ```
 
-## ![Chat using C#](./Documentation/Images/Chat_Using_CSharp.PNG)
+![Chat using C#](./Documentation/Images/Chat_Using_CSharp.PNG)
+
+#### Sending the Grounded Context
+
+```text
+You're an AI assistant who helps people find information. You'll provide answers from the text provided in the prompt, and respond concisely.
+
+What animal is the favorite of children at Contoso?
+
+How can they interact with it at Contoso?
+```
+
+![Chat using Grounded Context C#](./Documentation/Images/Chat_Using_GroundedContext_CSharp.PNG)
 
 ### 10.3. Using `Python`
 
@@ -377,7 +389,3 @@ Write a promotional email for a new wildlife rescue, including the following: - 
 > 3. Follow-up queries will be addressed via meetup chat or Twitter.
 
 ---
-
-```
-
-```
