@@ -109,6 +109,28 @@
 
 ---
 
+## Swamy's Tech Skills Academy - Mentoring Program
+
+[**Swamy's Tech Skills Academy**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data) is a platform dedicated to empowering individuals with the skills and knowledge needed to thrive in the tech industry. Our mentoring program focuses on providing personalized guidance and support to help you navigate your career path, enhance your technical skills, and achieve your professional goals.
+
+### 1. Python Flask, Open AI, Tailwind CSS
+
+1. Creating a simple web application using Python Flask, OpenAI, and Tailwind CSS.
+2. Integrating OpenAI's API for AI-driven features.
+3. To learn More vist the [**GitHub Repo**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/openai-chat-flask)
+
+![Python Flask, Open AI, Tailwind CSS](./Documentation/Images/Session1_FirstLook.PNG)
+
+### 1. Python Flask, Open AI, Tailwind CSS
+
+![Python Flask, Open AI, Tailwind CSS](./Documentation/Images/Session2_FirstLook.PNG)
+
+### 1. Python Flask, Open AI, Tailwind CSS
+
+![Python Flask, Open AI, Tailwind CSS](./Documentation/Images/Session3_FirstLook.PNG)
+
+---
+
 ## 1. Mastering Prompt Engineering with Azure OpenAI Service
 
 > 1. Discussing the importance of prompt engineering in AI applications.
