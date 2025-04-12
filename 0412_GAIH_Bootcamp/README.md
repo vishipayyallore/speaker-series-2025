@@ -360,7 +360,7 @@ Example:
 > 1. Demonstration of integrating OpenAI models using C#.
 
 ```text
-You are an AI assistant # Saved inside .txt
+You are an AI assistant
 
 Write an intro for a new wildlife Rescue
 ```
