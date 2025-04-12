@@ -338,6 +338,44 @@ Example:
 "Craving something delicious? 🍽️ At 101 Dosa Center, we bring you dosas made with love, home-made spices, and lots of butter! 🧈✨ Taste the tradition in every bite. ❤️ #DosaLovers #FoodieHeaven"
 ```
 
+````texts
+#Example: 11 Blog Post Generation Prompt
+
+Generate a detailed blog post about '{topic}'.
+Include an introduction, multiple main sections, optional code snippets, and a conclusion.
+Use proper **Markdown syntax** to format each section.
+
+The blog post must include the following Markdown elements:
+
+Headings
+# Heading Level 1
+## Heading Level 2
+### Heading Level 3
+
+Paragraphs
+Just write regular text separated by line breaks for paragraphs.
+
+Unordered List
+- Item 1
+- Item 2
+- Item 3
+
+Ordered List
+1. First item
+2. Second item
+3. Third item
+
+Blockquote
+> “Experience is simply the name we give our mistakes.”
+> — Oscar Wilde
+
+Code Block (JavaScript example)
+```js
+function helloWorld() {
+  console.log(""Hello, world!"");
+}
+````
+
 ---
 
 ## 9. Chat Playground
