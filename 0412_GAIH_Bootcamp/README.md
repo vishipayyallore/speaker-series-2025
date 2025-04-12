@@ -109,6 +109,42 @@
 
 ---
 
+## Swamy's Tech Skills Academy - Mentoring Program
+
+[**Swamy's Tech Skills Academy**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data) is a platform dedicated to empowering individuals with the skills and knowledge needed to thrive in the tech industry. Our mentoring program focuses on providing personalized guidance and support to help you navigate your career path, enhance your technical skills, and achieve your professional goals.
+
+### Communities and Resources
+
+> 1. [Global AI Hyderabad - Meetup](https://www.meetup.com/global-ai-hyderabad/)
+> 2. [Dot Net Learners House - Meetup](https://www.meetup.com/dot-net-learners-house-hyderabad/)
+> 3. [Dot Net Learners House - YouTube](https://www.youtube.com/@dotnetlearnershouse7615/streams)
+
+### 1. Python Flask, Open AI, Tailwind CSS
+
+1. Creating a simple web application using Python Flask, OpenAI, and Tailwind CSS.
+2. Integrating OpenAI's API for AI-driven features.
+3. To learn more, visit the [**GitHub Repo**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/openai-chat-flask)
+
+![Python Flask, Open AI, Tailwind CSS](./Documentation/Images/Session1_FirstLook.PNG)
+
+### 2. React.js, Python Flask, Azure Open AI, Tailwind CSS
+
+1. Creating a simple web application using React.js, Python Flask, Azure OpenAI, and Tailwind CSS.
+2. Integrating Azure OpenAI's API for AI-driven features.
+3. To learn more, visit the [**GitHub Repo**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/flask-react-aoai-completions).
+
+![React.js, Python Flask, Azure Open AI, Tailwind CSS](./Documentation/Images/Session2_FirstLook.PNG)
+
+### 3. .NET 9 Console App, Semantic Kernel, Open AI, Azure Open AI
+
+> 1. Creating a simple console application using .NET 9, Semantic Kernel, OpenAI, and Azure OpenAI.
+> 2. Integrating OpenAI's/Azure OpenAI's API for AI-driven features.
+> 3. To learn more, visit the [**GitHub Repo**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/semantic-kernel-oai-azoai).
+
+![Python Flask, Open AI, Tailwind CSS](./Documentation/Images/Session3_FirstLook.PNG)
+
+---
+
 ## 1. Mastering Prompt Engineering with Azure OpenAI Service
 
 > 1. Discussing the importance of prompt engineering in AI applications.
@@ -302,6 +338,44 @@ Example:
 "Craving something delicious? 🍽️ At 101 Dosa Center, we bring you dosas made with love, home-made spices, and lots of butter! 🧈✨ Taste the tradition in every bite. ❤️ #DosaLovers #FoodieHeaven"
 ```
 
+````texts
+#Example: 11 Blog Post Generation Prompt
+
+Generate a detailed blog post about '{topic}'.
+Include an introduction, multiple main sections, optional code snippets, and a conclusion.
+Use proper **Markdown syntax** to format each section.
+
+The blog post must include the following Markdown elements:
+
+Headings
+# Heading Level 1
+## Heading Level 2
+### Heading Level 3
+
+Paragraphs
+Just write regular text separated by line breaks for paragraphs.
+
+Unordered List
+- Item 1
+- Item 2
+- Item 3
+
+Ordered List
+1. First item
+2. Second item
+3. Third item
+
+Blockquote
+> “Experience is simply the name we give our mistakes.”
+> — Oscar Wilde
+
+Code Block (JavaScript example)
+```js
+function helloWorld() {
+  console.log(""Hello, world!"");
+}
+````
+
 ---
 
 ## 9. Chat Playground
@@ -324,7 +398,7 @@ Example:
 > 1. Demonstration of integrating OpenAI models using C#.
 
 ```text
-You are an AI assistant # Saved inside .txt
+You are an AI assistant
 
 Write an intro for a new wildlife Rescue
 ```
