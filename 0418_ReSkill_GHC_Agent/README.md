@@ -58,33 +58,21 @@ Welcome to the session "Build Applications with GitHub Copilot Agent Mode in VS 
   - Explore its features, including autonomous operation, multi-step task execution, and self-healing capabilities.
   - Learn how to integrate it into your development workflow effectively.
 
-## Session Details
+## 2. 📋 Session Details
 
 Copilot agent mode is the next evolution in AI-assisted coding. Acting as an autonomous peer programmer, it performs multi-step coding tasks at your command — analyzing your codebase, reading relevant files, proposing file edits, and running terminal commands and tests. It responds to compile and lint errors, monitors terminal and test output, and auto-corrects in a loop until the task is completed.
-
-### Session Title
-
-Build Applications with GitHub Copilot Agent Mode in VS Code
-
-### Microsoft Learn Module
-
-[Build applications with GitHub Copilot agent mode](https://learn.microsoft.com/training/modules/github-copilot-agent-mode)
-
-### Session Abstract
-
-GitHub has significantly enhanced its Copilot offering with the preview release of agent mode. This feature aims to streamline and automate code editing workflows, allowing developers to iterate on code changes more efficiently using natural language prompts. Agent mode takes GitHub Copilot even further by enabling Copilot to autonomously plan and execute tasks, including suggesting and running terminal commands, and iterating to resolve issues. These advancements signify a move towards a more "agentic AI" that proactively assists developers throughout the development lifecycle.
 
 ### Session Level
 
 Intermediate (200), technical
 
-### Duration
+### Microsoft Learn Module
 
-1 hour
+[Build applications with GitHub Copilot agent mode](https://learn.microsoft.com/training/modules/github-copilot-agent-mode)
 
-### Speaker Expectation/Skills
+## 3. 📝 Session Abstract
 
-Speakers should be familiar with the GitHub platform, be able to develop code, understand a programming language, a framework, and GitHub Copilot fundamentals. The presentation is designed to be delivered by three presenters but can also be presented by one.
+GitHub has significantly enhanced its Copilot offering with the preview release of agent mode. This feature aims to streamline and automate code editing workflows, allowing developers to iterate on code changes more efficiently using natural language prompts. Agent mode takes GitHub Copilot even further by enabling Copilot to autonomously plan and execute tasks, including suggesting and running terminal commands, and iterating to resolve issues. These advancements signify a move towards a more "agentic AI" that proactively assists developers throughout the development lifecycle.
 
 ### Session Overview
 
