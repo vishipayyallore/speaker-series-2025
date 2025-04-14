@@ -45,11 +45,9 @@ Welcome to the session "Build Applications with GitHub Copilot Agent Mode in VS 
 ### Key Highlights
 
 - **What is GitHub Copilot Agent Mode?**
-
   - A next-generation AI tool that assists developers in automating repetitive tasks and enhancing productivity.
 
 - **Why Attend?**
-
   - Learn how to leverage GitHub Copilot Agent Mode to streamline your coding process.
   - Gain hands-on experience with real-world examples and demos.
 
@@ -74,9 +72,9 @@ Intermediate (200), technical
 
 GitHub has significantly enhanced its Copilot offering with the preview release of agent mode. This feature aims to streamline and automate code editing workflows, allowing developers to iterate on code changes more efficiently using natural language prompts. Agent mode takes GitHub Copilot even further by enabling Copilot to autonomously plan and execute tasks, including suggesting and running terminal commands, and iterating to resolve issues. These advancements signify a move towards a more "agentic AI" that proactively assists developers throughout the development lifecycle.
 
-### Session Overview
+## Title needed
 
-The session will cover the following topics:
+## GPT my friend, could you please explain the below 5 concepts in detail?
 
 - GitHub Copilot inline suggestions
 - GitHub Copilot Chat
