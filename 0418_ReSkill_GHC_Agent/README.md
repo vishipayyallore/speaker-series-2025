@@ -38,6 +38,26 @@
 
 ---
 
+## 1. 🚀 Introduction
+
+Welcome to the session "Build Applications with GitHub Copilot Agent Mode in VS Code"! In this session, we will explore how GitHub Copilot Agent Mode can revolutionize your development workflow by acting as an autonomous peer programmer. This feature enables multi-step coding tasks, including analyzing your codebase, proposing edits, running terminal commands, and iterating to resolve issues.
+
+### Key Highlights
+
+- **What is GitHub Copilot Agent Mode?**
+
+  - A next-generation AI tool that assists developers in automating repetitive tasks and enhancing productivity.
+
+- **Why Attend?**
+
+  - Learn how to leverage GitHub Copilot Agent Mode to streamline your coding process.
+  - Gain hands-on experience with real-world examples and demos.
+
+- **Session Goals:**
+  - Understand the capabilities of GitHub Copilot Agent Mode.
+  - Explore its features, including autonomous operation, multi-step task execution, and self-healing capabilities.
+  - Learn how to integrate it into your development workflow effectively.
+
 ## Session Details
 
 Copilot agent mode is the next evolution in AI-assisted coding. Acting as an autonomous peer programmer, it performs multi-step coding tasks at your command — analyzing your codebase, reading relevant files, proposing file edits, and running terminal commands and tests. It responds to compile and lint errors, monitors terminal and test output, and auto-corrects in a loop until the task is completed.
