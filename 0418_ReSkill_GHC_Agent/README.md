@@ -45,9 +45,11 @@ Welcome to the session "Build Applications with GitHub Copilot Agent Mode in VS 
 ### Key Highlights
 
 - **What is GitHub Copilot Agent Mode?**
+
   - A next-generation AI tool that assists developers in automating repetitive tasks and enhancing productivity.
 
 - **Why Attend?**
+
   - Learn how to leverage GitHub Copilot Agent Mode to streamline your coding process.
   - Gain hands-on experience with real-world examples and demos.
 
@@ -72,33 +74,41 @@ Intermediate (200), technical
 
 GitHub has significantly enhanced its Copilot offering with the preview release of agent mode. This feature aims to streamline and automate code editing workflows, allowing developers to iterate on code changes more efficiently using natural language prompts. Agent mode takes GitHub Copilot even further by enabling Copilot to autonomously plan and execute tasks, including suggesting and running terminal commands, and iterating to resolve issues. These advancements signify a move towards a more "agentic AI" that proactively assists developers throughout the development lifecycle.
 
-## Title needed
+## 4. 🤖 Key Concepts Explained
 
-## GPT my friend, could you please explain the below 5 concepts in detail?
+### 1. GitHub Copilot Inline Suggestions
 
-- GitHub Copilot inline suggestions
-- GitHub Copilot Chat
-- GitHub Copilot edits
-- GitHub Copilot agent mode
-- Chat participants, variables, and slash commands
+GitHub Copilot provides inline suggestions as you type, offering code snippets, function completions, and even entire blocks of code. These suggestions are context-aware, meaning they adapt to the code you are writing and the comments you provide. This feature helps developers save time by reducing the need to search for syntax or boilerplate code.
 
-### Key Audience Takeaways
+### 2. GitHub Copilot Chat
+
+GitHub Copilot Chat allows developers to interact with Copilot in a conversational manner. You can ask questions, request explanations for code, or even ask for debugging assistance. This feature integrates seamlessly into your IDE, providing a more interactive and intuitive coding experience.
+
+### 3. GitHub Copilot Edits
+
+Copilot Edits enable developers to make changes to their codebase efficiently. By providing natural language instructions, you can ask Copilot to refactor code, fix bugs, or implement new features. This feature is particularly useful for maintaining clean and optimized code.
+
+### 4. GitHub Copilot Agent Mode
+
+Agent Mode is an advanced feature that allows Copilot to act autonomously. It can perform multi-step coding tasks, such as analyzing your codebase, proposing edits, running terminal commands, and iterating to resolve issues. This mode transforms Copilot into a proactive assistant that can handle complex workflows.
+
+### 5. Chat Participants, Variables, and Slash Commands
+
+This feature enhances the interactivity of GitHub Copilot Chat by introducing participants, variables, and slash commands. Participants allow you to define roles (e.g., user, assistant) in a conversation. Variables enable dynamic content generation, while slash commands provide quick access to predefined actions or templates, making the chat experience more powerful and efficient.
+
+## 5. 🎯 Key Takeaways
 
 By the end of this session, participants will:
 
-- Understand how to develop with VS Code IDE in a GitHub Codespace.
-- Prompt GitHub Copilot agent mode to create an application.
-- Leverage documentation files to instruct GitHub Copilot agent mode.
-- Explore GitHub Copilot agent mode features, including:
-  - Autonomous operation
-  - Multi-step tasks
-  - Tools for task completion
-  - Iteration and self-healing
-  - User control and review
-  - Context management
-  - Undo and redo
-  - Interrupting requests
-  - Limitations
+- Gain a deep understanding of GitHub Copilot agent mode features, including:
+  - **Autonomous operation**: Copilot can independently analyze, plan, and execute tasks without constant user intervention.
+  - **Multi-step tasks**: Handles complex workflows involving multiple steps, such as editing, testing, and debugging.
+  - **Tools for task completion**: Utilizes built-in tools to complete tasks efficiently, like running terminal commands or editing files.
+  - **Iteration and self-healing**: Automatically iterates to fix errors and resolve issues during task execution.
+  - **User control and review**: Allows users to review and approve changes, ensuring control over the development process.
+  - **Context management**: Maintains awareness of the project context to provide relevant suggestions and actions.
+  - **Undo and redo**: Supports undoing or redoing actions to correct mistakes or revisit previous states.
+  - **Interrupting requests**: Enables users to pause or stop ongoing tasks for better flexibility and control.
 
 ### Session Key Technologies
 
