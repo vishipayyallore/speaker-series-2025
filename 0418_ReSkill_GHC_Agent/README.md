@@ -28,13 +28,6 @@
 ## What are we doing today?
 
 > 1. 🚀 Introduction
-> 1. 🛠 Project Setup
-> 1. 📂 Folder Structure
-> 1. 🔗 Modular Design
-> 1. 📌 App Initialization
-> 1. 📌 Blueprint Structure
-> 1. ▶️ Running the App and show Navigation
-> 1. 💬 Showing the Chat Interface in Action
 > 1. 🔄 SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/openai-chat-flask) of today's session for more details
@@ -51,7 +44,7 @@ Copilot agent mode is the next evolution in AI-assisted coding. Acting as an aut
 
 ### Session Title
 
-GitHub Copilot Agent Mode
+Build Applications with GitHub Copilot Agent Mode in VS Code
 
 ### Microsoft Learn Module
 
@@ -59,7 +52,7 @@ GitHub Copilot Agent Mode
 
 ### Session Abstract
 
-Build applications with GitHub Copilot agent mode. GitHub has significantly enhanced its Copilot offering with the preview release of agent mode. This feature aims to streamline and automate code editing workflows, allowing developers to iterate on code changes more efficiently using natural language prompts. Agent mode takes GitHub Copilot even further by enabling Copilot to autonomously plan and execute tasks, including suggesting and running terminal commands, and iterating to resolve issues. These advancements signify a move towards a more "agentic AI" that proactively assists developers throughout the development lifecycle.
+GitHub has significantly enhanced its Copilot offering with the preview release of agent mode. This feature aims to streamline and automate code editing workflows, allowing developers to iterate on code changes more efficiently using natural language prompts. Agent mode takes GitHub Copilot even further by enabling Copilot to autonomously plan and execute tasks, including suggesting and running terminal commands, and iterating to resolve issues. These advancements signify a move towards a more "agentic AI" that proactively assists developers throughout the development lifecycle.
 
 ### Session Level
 
@@ -85,14 +78,14 @@ The session will cover the following topics:
 
 ### Key Audience Takeaways
 
-By the end of this session, participants will understand:
+By the end of this session, participants will:
 
-- How to develop with VS Code IDE in a GitHub Codespace
-- Prompt GitHub Copilot agent mode to create an application
-- Leverage documentation files to instruct GitHub Copilot agent mode
-- GitHub Copilot agent mode features:​
+- Understand how to develop with VS Code IDE in a GitHub Codespace.
+- Prompt GitHub Copilot agent mode to create an application.
+- Leverage documentation files to instruct GitHub Copilot agent mode.
+- Explore GitHub Copilot agent mode features, including:
   - Autonomous operation
-  - Multi-Step tasks
+  - Multi-step tasks
   - Tools for task completion
   - Iteration and self-healing
   - User control and review
