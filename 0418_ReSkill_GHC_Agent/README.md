@@ -1,12 +1,8 @@
-# Global AI Hyderabad - Monthly Online Event - Mar 2025
+# Build Applications with GitHub Copilot Agent Mode in VS Code
 
-## Date Time: 23-Mar-2025 at 09:00 AM IST
+## Date Time: 18-Apr-2025 at 09:00 AM IST
 
 ## Event URL: [https://www.meetup.com/global-ai-hyderabad/events/306606120](https://www.meetup.com/global-ai-hyderabad/events/306606120)
-
-## YouTube: [https://www.youtube.com/watch?v=RUeaM9Rix60](https://www.youtube.com/watch?v=RUeaM9Rix60)
-
-<!-- ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG) -->
 
 ---
 
@@ -49,193 +45,94 @@
 
 ---
 
-## 🚀 1. Introduction
+## Session Details
 
-> 1. Discussion and Demo
+Copilot agent mode is the next evolution in AI-assisted coding. Acting as an autonomous peer programmer, it performs multi-step coding tasks at your command — analyzing your codebase, reading relevant files, proposing file edits, and running terminal commands and tests. It responds to compile and lint errors, monitors terminal and test output, and auto-corrects in a loop until the task is completed.
 
-![Singl Turn Chat BOT](./Documentation/Images/STChatBOT.PNG)
+### Session Title
 
-## 🛠 2. Project Setup
+GitHub Copilot Agent Mode
 
-> 1. Discussion and Demo
-> 1. Create a virtual environment and install dependencies.
+### Microsoft Learn Module
 
-```text
-python -m venv .venv
-.\.venv\Scripts\activate  # (Windows)
-source .venv/bin/activate  # (Mac/Linux)
-pip install flask flask-sqlalchemy python-dotenv openai
-```
+[Build applications with GitHub Copilot agent mode](https://learn.microsoft.com/training/modules/github-copilot-agent-mode)
 
-## 📂 3. Folder Structure
+### Session Abstract
 
-> 1. Explain the folder structure (briefly, using a simplified diagram).
+Build applications with GitHub Copilot agent mode. GitHub has significantly enhanced its Copilot offering with the preview release of agent mode. This feature aims to streamline and automate code editing workflows, allowing developers to iterate on code changes more efficiently using natural language prompts. Agent mode takes GitHub Copilot even further by enabling Copilot to autonomously plan and execute tasks, including suggesting and running terminal commands, and iterating to resolve issues. These advancements signify a move towards a more "agentic AI" that proactively assists developers throughout the development lifecycle.
 
-```text
-openai-chat-flask/
-├── app.py                  # Application entry point
-├── requirements.txt        # Dependencies
-├── .env                    # Environment variables
-├── README.md               # Documentation
-└── website/                # Main Flask package
-    ├── __init__.py         # App factory (configures app, database, registers blueprints)
-    ├── data/               # Database-related code
-    │   ├── __init__.py     # (Optional) Exposes models
-    │   └── models.py       # SQLAlchemy models (e.g., ChatHistory)
-    ├── api/                # API endpoints
-    │   ├── __init__.py     # Imports blueprint from chat.py
-    │   └── chat.py         # Chat API route that interacts with OpenAI
-    ├── views/              # View (template) routes
-    │   ├── __init__.py     # Imports blueprint from home.py
-    │   └── home.py         # Routes for Home, ST Chat Bot, and History pages
-    ├── static/             # Static assets (CSS, images)
-    │   ├── favicon.ico
-    │   └── globalstyles.css
-    └── templates/          # Jinja2 templates
-        ├── base.html       # Base layout (includes navbar and footer)
-        ├── navbar.html     # Navbar (included in base.html)
-        ├── Footer.html     # Footer (included in base.html)
-        ├── home.html       # Home page overview
-        ├── stchatbot.html  # Single Turn Chat Bot page (chat interface)
-        └── history.html    # Search History page (placeholder or history display)
-```
+### Session Level
 
-## 🔗 4. Modular Design
+Intermediate (200), technical
 
-> 1. Discussion and Demo
+### Duration
 
-### 4.1. Benefits of Modular Design
+1 hour
 
-#### Separation of Concerns
+### Speaker Expectation/Skills
 
-> 1. Views (views/home.py) handle rendering HTML pages.
-> 1. APIs (api/chat.py) handle JSON-based requests.
-> 1. Database (data/models.py) stores chat history.
+Speakers should be familiar with the GitHub platform, be able to develop code, understand a programming language, a framework, and GitHub Copilot fundamentals. The presentation is designed to be delivered by three presenters but can also be presented by one.
 
-#### Easier Debugging & Maintenance
+### Session Overview
 
-> 1. The app is structured into clear, self-contained components.
-> 1. A bug in one module doesn’t affect the others.
+The session will cover the following topics:
 
-#### Scalability
+- GitHub Copilot inline suggestions
+- GitHub Copilot Chat
+- GitHub Copilot edits
+- GitHub Copilot agent mode
+- Chat participants, variables, and slash commands
 
-> 1. We can easily add new blueprints (e.g., Authentication, Admin Panel).
-> 1. Supports microservices or external APIs without modifying the entire application.
+### Key Audience Takeaways
 
-#### Reusability
+By the end of this session, participants will understand:
 
-> 1. Components like views, API routes, and database models can be reused in different projects.
+- How to develop with VS Code IDE in a GitHub Codespace
+- Prompt GitHub Copilot agent mode to create an application
+- Leverage documentation files to instruct GitHub Copilot agent mode
+- GitHub Copilot agent mode features:​
+  - Autonomous operation
+  - Multi-Step tasks
+  - Tools for task completion
+  - Iteration and self-healing
+  - User control and review
+  - Context management
+  - Undo and redo
+  - Interrupting requests
+  - Limitations
 
-## 📌 5. App Initialization
+### Session Key Technologies
 
-### 5.1. What Is an App Factory?
+- GitHub
+- GitHub Pull Requests
+- GitHub Copilot
+  - Inline suggestions
+  - Chat
+  - Edits
+  - Pull request summaries/outlines
+  - Agent mode
+- React.js
+- Node.js
+- Python Django
+- MongoDB
 
-> An app factory is a function (commonly named create_app()) that sets up and returns a fully configured Flask application instance. This pattern allows you to configure your application dynamically, register blueprints (which help separate different parts of your app), and initialize extensions (like SQLAlchemy) all in one place.
+### Session Presentation, Videos, and Transcripts
 
-### 5.2. Role of app.py
+- Presentation
+  - [Microsoft AI Skills Fest - Build applications with GitHub Copilot agent mode](../assets/build_applications_w_github_copilot/Microsoft%20AI%20SKills%20Fest%20-%20Build%20applications%20with%20GitHub%20Copilot%20agent%20mode.pptx)
+- Videos
+  - [Microsoft AI Skills Fest - Build applications with GitHub Copilot agent mode - slides overview](../assets/build_applications_w_github_copilot/Microsoft%20AI%20Skills%20Fest%20-%20Build%20applications%20with%20GitHub%20Copilot%20agent%20mode%20-%20slides%20overview.mp4)
+  - [AI Skills Fest - Train-the-Trainer - Build Applications with GitHub Copilot Agent Mode](https://aka.ms/AAva08z)
+  - Video summaries
+    - [Microsoft AI Skills Fest - Build applications with GitHub Copilot agent mode - slides overview](../assets/build_applications_w_github_copilot/Microsoft%20AI%20Skills%20Fest%20-%20Build%20applications%20with%20GitHub%20Copilot%20agent%20mode%20-%20slides%20overview.pdf)
+    - [AI Skills Fest - Train-the-Trainer - Build Applications with GitHub Copilot Agent Mode](../assets/build_applications_w_github_copilot/AI%20Skills%20Fest%20-%20Train-the-Trainer%20-%20Build%20Applications%20with%20GitHub%20Copilot%20Agent%20Mode.pdf)
+  - Transcripts
+    - [Microsoft AI Skills Fest - Build applications with GitHub Copilot agent mode - slides overview](../assets/build_applications_w_github_copilot/Microsoft%20AI%20Skills%20Fest%20-%20Build%20applications%20with%20GitHub%20Copilot%20agent%20mode%20-%20slides%20overview.srt)
+    - [AI Skills Fest - Train-the-Trainer - Build Applications with GitHub Copilot Agent Mode](../assets/build_applications_w_github_copilot/AI%20Skills%20Fest%20-%20Train-the-Trainer%20-%20Build%20Applications%20with%20GitHub%20Copilot%20Agent%20Mode.srt)
+  - Prompts Troubleshooting
+    - [Prompts/Troubleshooting Guide](./mona-high-school-fitness-tracker.md)
 
-> app.py serves as the entry point of your application. Its main job is to call the app factory and start the server. This keeps the configuration logic (like registering blueprints, setting up the database, and loading environment variables) separate from the code that actually runs the server.
-
-📝 `app.py`
-
-```python
-from website import create_app
-
-app = create_app()
-
-if __name__ == '__main__':
-    app.run(debug=True)
-```
-
-## 📌 6. Blueprint Structure
-
-> 1. Discussion and Demo
-
-### 6.1. Main App Initialization (website/`init.py`)
-
-This file is the central place where the Flask application is created. It configures the app, initializes extensions (like SQLAlchemy), and registers the blueprints from both the views and API modules.
-
-📝 `website/__init__.py`
-
-```python
-def create_app():
-    app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.db"
-
-    from .views import views
-    from .api import api
-    app.register_blueprint(views, url_prefix="/")
-    app.register_blueprint(api, url_prefix="/api")
-
-    return app
-```
-
-#### 6.1.1. Key Points
-
-> 1. Loads environment variables.
-> 1. Configures app settings (secret key, database URI, etc.).
-> 1. Initializes the database.
-> 1. Registers two major blueprints
->    - Views Blueprint: For routes that render HTML templates.
->    - API Blueprint: For endpoints that return JSON responses.
-
-### 6.2. View Routes (website/views/home.py)
-
-This module contains routes responsible for rendering HTML templates. They handle user navigation and display pages such as Home, Single Turn Chat Bot, and Search History.
-
-📂 website/views/home.py
-
-```python
-from flask import Blueprint, render_template
-
-views = Blueprint("views", __name__)
-
-@views.route("/")
-def home():
-    return render_template("home.html")
-```
-
-#### 6.2.1. Key Points
-
-> 1. Defines a blueprint named views.
-> 1. Contains routes like `/`, `/stchatbot`, and `/history`.
-> 1. Each route calls render_template() to display the appropriate page.
-
-### 6.3. API Endpoints (website/api/chat.py)
-
-This module contains endpoints that interact with external services (like OpenAI) and return JSON responses. In this case, the /api/chat endpoint receives a user message, sends it to the OpenAI API, and returns the bot's response.
-
-📂 website/api/chat.py
-
-```python
-from flask import Blueprint, request, jsonify
-import openai
-
-api = Blueprint("api", __name__)
-
-@api.route("/chat", methods=["POST"])
-def chat():
-    data = request.get_json()
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": data["message"]}],
-    )
-    return jsonify({"response": response["choices"][0]["message"]["content"]})
-```
-
-#### 6.3.1. Key Points
-
-> 1. Defines a blueprint named api.
-> 1. Contains the /chat route for handling POST requests.
-> 1. Processes JSON data, validates input, calls the OpenAI API, and returns a JSON response.
-
-## ▶️ 7. Running the App and show Navigation
-
-> 1. Navigating between routes (Home, ST Chat Bot, History).
-
-## 💬 8. Showing the Chat Interface in Action
-
-> 1. Show the chat interface in action and interact with the OpenAI API.
+---
 
 ## 🔄 9. SUMMARY / RECAP / Q&A
 
