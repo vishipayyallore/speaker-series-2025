@@ -2,7 +2,9 @@
 
 ## Date Time: 18-Apr-2025 at 09:00 AM IST
 
-## Event URL: [https://www.meetup.com/global-ai-hyderabad/events/306606120](https://www.meetup.com/global-ai-hyderabad/events/306606120)
+## Event URL: [https://reskilll.com/event/soa46 ](https://reskilll.com/event/soa46)
+
+![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
 ---
 
@@ -30,7 +32,7 @@
 > 1. 🚀 Introduction
 > 1. 🔄 SUMMARY / RECAP / Q&A
 
-### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/openai-chat-flask) of today's session for more details
+### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data) of today's session for more details
 
 ---
 
