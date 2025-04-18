@@ -29,8 +29,33 @@
 
 ## What are we doing today?
 
-> 1. 🚀 Introduction
-> 1. 🔄 SUMMARY / RECAP / Q&A
+> 1. 🚀 **Introduction**
+
+- Overview of GitHub Copilot Agent Mode and its capabilities.
+- Key highlights, including autonomous operation and multi-step task execution.
+
+> 2. 📋 **Session Details**
+
+- Intermediate-level technical session.
+- Explore the Microsoft Learn Module: [Build applications with GitHub Copilot agent mode](https://learn.microsoft.com/training/modules/github-copilot-agent-mode).
+
+> 3. 📝 **Session Abstract**
+
+- Learn how GitHub Copilot Agent Mode streamlines and automates code editing workflows.
+- Understand its role in enabling developers to iterate efficiently using natural language prompts.
+
+> 4. 🤖 **Key Concepts Explained**
+
+- GitHub Copilot inline suggestions.
+- GitHub Copilot Chat.
+- GitHub Copilot edits.
+- GitHub Copilot agent mode.
+- Chat participants, variables, and slash commands.
+
+> 5. 🎯 **Key Takeaways**
+
+- Gain insights into features like autonomous operation, iteration, self-healing, and context management.
+- Learn how to leverage tools for task completion and maintain user control and review.
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data) of today's session for more details
 
@@ -78,23 +103,23 @@ GitHub has significantly enhanced its Copilot offering with the preview release 
 
 ## 4. 🤖 Key Concepts Explained
 
-### 1. GitHub Copilot Inline Suggestions
+### 1. 🛠️ GitHub Copilot Inline Suggestions
 
 GitHub Copilot provides inline suggestions as you type, offering code snippets, function completions, and even entire blocks of code. These suggestions are context-aware, meaning they adapt to the code you are writing and the comments you provide. This feature helps developers save time by reducing the need to search for syntax or boilerplate code.
 
-### 2. GitHub Copilot Chat
+### 2. 🗨️ GitHub Copilot Chat
 
 GitHub Copilot Chat allows developers to interact with Copilot in a conversational manner. You can ask questions, request explanations for code, or even ask for debugging assistance. This feature integrates seamlessly into your IDE, providing a more interactive and intuitive coding experience.
 
-### 3. GitHub Copilot Edits
+### 3. ✏️ GitHub Copilot Edits
 
 Copilot Edits enable developers to make changes to their codebase efficiently. By providing natural language instructions, you can ask Copilot to refactor code, fix bugs, or implement new features. This feature is particularly useful for maintaining clean and optimized code.
 
-### 4. GitHub Copilot Agent Mode
+### 4. 🤖 GitHub Copilot Agent Mode
 
 Agent Mode is an advanced feature that allows Copilot to act autonomously. It can perform multi-step coding tasks, such as analyzing your codebase, proposing edits, running terminal commands, and iterating to resolve issues. This mode transforms Copilot into a proactive assistant that can handle complex workflows.
 
-### 5. Chat Participants, Variables, and Slash Commands
+### 5. 🗨️ Chat Participants, Variables, and Slash Commands
 
 This feature enhances the interactivity of GitHub Copilot Chat by introducing participants, variables, and slash commands. Participants allow you to define roles (e.g., user, assistant) in a conversation. Variables enable dynamic content generation, while slash commands provide quick access to predefined actions or templates, making the chat experience more powerful and efficient.
 
