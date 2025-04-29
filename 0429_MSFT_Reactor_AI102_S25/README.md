@@ -59,43 +59,8 @@
 
 ### 1.3. Microsoft Learn Module(s)
 
-> 1. <https://aka.ms/Entity-Recognition>
+> 1. <https://aka.ms/AISpeech-Service>
 
-## 2. Introduction
-
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-gb/training/modules/custom-name-entity-recognition/1-introduction>
-
-## 3. Built-in named entity recognition
-
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/quickstart?tabs=windows%2Cga-api&pivots=rest-api>
-> 1. Verifying it in Postman
-
-![Built-in-NER.PNG](./Documentation/Images/Built-in-NER.PNG)
-
-## 4. Understand custom named entity recognition
-
-> 1. Discussion and Demo
-> 1. <https://learn.microsoft.com/en-gb/training/modules/custom-name-entity-recognition/2-understand-custom-named>
-
-## 5. Provision an Azure AI Language resource
-
-> 1. Discussion and Demo
-
-![LanguageService NER](./Documentation/Images/LanguageService_NER.PNG)
-
-## 6. Roles for your user
-
-> 1. Discussion and Demo
-
-![Roles For User](./Documentation/Images/Roles_For_User.PNG)
-
-## 7. Upload sample ads
-
-> 1. Discussion and Demo
-
-![Upload Data](./Documentation/Images/Upload_Data.PNG)
 
 ---
 
