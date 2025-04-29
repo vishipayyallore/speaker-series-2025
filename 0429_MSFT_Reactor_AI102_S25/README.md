@@ -1,10 +1,10 @@
-# AI-102 - Building Custom Named Entity Recognition Models with Azure AI Language
+# AI-102 - Translating Speech with Azure AI Speech Service
 
-## Date Time: 25-Feb-2025 at 03:30 PM IST
+## Date Time: 29-Apr-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277](https://www.meetup.com/microsoft-reactor-bengaluru/events/305788277)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/307042377](https://www.meetup.com/microsoft-reactor-bengaluru/events/307042377)
 
-## YouTube URL: [https://www.youtube.com/watch?v=X0GDn-F1zGo](https://www.youtube.com/watch?v=X0GDn-F1zGo)
+## YouTube URL: [https://www.youtube.com/watch?v=fyZwhob8klU](https://www.youtube.com/watch?v=fyZwhob8klU)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
