@@ -41,7 +41,7 @@
 > 5. 🔈 Use the text to speech API
 > 6. 🔄 SUMMARY / RECAP / Q&A
 
-### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy/learn-ai-102-code) of today's session for more details
+### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
 
 ---
 
