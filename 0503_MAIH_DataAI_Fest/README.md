@@ -1,8 +1,8 @@
-# Global AI Bootcamp 2025 Hyderabad - 12 April 2025
+# AI & Data Fest 2025 - 03 May 2025
 
-## Date Time: 12-Apr-2025 at 09:30 AM IST
+## Date Time: 03-May-2025 at 09:30 AM IST
 
-## Event URL: [https://www.meetup.com/global-ai-hyderabad/events/306095644](https://www.meetup.com/global-ai-hyderabad/events/306095644)
+## Event URL: [https://www.meetup.com/microsoft-ai/events/306575292](https://www.meetup.com/microsoft-ai/events/306575292)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
