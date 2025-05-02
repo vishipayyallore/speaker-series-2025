@@ -43,7 +43,7 @@
 
 ---
 
-## Keynote - May-2025: From a Developer's Perspective
+## A. Keynote - May-2025: From a Developer's Perspective
 
 ### Our Progress Over Time
 
@@ -84,7 +84,7 @@
 
 ---
 
-## Swamy's Tech Skills Academy - Mentoring Program
+## B. Swamy's Tech Skills Academy - Mentoring Program
 
 [**Swamy's Tech Skills Academy**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data) is a platform dedicated to empowering individuals with the skills and knowledge needed to thrive in the tech industry. Our mentoring program focuses on providing personalized guidance and support to help you navigate your career path, enhance your technical skills, and achieve your professional goals.
 
