@@ -101,39 +101,82 @@
 
 ---
 
-## B. Swamy's Tech Skills Academy - Mentoring Program
+## 2. 🎓 Swamy's Tech Skills Academy - Mentoring Program
 
 [**Swamy's Tech Skills Academy**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data) is a platform dedicated to empowering individuals with the skills and knowledge needed to thrive in the tech industry. Our mentoring program focuses on providing personalized guidance and support to help you navigate your career path, enhance your technical skills, and achieve your professional goals.
 
-### Communities and Resources
+### 2.1. 🌟 What We Offer
 
-> 1. [Global AI Hyderabad - Meetup](https://www.meetup.com/global-ai-hyderabad/)
-> 2. [Dot Net Learners House - Meetup](https://www.meetup.com/dot-net-learners-house-hyderabad/)
-> 3. [Dot Net Learners House - YouTube](https://www.youtube.com/@dotnetlearnershouse7615/streams)
+> 1. **Personalized Learning Paths**: Customized guidance based on your career goals and current skill level.
+> 2. **Hands-on Projects**: Real-world project experience with modern technologies and Azure cloud solutions.
+> 3. **Industry-Aligned Skills**: Focus on high-demand technologies including AI, cloud computing, and modern web development.
+> 4. **Community Support**: Join a network of like-minded professionals for collaboration and knowledge sharing.
 
-### 1. Python Flask, Open AI, Tailwind CSS
+### 2.2. 🌐 Communities and Resources
 
-1. Creating a simple web application using Python Flask, OpenAI, and Tailwind CSS.
-2. Integrating OpenAI's API for AI-driven features.
-3. To learn more, visit the [**GitHub Repo**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/openai-chat-flask)
+> 1. [Global AI Hyderabad - Meetup](https://www.meetup.com/global-ai-hyderabad/) - Join our AI-focused community events and workshops.
+> 2. [Dot Net Learners House - Meetup](https://www.meetup.com/dot-net-learners-house-hyderabad/) - Connect with .NET developers and enthusiasts.
+> 3. [Dot Net Learners House - YouTube](https://www.youtube.com/@dotnetlearnershouse7615/streams) - Access recordings of our past sessions and tutorials.
+> 4. [Microsoft Learn](https://learn.microsoft.com/en-us/training/) - Supplementary learning resources for Azure and Microsoft technologies.
 
-![Python Flask, Open AI, Tailwind CSS](./Documentation/Images/Session1_FirstLook.PNG)
+### 2.3. 💻 Featured Projects
 
-### 2. React.js, Python Flask, Azure Open AI, Tailwind CSS
+#### 2.3.1. Python Flask, OpenAI, Tailwind CSS
 
-1. Creating a simple web application using React.js, Python Flask, Azure OpenAI, and Tailwind CSS.
-2. Integrating Azure OpenAI's API for AI-driven features.
-3. To learn more, visit the [**GitHub Repo**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/flask-react-aoai-completions).
+> 1. **Project Overview**: A modern web application leveraging AI capabilities through OpenAI.
+> 2. **Key Technologies**:
+>    - Python Flask for backend services
+>    - OpenAI API integration with proper authentication and security
+>    - Tailwind CSS for responsive UI design
+> 3. **Azure Integration Options**:
+>    - Azure App Service for hosting
+>    - Azure Key Vault for secure API key management
+>    - Azure Application Insights for monitoring
+> 4. **Repository**: [GitHub Repo](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/openai-chat-flask)
 
-![React.js, Python Flask, Azure Open AI, Tailwind CSS](./Documentation/Images/Session2_FirstLook.PNG)
+![Python Flask, OpenAI, Tailwind CSS](./Documentation/Images/Session1_FirstLook.PNG)
 
-### 3. .NET 9 Console App, Semantic Kernel, Open AI, Azure Open AI
+#### 2.3.2. React.js, Python Flask, Azure OpenAI, Tailwind CSS
 
-> 1. Creating a simple console application using .NET 9, Semantic Kernel, OpenAI, and Azure OpenAI.
-> 2. Integrating OpenAI's/Azure OpenAI's API for AI-driven features.
-> 3. To learn more, visit the [**GitHub Repo**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/semantic-kernel-oai-azoai).
+> 1. **Project Overview**: A full-stack application demonstrating integration between React frontend and Python backend with Azure OpenAI.
+> 2. **Key Technologies**:
+>    - React.js for interactive frontend
+>    - Python Flask RESTful API backend
+>    - Azure OpenAI for AI capabilities
+>    - Managed Identity authentication for secure service access
+> 3. **Azure Best Practices**:
+>    - Infrastructure as Code deployment
+>    - Proper error handling and logging
+>    - Secure credential management
+> 4. **Repository**: [GitHub Repo](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/flask-react-aoai-completions)
 
-![Python Flask, Open AI, Tailwind CSS](./Documentation/Images/Session3_FirstLook.PNG)
+![React.js, Python Flask, Azure OpenAI, Tailwind CSS](./Documentation/Images/Session2_FirstLook.PNG)
+
+#### 2.3.3. .NET 9 Console App, Semantic Kernel, OpenAI, Azure OpenAI
+
+> 1. **Project Overview**: A console application showcasing the power of Semantic Kernel with multiple AI providers.
+> 2. **Key Technologies**:
+>    - .NET 9's latest features and performance improvements
+>    - Microsoft Semantic Kernel for orchestrating AI capabilities
+>    - Both OpenAI and Azure OpenAI integration
+> 3. **Advanced Features**:
+>    - Multi-modal AI interactions
+>    - Contextual memory and RAG pattern implementation
+>    - Efficient token usage and management
+> 4. **Repository**: [GitHub Repo](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/semantic-kernel-oai-azoai)
+
+![.NET 9, Semantic Kernel, OpenAI](./Documentation/Images/Session3_FirstLook.PNG)
+
+### 2.4. 🚀 How to Join
+
+> 1. **Connect**: Follow us on [LinkedIn](https://www.linkedin.com/company/swamy-s-tech-skills-academy/about/?viewAsMember=true)
+> 2. **Participate**: Join our upcoming meetups and workshops
+> 3. **Collaborate**: Contribute to our open-source projects on GitHub
+> 4. **Learn**: Access our comprehensive learning resources and project templates
+
+### 2.5. 📊 Success Stories
+
+> Our mentees have successfully transitioned to roles at leading technology companies, developed innovative solutions using Azure AI services, and contributed to the growth of the tech community through knowledge sharing and open-source contributions.
 
 ---
 
