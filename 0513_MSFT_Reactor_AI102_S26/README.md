@@ -305,6 +305,86 @@ Refine results using filters, facets, and custom sort orders.
     --data-urlencode "$orderby=last_modified desc"
   ```
 
+## 9. ⚡ Enhance the index
+
+Improve UX with search-as-you-type, custom scoring, and synonyms.
+
+### 9.1. Autocomplete & Suggestions
+
+- **Define a suggester** in your index:
+
+  ```json
+  "suggesters": [
+    {
+      "name": "sg",
+      "searchMode": "analyzingInfixMatching",
+      "sourceFields": ["content", "merged_content"]
+    }
+  ]
+  ```
+
+- **Request suggestions**:
+
+  ```bash
+  curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs/suggest?api-version=2021-04-30-Preview" \
+    -H "api-key: <your-key>" \
+    --data-urlencode "search=par" \
+    --data-urlencode "suggesterName=sg" \
+    --data-urlencode "select=content"
+  ```
+
+### 9.2. Scoring Profiles
+
+- **Add a scoring profile**:
+
+  ```json
+  "scoringProfiles": [
+    {
+      "name": "recentBoost",
+      "text": { "weights": { "merged_content": 2.0 } },
+      "functions": [
+        {
+          "type": "freshness",
+          "fieldName": "last_modified",
+          "boost": 2,
+          "interpolation": "linear",
+          "parameters": { "freshness": "P30D" }
+        }
+      ]
+    }
+  ]
+  ```
+
+- **Use in a query**:
+
+  ```bash
+  curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs?api-version=2021-04-30-Preview" \
+    -H "api-key: <your-key>" \
+    --data-urlencode "search=term" \
+    --data-urlencode "scoringProfile=recentBoost"
+  ```
+
+### 9.3. Synonym Maps
+
+- **Create a synonym map**:
+
+  ```bash
+  curl -X PUT "https://<service>.search.windows.net/synonymmaps/countrySyn?api-version=2021-04-30-Preview" \
+    -H "api-key: <your-key>" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "format": "solr",
+      "synonyms": "UK, United Kingdom\nGB, Great Britain"
+    }'
+  ```
+
+- **Attach to index** fields:
+
+  ```json
+  "fields": [...],
+  "synonymMaps": ["countrySyn"]
+  ```
+
 ## X. 🔄 SUMMARY / RECAP / Q&A
 
 > 1. SUMMARY / RECAP / Q&A
