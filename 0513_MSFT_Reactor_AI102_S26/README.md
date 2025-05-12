@@ -192,6 +192,20 @@ Azure AI Search processes each document through a multi-stage pipeline:
 
 The final enriched JSON is ready for querying once indexed.
 
+```json
+{
+  "metadata_storage_name": "report.pdf",
+  "metadata_author": "Alice",
+  "content": "This report outlines the quarterly financial results...",
+  "normalized_images": [
+    { "image": "<binary>", "imageText": "Sales chart Q1" },
+    { "image": "<binary>", "imageText": "Revenue table" }
+  ],
+  "language": "en",
+  "merged_content": "This report outlines the quarterly financial results... Sales chart Q1 Revenue table"
+}
+```
+
 ## X. 🔄 SUMMARY / RECAP / Q&A
 
 > 1. SUMMARY / RECAP / Q&A
