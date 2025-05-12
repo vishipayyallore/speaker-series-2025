@@ -37,8 +37,8 @@
 >    - Microsoft Learn Module(s)
 > 2. 🔊 Introduction
 > 3. 🏗️ Provision an Azure resource for speech
-> 4. 🗣️ Use the Azure AI Speech to Text API
-> 5. 🔈 Use the text to speech API
+> 4. 🔈 Use the text to speech API
+> 5. 🔋 Manage capacity
 > 6. 🔄 SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
@@ -68,15 +68,39 @@
 
 ## 2. 🔊 Introduction
 
-To be done
+> Problem: finding relevant information in large, unstructured data sets.
+
+**Example**: Margie’s Travel has thousands of brochures and customer reviews—agents need a fast way to locate answers.
+
+**Solution**: Azure AI Search indexes your data, applies AI enrichment, and exposes a high-scale search API.
+
+With Azure AI Search you can:
+
+- Index documents and databases in a few clicks
+- Enrich content with built-in cognitive skills
+- Query using full-text search, filters, and facets
 
 ## 3. 🏗️ Provision an Azure resource for speech
 
-To be done
+> 1. Discussion and Demo
 
 ## 4. 🔋 Manage capacity
 
-To be done
+When provisioning your Azure AI Search resource, choose a pricing tier to set capacity limits, features, and cost:
+
+- **Free (F)**: Up to 3 indexes, 50 MB storage—exploration and tutorials
+- **Basic (B)**: Up to 15 indexes, 5 GB storage—small workloads
+- **Standard (S/S2/S3/S3HD)**: Scalable enterprise tiers with increasing storage and performance
+- **Storage optimized (L1/L2)**: Large-index support, higher query latency
+
+> **Note**: You cannot change tiers on an existing resource. To scale up, create a new service and reindex.
+
+Optimize performance with **replicas** and **partitions**:
+
+- **Replicas (R)**: Duplicate service instances for concurrency and high availability
+- **Partitions (P)**: Shard index storage for larger datasets
+
+Search units (SU) = R × P (e.g., 4 replicas × 3 partitions = 12 SU)
 
 ## 5. 🔍 Understand search components
 
