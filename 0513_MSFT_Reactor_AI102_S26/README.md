@@ -74,11 +74,59 @@ To be done
 
 To be done
 
-## 4. ??Icon Manage capacity
+## 4. 🔋 Manage capacity
 
 To be done
 
----
+## 5. 🔍 Understand search components
+
+An Azure AI Search solution is built from several core components, each contributing to data ingestion, enrichment, indexing, and querying.
+
+### • Data source
+
+A data source is a connection to a repository of content. It defines how to connect to the content and how to pull data from it. Azure AI Search supports several types of data sources, including:
+
+- **Blob storage** (unstructured files)
+- **Azure SQL Database** (tables)
+- **Cosmos DB** (JSON documents)
+
+Alternatively, applications can push JSON data directly into an index.
+
+### • Skillset
+
+> 1. A skillset is a collection of AI skills that can be applied to content in an index. It defines how to extract insights from your data and how to map those insights into the index schema.
+> 1. Skillsets define an enrichment pipeline of AI skills that extract insights from your source content. Common AI skills include:
+
+- Language detection
+- Key phrase extraction
+- Sentiment analysis
+- Entity recognition (people, locations, organizations)
+- OCR and image analysis
+- You can also create **custom skills** to handle specialized processing.
+
+### • Indexer
+
+An indexer is a component that connects a data source to an index. It defines how to pull data from the source, run the skillset, and map the extracted fields into the index schema.
+
+The indexer orchestrates the indexing workflow by:
+
+1. Pulling data from the data source
+2. Running the skillset to enrich content
+3. Mapping the extracted fields into the index
+
+Indexers can run on demand or on a schedule. If you update your index schema or skillset, reset the index before rerunning.
+
+### • Index
+
+An index is a searchable store of JSON documents. It defines the schema for the data you want to search and how to query it.
+Each field in the index can be configured with these attributes:
+
+- **Key**: Unique identifier for each document
+- **Searchable**: Include in full-text search
+- **Filterable**: Support filter expressions
+- **Sortable**: Enable sorting of results
+- **Facetable**: Generate facet counts
+- **Retrievable**: Include in query results (default is true)
 
 ## 6. 🔄 SUMMARY / RECAP / Q&A
 
