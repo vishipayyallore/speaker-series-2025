@@ -68,10 +68,15 @@
 
 ## 2. 🔊 Introduction
 
+To be done
 
 ## 3. 🏗️ Provision an Azure resource for speech
 
+To be done
+
 ## 4. ??Icon Manage capacity
+
+To be done
 
 ---
 
