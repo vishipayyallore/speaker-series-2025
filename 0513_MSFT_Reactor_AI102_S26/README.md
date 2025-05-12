@@ -68,6 +68,11 @@
 
 ## 2. 🔊 Introduction
 
+
+## 3. 🏗️ Provision an Azure resource for speech
+
+## 4. ??Icon Manage capacity
+
 ---
 
 ## 6. 🔄 SUMMARY / RECAP / Q&A
