@@ -157,6 +157,7 @@ Each field in the index can be configured with these attributes:
 Azure AI Search processes each document through a multi-stage pipeline:
 
 1. **Initial document**
+
    - Raw fields from your data source are mapped into a JSON document:
 
    ```json
@@ -167,7 +168,8 @@ Azure AI Search processes each document through a multi-stage pipeline:
    }
    ```
 
-2. **Normalize images** *(optional)*
+2. **Normalize images** _(optional)_
+
    - Image data extracted into an array:
 
    ```json
@@ -178,12 +180,14 @@ Azure AI Search processes each document through a multi-stage pipeline:
    ```
 
 3. **Apply cognitive skills**
+
    - Skills run per document or per array item (e.g., OCR on each image):
      - Language detection → `language`
      - OCR on images → `imageText`
      - Any custom or built-in skill adds new fields
 
-4. **Merge content** *(optional)*
+4. **Merge content** _(optional)_
+
    - Use a merge skill to combine original `content` + `imageText` into `merged_content`.
 
 5. **Map to index**
@@ -205,6 +209,41 @@ The final enriched JSON is ready for querying once indexed.
   "merged_content": "This report outlines the quarterly financial results... Sales chart Q1 Revenue table"
 }
 ```
+
+## 7. 🔎 Search an index
+
+Once your index is populated, query it using Azure AI Search REST API or SDKs.
+
+### Lucene query types
+
+- **Simple**: literal term matching (e.g., `hotel`)
+- **Full**: advanced syntax—regex, fuzzy, proximity, and filters
+
+### Common parameters
+
+- `search` — terms to find
+- `queryType` — `simple` or `full`
+- `searchFields` — fields to search (comma-separated)
+- `select` — fields to return
+- `searchMode` — `any` (OR) or `all` (AND)
+
+### Sample REST request
+
+```bash
+curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs?api-version=2021-04-30-Preview" \
+  -H "api-key: <your-key>" \
+  --data-urlencode "search=hotel" \
+  --data-urlencode "searchFields=content,merged_content" \
+  --data-urlencode "select=metadata_storage_name,merged_content" \
+  --data-urlencode "searchMode=all"
+```
+
+### Query processing stages
+
+1. **Parsing** — build subqueries (term, phrase, prefix)
+2. **Lexical analysis** — lowercase, stopword removal, stemming
+3. **Retrieval** — match terms to documents
+4. **Scoring** — compute relevance via TF/IDF
 
 ## X. 🔄 SUMMARY / RECAP / Q&A
 
