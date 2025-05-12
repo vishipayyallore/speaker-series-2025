@@ -152,7 +152,47 @@ Each field in the index can be configured with these attributes:
 - **Facetable**: Generate facet counts
 - **Retrievable**: Include in query results (default is true)
 
-## 6. 🔄 SUMMARY / RECAP / Q&A
+## 6. ⚙️ Understand the indexing process
+
+Azure AI Search processes each document through a multi-stage pipeline:
+
+1. **Initial document**
+   - Raw fields from your data source are mapped into a JSON document:
+
+   ```json
+   {
+     "metadata_storage_name": "...",
+     "metadata_author": "...",
+     "content": "..."
+   }
+   ```
+
+2. **Normalize images** *(optional)*
+   - Image data extracted into an array:
+
+   ```json
+   "normalized_images": [
+     { "image": <binary> },
+     { "image": <binary> }
+   ]
+   ```
+
+3. **Apply cognitive skills**
+   - Skills run per document or per array item (e.g., OCR on each image):
+     - Language detection → `language`
+     - OCR on images → `imageText`
+     - Any custom or built-in skill adds new fields
+
+4. **Merge content** *(optional)*
+   - Use a merge skill to combine original `content` + `imageText` into `merged_content`.
+
+5. **Map to index**
+   - **Implicit**: fields with matching names map automatically
+   - **Explicit**: define mappings to rename or transform fields
+
+The final enriched JSON is ready for querying once indexed.
+
+## X. 🔄 SUMMARY / RECAP / Q&A
 
 > 1. SUMMARY / RECAP / Q&A
 > 2. Any open queries, I will get back through meetup chat/twitter.
