@@ -37,8 +37,8 @@
 >    - Microsoft Learn Module(s)
 > 2. 🔊 Introduction
 > 3. 🏗️ Provision an Azure resource for speech
-> 4. 🗣️ Use the Azure AI Speech to Text API
-> 5. 🔈 Use the text to speech API
+> 4. 🔈 Use the text to speech API
+> 5. 🔋 Manage capacity
 > 6. 🔄 SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
@@ -68,70 +68,131 @@
 
 ## 2. 🔊 Introduction
 
-Translation of speech builds on speech recognition by recognizing and transcribing spoken input in a specified language, and returning translations of the transcription in one or more other languages.
+> Problem: finding relevant information in large, unstructured data sets.
 
-### What is Azure AI Speech Translation?
+**Example**: Margie’s Travel has thousands of brochures and customer reviews—agents need a fast way to locate answers.
 
-Azure AI Speech Translation is a cloud-based service that provides real-time, multi-language translation capabilities for speech and text. It combines advanced speech recognition, machine translation, and speech synthesis technologies to enable seamless communication across language barriers.
+**Solution**: Azure AI Search indexes your data, applies AI enrichment, and exposes a high-scale search API.
 
-### Key Capabilities
+With Azure AI Search you can:
 
-- **Real-time Speech-to-Text Translation**: Convert spoken language into text in real-time.
-- **Multi-language Support**: Translate between 60+ languages for text and 40+ languages for speech.
-- **Custom Voice Development**: Create custom voices that match your brand or specific requirements.
-- **Speech Synthesis**: Convert translated text back into natural-sounding speech.
-- **Integration Flexibility**: Use REST APIs or client SDKs for various programming languages.
-
-### Why Azure AI Speech Translation?
-
-- **Enhanced Accessibility**: Make content and communications accessible to global audiences.
-- **Improved Efficiency**: Automate translation tasks that would otherwise require human translators.
-- **Scalability**: Handle translation tasks at scale with Azure's cloud infrastructure.
-- **High Accuracy**: Leverage Microsoft's advanced AI models for accurate translations.
-- **Security & Compliance**: Benefit from Azure's robust security features and compliance certifications.
-
-### In this session, you'll learn
-
-- How to provision Azure resources for speech translation.
-- Techniques for generating text translation from speech.
-- Methods for synthesizing spoken translations.
-- Practical implementation using Azure AI Speech SDKs.
-
-The session includes important conceptual information about Azure AI Speech and step-by-step guidance on using its APIs through supported SDKs, followed by hands-on exercises to help you gain practical experience with Azure AI Speech translation capabilities.
-
----
+- Index documents and databases in a few clicks
+- Enrich content with built-in cognitive skills
+- Query using full-text search, filters, and facets
 
 ## 3. 🏗️ Provision an Azure resource for speech
 
 > 1. Discussion and Demo
 
----
+## 4. 🔋 Manage capacity
 
-## 4. 🗣️ Use the Azure AI Speech to Text API
+When provisioning your Azure AI Search resource, choose a pricing tier to set capacity limits, features, and cost:
 
-> 1. Discussion and Demo
+- **Free (F)**: Up to 3 indexes, 50 MB storage—exploration and tutorials
+- **Basic (B)**: Up to 15 indexes, 5 GB storage—small workloads
+- **Standard (S/S2/S3/S3HD)**: Scalable enterprise tiers with increasing storage and performance
+- **Storage optimized (L1/L2)**: Large-index support, higher query latency
 
-![Speech To Text Postman](./Documentation/Images/SpeechToText_Postman.PNG)
+> **Note**: You cannot change tiers on an existing resource. To scale up, create a new service and reindex.
 
----
+Optimize performance with **replicas** and **partitions**:
 
-## 5. 🔈 Use the text to speech API
+- **Replicas (R)**: Duplicate service instances for concurrency and high availability
+- **Partitions (P)**: Shard index storage for larger datasets
 
-> 1. Discussion and Demo
+Search units (SU) = R × P (e.g., 4 replicas × 3 partitions = 12 SU)
 
-![Text To Speech Postman](./Documentation/Images/TextToSpeech_Postman.PNG)
+## 5. 🔍 Understand search components
 
-### Using `CURL`
+An Azure AI Search solution is built from several core components, each contributing to data ingestion, enrichment, indexing, and querying.
 
-```powershell
-curl --location --request POST "https://swedencentral.tts.speech.microsoft.com/cognitiveservices/v1" --header "Ocp-Apim-Subscription-Key: $OcpApimSubscriptionKey" --header "Content-Type: application/ssml+xml" --header "X-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3" --header "User-Agent: curl" --data-raw "<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-US-AvaMultilingualNeural'>my voice is my passport verify me</voice></speak>" --output output.mp3
-```
+### • Data source
 
-![Text To Speech curl](./Documentation/Images/TextToSpeech_Curl.PNG)
+A data source is a connection to a repository of content. It defines how to connect to the content and how to pull data from it. Azure AI Search supports several types of data sources, including:
 
----
+- **Blob storage** (unstructured files)
+- **Azure SQL Database** (tables)
+- **Cosmos DB** (JSON documents)
 
-## 6. 🔄 SUMMARY / RECAP / Q&A
+Alternatively, applications can push JSON data directly into an index.
+
+### • Skillset
+
+> 1. A skillset is a collection of AI skills that can be applied to content in an index. It defines how to extract insights from your data and how to map those insights into the index schema.
+> 1. Skillsets define an enrichment pipeline of AI skills that extract insights from your source content. Common AI skills include:
+
+- Language detection
+- Key phrase extraction
+- Sentiment analysis
+- Entity recognition (people, locations, organizations)
+- OCR and image analysis
+- You can also create **custom skills** to handle specialized processing.
+
+### • Indexer
+
+An indexer is a component that connects a data source to an index. It defines how to pull data from the source, run the skillset, and map the extracted fields into the index schema.
+
+The indexer orchestrates the indexing workflow by:
+
+1. Pulling data from the data source
+2. Running the skillset to enrich content
+3. Mapping the extracted fields into the index
+
+Indexers can run on demand or on a schedule. If you update your index schema or skillset, reset the index before rerunning.
+
+### • Index
+
+An index is a searchable store of JSON documents. It defines the schema for the data you want to search and how to query it.
+Each field in the index can be configured with these attributes:
+
+- **Key**: Unique identifier for each document
+- **Searchable**: Include in full-text search
+- **Filterable**: Support filter expressions
+- **Sortable**: Enable sorting of results
+- **Facetable**: Generate facet counts
+- **Retrievable**: Include in query results (default is true)
+
+## 6. ⚙️ Understand the indexing process
+
+Azure AI Search processes each document through a multi-stage pipeline:
+
+1. **Initial document**
+   - Raw fields from your data source are mapped into a JSON document:
+
+   ```json
+   {
+     "metadata_storage_name": "...",
+     "metadata_author": "...",
+     "content": "..."
+   }
+   ```
+
+2. **Normalize images** *(optional)*
+   - Image data extracted into an array:
+
+   ```json
+   "normalized_images": [
+     { "image": <binary> },
+     { "image": <binary> }
+   ]
+   ```
+
+3. **Apply cognitive skills**
+   - Skills run per document or per array item (e.g., OCR on each image):
+     - Language detection → `language`
+     - OCR on images → `imageText`
+     - Any custom or built-in skill adds new fields
+
+4. **Merge content** *(optional)*
+   - Use a merge skill to combine original `content` + `imageText` into `merged_content`.
+
+5. **Map to index**
+   - **Implicit**: fields with matching names map automatically
+   - **Explicit**: define mappings to rename or transform fields
+
+The final enriched JSON is ready for querying once indexed.
+
+## X. 🔄 SUMMARY / RECAP / Q&A
 
 > 1. SUMMARY / RECAP / Q&A
 > 2. Any open queries, I will get back through meetup chat/twitter.
