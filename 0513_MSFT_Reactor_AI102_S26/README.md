@@ -1,10 +1,10 @@
-# AI-102 - Translating Speech with Azure AI Speech Service
+# AI-102 - Building Intelligent Search Solutions with Azure AI Search
 
-## Date Time: 29-Apr-2025 at 03:30 PM IST
+## Date Time: 13-May-2025 at 03:30 PM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/307042377](https://www.meetup.com/microsoft-reactor-bengaluru/events/307042377)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/307042690](https://www.meetup.com/microsoft-reactor-bengaluru/events/307042690)
 
-## YouTube URL: [https://www.youtube.com/watch?v=fyZwhob8klU](https://www.youtube.com/watch?v=fyZwhob8klU)
+## YouTube URL: [https://www.youtube.com/watch?v=RKFELXBefeY](https://www.youtube.com/watch?v=RKFELXBefeY)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
