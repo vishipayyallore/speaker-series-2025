@@ -245,6 +245,66 @@ curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs?api-versi
 3. **Retrieval** — match terms to documents
 4. **Scoring** — compute relevance via TF/IDF
 
+## 8. 🛠️ Apply filtering & sorting
+
+Refine results using filters, facets, and custom sort orders.
+
+### Filtering
+
+- **Simple syntax**:
+
+  ```bash
+  curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs?api-version=2021-04-30-Preview" \
+    -H "api-key: <your-key>" \
+    --data-urlencode "search=London+author:'Reviewer'" \
+    --data-urlencode "queryType=simple"
+  ```
+
+- **OData filter (full syntax)**:
+
+  ```bash
+  curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs?api-version=2021-04-30-Preview" \
+    -H "api-key: <your-key>" \
+    --data-urlencode "search=London" \
+    --data-urlencode "$filter=author eq 'Reviewer'" \
+    --data-urlencode "queryType=full"
+  ```
+
+> **Tip**: OData `$filter` expressions are case-sensitive.
+
+### Facets
+
+- **Retrieve facet values**:
+
+  ```bash
+  curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs?api-version=2021-04-30-Preview" \
+    -H "api-key: <your-key>" \
+    --data-urlencode "search=*" \
+    --data-urlencode "facet=author"
+  ```
+
+- **Filter by facet selection**:
+
+  ```bash
+  curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs?api-version=2021-04-30-Preview" \
+    -H "api-key: <your-key>" \
+    --data-urlencode "search=*" \
+    --data-urlencode "$filter=author eq 'SelectedValue'"
+  ```
+
+### Sorting
+
+- **By relevance** (default)
+
+- **Custom order**:
+
+  ```bash
+  curl -X GET "https://<service>.search.windows.net/indexes/<index>/docs?api-version=2021-04-30-Preview" \
+    -H "api-key: <your-key>" \
+    --data-urlencode "search=*" \
+    --data-urlencode "$orderby=last_modified desc"
+  ```
+
 ## X. 🔄 SUMMARY / RECAP / Q&A
 
 > 1. SUMMARY / RECAP / Q&A
