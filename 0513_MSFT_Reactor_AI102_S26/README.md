@@ -36,10 +36,14 @@
 >    - Previous Session(s)
 >    - Microsoft Learn Module(s)
 > 2. 🔊 Introduction
-> 3. 🏗️ Provision an Azure resource for speech
-> 4. 🔈 Use the text to speech API
-> 5. 🔋 Manage capacity
-> 6. 🔄 SUMMARY / RECAP / Q&A
+> 3. 🏗️ Provision an Azure AI Search resource
+> 4. 🔋 Manage capacity
+> 5. 🔍 Understand search components
+> 6. ⚙️ Understand the indexing process
+> 7. 🔎 Search an index
+> 8. 🛠️ Apply filtering & sorting
+> 9. ⚡ Enhance the index
+> 10. 🔄 SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
 
