@@ -91,6 +91,16 @@ With Azure AI Search you can:
 > 3. Set up a Storage account with a blob container for your documents
 > 4. Retrieve service endpoint and API key (or configure managed identity)
 
+## 4. Upload Documents to Azure Storage
+
+```powershell
+$subscriptionId="YourSubscriptionId"
+$azureStorageAccount="YourStorageAccount"
+$azureStorageKey="YourStorageKey"
+```
+
+![Uploading the Documents | 100x100](./Documentation/Images/UploadDocuments.PNG)
+
 ## 4. 🔋 Manage capacity
 
 When provisioning your Azure AI Search resource, choose a pricing tier to set capacity limits, features, and cost:
@@ -216,6 +226,10 @@ The final enriched JSON is ready for querying once indexed.
   "merged_content": "This report outlines the quarterly financial results... Sales chart Q1 Revenue table"
 }
 ```
+
+## Index the documents
+
+> 1. Discussion and Demo
 
 ## 7. 🔎 Search an index
 
