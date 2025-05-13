@@ -84,9 +84,12 @@ With Azure AI Search you can:
 - Enrich content with built-in cognitive skills
 - Query using full-text search, filters, and facets
 
-## 3. 🏗️ Provision an Azure resource for speech
+## 3. 🏗️ Provision an Azure AI Search resource
 
-> 1. Discussion and Demo
+> 1. Create an Azure AI Search service via the Portal or CLI
+> 2. Create an Azure Cognitive Services resource for enrichment skills
+> 3. Set up a Storage account with a blob container for your documents
+> 4. Retrieve service endpoint and API key (or configure managed identity)
 
 ## 4. 🔋 Manage capacity
 
