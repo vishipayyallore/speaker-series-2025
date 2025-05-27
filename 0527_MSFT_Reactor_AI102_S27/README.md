@@ -64,9 +64,7 @@
 
 ### 1.3. Microsoft Learn Module(s)
 
-> 1. <https://learn.microsoft.com/azure/search/cognitive-search-create-custom-skill-example>
-> 2. <https://learn.microsoft.com/azure/search/cognitive-search-custom-skill-interface>
-> 3. <https://learn.microsoft.com/azure/search/cognitive-search-custom-skill-scale>
+> 1. <https://aka.ms/Azure-AISearch>
 
 ---
 
@@ -275,10 +273,10 @@ public static class TextClassificationSkill
             try
             {
                 string text = record.Data.ContainsKey("text") ? record.Data["text"].ToString() : "";
-                
+
                 // Simple classification logic (replace with your ML model)
                 var classification = ClassifyText(text);
-                
+
                 outputRecord.Data["category"] = classification.Category;
                 outputRecord.Data["confidence"] = classification.Confidence;
             }
@@ -297,7 +295,7 @@ public static class TextClassificationSkill
     {
         // Simple keyword-based classification
         text = text.ToLower();
-        
+
         if (text.Contains("contract") || text.Contains("agreement"))
             return ("Legal Document", 0.85);
         else if (text.Contains("invoice") || text.Contains("bill"))
@@ -347,7 +345,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     try:
         req_body = req.get_json()
-        
+
         response = {
             "values": []
         }
@@ -355,10 +353,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         for record in req_body.get("values", []):
             record_id = record.get("recordId")
             text = record.get("data", {}).get("text", "")
-            
+
             # Simple classification logic
             category, confidence = classify_text(text)
-            
+
             output_record = {
                 "recordId": record_id,
                 "data": {
@@ -368,7 +366,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
                 "errors": [],
                 "warnings": []
             }
-            
+
             response["values"].append(output_record)
 
         return func.HttpResponse(
@@ -387,7 +385,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 def classify_text(text):
     """Simple keyword-based text classification"""
     text_lower = text.lower()
-    
+
     if any(keyword in text_lower for keyword in ["contract", "agreement", "terms"]):
         return "Legal Document", 0.85
     elif any(keyword in text_lower for keyword in ["invoice", "bill", "payment"]):
@@ -409,7 +407,7 @@ using Microsoft.ML.OnnxRuntime.Tensors;
 public static class MLCustomSkill
 {
     private static InferenceSession _session;
-    
+
     static MLCustomSkill()
     {
         // Initialize ONNX Runtime session with your model
@@ -423,7 +421,7 @@ public static class MLCustomSkill
         ILogger log)
     {
         var response = new CustomSkillResponse { Values = new List<CustomSkillResponseRecord>() };
-        
+
         try
         {
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
@@ -440,13 +438,13 @@ public static class MLCustomSkill
                 try
                 {
                     string text = record.Data["text"].ToString();
-                    
+
                     // Preprocess text (tokenization, vectorization, etc.)
                     var input = PreprocessText(text);
-                    
+
                     // Run ML model inference
                     var results = RunInference(input);
-                    
+
                     outputRecord.Data["prediction"] = results.Prediction;
                     outputRecord.Data["confidence"] = results.Confidence;
                     outputRecord.Data["probabilities"] = results.Probabilities;
@@ -473,7 +471,7 @@ public static class MLCustomSkill
         // Implement your text preprocessing logic
         // This might include tokenization, embedding lookup, etc.
         // Return numerical representation suitable for your ML model
-        
+
         // Placeholder implementation
         return new float[512]; // Assuming 512-dimensional input
     }
@@ -489,19 +487,19 @@ public static class MLCustomSkill
 
         // Run inference
         using var results = _session.Run(inputs);
-        
+
         // Extract outputs (adjust based on your model's output format)
         var outputTensor = results.First().AsTensor<float>();
         var probabilities = outputTensor.ToArray();
-        
+
         // Find prediction with highest probability
         int predictedIndex = Array.IndexOf(probabilities, probabilities.Max());
         float confidence = probabilities[predictedIndex];
-        
+
         // Map index to class name (customize based on your classes)
         string[] classNames = { "Class1", "Class2", "Class3" };
         string prediction = classNames[predictedIndex];
-        
+
         return (prediction, confidence, probabilities);
     }
 }
@@ -510,6 +508,7 @@ public static class MLCustomSkill
 ## 7. 🧪 Hands-on Exercise - Create a Custom Skill
 
 ### Exercise Overview
+
 Create a custom skill that extracts and classifies email addresses from documents.
 
 ### Step 1: Create Azure Function App
@@ -586,13 +585,13 @@ public static class EmailExtractionSkill
     private static (bool HasBusinessEmail, bool HasPersonalEmail) ClassifyEmails(List<string> emails)
     {
         var personalDomains = new HashSet<string> { "gmail.com", "yahoo.com", "hotmail.com", "outlook.com" };
-        
-        bool hasPersonal = emails.Any(email => 
+
+        bool hasPersonal = emails.Any(email =>
             personalDomains.Contains(email.Split('@')[1]));
-        
-        bool hasBusiness = emails.Any(email => 
+
+        bool hasBusiness = emails.Any(email =>
             !personalDomains.Contains(email.Split('@')[1]));
-        
+
         return (hasBusiness, hasPersonal);
     }
 }
