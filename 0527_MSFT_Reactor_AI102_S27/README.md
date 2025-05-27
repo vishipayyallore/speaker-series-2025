@@ -64,8 +64,9 @@
 
 ### 1.3. Microsoft Learn Module(s)
 
-> 1. <https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/>
-> 2. <https://docs.microsoft.com/learn/modules/create-custom-skill-for-azure-cognitive-search/>
+> 1. <https://learn.microsoft.com/azure/search/cognitive-search-create-custom-skill-example>
+> 2. <https://learn.microsoft.com/azure/search/cognitive-search-custom-skill-interface>
+> 3. <https://learn.microsoft.com/azure/search/cognitive-search-custom-skill-scale>
 
 ---
 

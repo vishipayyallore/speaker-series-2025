@@ -1,0 +1,39 @@
+SOFTWARE LICENSE AGREEMENT
+
+This Software License Agreement ("Agreement") is entered into on March 15, 2024, 
+between TechCorp Inc. ("Licensor") and ClientCorp Ltd. ("Licensee").
+
+TERMS AND CONDITIONS:
+- License Duration: 3 years
+- Annual Payment: $50,000
+- Territory: North America
+- Renewal: Automatic unless terminated with 90 days notice
+
+CONTACT INFORMATION:
+Licensor: legal@techcorp.com, billing@techcorp.com
+Licensee: procurement@clientcorp.com, it-admin@clientcorp.com
+
+CONFIDENTIALITY CLAUSE:
+Both parties agree to maintain confidentiality of proprietary information, 
+trade secrets, and technical documentation for a period of 5 years after 
+termination of this agreement.
+
+LIABILITY LIMITATIONS:
+The maximum liability under this agreement shall not exceed the annual 
+license fee. Neither party shall be liable for indirect, consequential, 
+or punitive damages.
+
+TERMINATION CONDITIONS:
+This agreement may be terminated by either party with 90 days written notice.
+Immediate termination is allowed in case of material breach that remains 
+uncured for 30 days after written notice.
+
+GOVERNING LAW:
+This agreement shall be governed by the laws of Delaware, United States.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+TechCorp Inc.                    ClientCorp Ltd.
+By: John Smith                   By: Sarah Johnson
+Title: CEO                       Title: CTO
+Date: March 15, 2024            Date: March 15, 2024
