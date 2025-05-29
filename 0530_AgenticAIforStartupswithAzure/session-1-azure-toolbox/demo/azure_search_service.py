@@ -160,7 +160,8 @@ class AzureSearchService:
             return []
     
     def index_document(self, document: Dict[str, Any]) -> bool:
-        """Index a single document with vector embeddings"""
+        # Always define search_document at the top
+        search_document = None
         try:
             # Validate required fields
             required_fields = ["id", "content"]
@@ -168,17 +169,13 @@ class AzureSearchService:
                 if not document.get(field):
                     logger.error(f"Missing required field '{field}' in document")
                     return False
-            
             content = document.get("content", "")
             if len(content.strip()) == 0:
                 logger.error("Document content is empty")
                 return False
-            
             logger.info(f"Generating embeddings for document '{document.get('id')}'...")
-            
             # Generate embeddings for the content
             content_embedding = self.generate_embeddings(content)
-            
             if not content_embedding:
                 logger.error("Failed to generate embeddings for document content")
                 return False
@@ -195,12 +192,9 @@ class AzureSearchService:
                 "metadata": json.dumps(document.get("metadata", {}))
             }
             logger.debug(f"Document to be indexed: {json.dumps(search_document)[:1000]}")
-            
             logger.info(f"Uploading document '{document.get('id')}' to search index...")
-            
             # Upload to search index
             result = self.search_client.upload_documents([search_document])
-            
             # Check the result
             upload_results = list(result)
             if upload_results and upload_results[0].succeeded:
@@ -211,8 +205,13 @@ class AzureSearchService:
                 logger.error(f"Failed to index document '{document.get('id')}': {error_msg}")
                 # Return the error message for API response
                 return error_msg or False
-            
         except Exception as e:
+            # Only reference search_document if it is not None
+            if search_document is not None:
+                try:
+                    logger.debug(f"Exception occurred. Last search_document: {json.dumps(search_document)[:1000]}")
+                except Exception:
+                    pass
             logger.error(f"Error indexing document '{document.get('id', 'unknown')}': {str(e)}")
             logger.error(f"Exception type: {type(e).__name__}")
             import traceback

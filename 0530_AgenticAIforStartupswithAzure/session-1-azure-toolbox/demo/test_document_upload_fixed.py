@@ -16,17 +16,19 @@ logger = logging.getLogger(__name__)
 def test_pdf_upload():
     """Test PDF file upload"""
     logger.info("Testing PDF file upload...")
-    
-    # Find a PDF file in the sample documents
+      # Find a PDF file in the sample documents
     pdf_path = Path("../sample-documents/collateral/Dubai Brochure.pdf")
     if not pdf_path.exists():
         logger.error(f"PDF file not found: {pdf_path}")
         return False
     
+    base_url = "http://localhost:8001"  # Using port 8001 to match running server
+    upload_url = f"{base_url}/api/upload"
+    
     try:
         with open(pdf_path, 'rb') as f:
             files = {'file': (pdf_path.name, f, 'application/pdf')}
-            response = requests.post('http://localhost:8001/api/upload', files=files)
+            response = requests.post(upload_url, files=files)
             
         if response.status_code == 200:
             result = response.json()
@@ -50,10 +52,13 @@ def test_markdown_upload():
         logger.error(f"Markdown file not found: {md_path}")
         return False
     
+    base_url = "http://localhost:8001"  # Using port 8001 to match running server
+    upload_url = f"{base_url}/api/upload"
+    
     try:
         with open(md_path, 'rb') as f:
             files = {'file': (md_path.name, f, 'text/markdown')}
-            response = requests.post('http://localhost:8001/api/upload', files=files)
+            response = requests.post(upload_url, files=files)
             
         if response.status_code == 200:
             result = response.json()
