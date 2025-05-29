@@ -74,7 +74,6 @@ class DocumentProcessor:
         
         content_hash = hashlib.md5(content.encode()).hexdigest()[:8]
         return f"{sanitized_name}_{content_hash}"
-        return f"{sanitized_name}_{content_hash}"
     
     def _process_pdf(self, file_content: bytes, filename: str) -> Dict[str, Any]:
         """Extract text from PDF file"""
