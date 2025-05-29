@@ -85,9 +85,11 @@ az storage container create `
 # Create Function App
 $functionAppName = "$ResourceGroupName-functions"
 Write-Host "Creating Function App: $functionAppName..." -ForegroundColor Green
+# Convert location to lowercase for Function App consumption plan
+$consumptionLocation = $Location.ToLower().Replace(" ", "")
 az functionapp create `
     --resource-group $ResourceGroupName `
-    --consumption-plan-location $Location `
+    --consumption-plan-location $consumptionLocation `
     --runtime python `
     --runtime-version 3.11 `
     --functions-version 4 `

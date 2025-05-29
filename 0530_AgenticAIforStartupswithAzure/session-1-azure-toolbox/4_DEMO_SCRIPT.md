@@ -137,11 +137,12 @@ az storage container create `
 az functionapp create `
   --name "agentic-ai-functions" `
   --resource-group "agentic-ai-demo-rg" `
-  --consumption-plan-location "East US" `
+  --consumption-plan-location "eastus" `
   --runtime "python" `
   --runtime-version "3.11" `
   --functions-version "4" `
-  --storage-account "agenticstorage1234"
+  --storage-account "agenticstorage1234" `
+  --os-type "Linux"
 ```
 
 </details>
