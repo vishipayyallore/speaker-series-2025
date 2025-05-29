@@ -1,4 +1,5 @@
-Session 2 — Launch Time: Scaling & Deploying on Azure (45 min)
+# Session 2 — Launch Time: Scaling & Deploying on Azure (45 min)
+
 This session focuses on what it takes to move from prototype to production.
 ● Deployment options: Azure Container Apps, Azure Functions
 ● Monitoring with Azure Monitor and Application Insights

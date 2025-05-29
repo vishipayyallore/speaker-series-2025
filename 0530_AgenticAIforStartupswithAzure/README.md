@@ -22,7 +22,7 @@ Complete implementation of a Knowledge Worker Agent demo showcasing:
 
 ### 🚀 Session 2: Scaling & Deploying on Azure
 
-**Location:** `Scaling_Deploying_on_Azure.md`
+**Location:** `session-2-scaling-deploying/`
 **Status:** 📋 Outlined (ready for development)
 **Duration:** 45 minutes
 
@@ -31,7 +31,7 @@ Session focuses on production deployment topics:
 - Deployment options: Azure Container Apps, Azure Functions
 - Monitoring with Azure Monitor and Application Insights
 - Cost management and smart scaling strategies
-- Real-world insights and resource planning
+[📖 View Session 2 Materials →](./session-2-scaling-deploying/)
 
 ## 🎯 Speaker Series Overview
 
@@ -64,7 +64,7 @@ python web_interface.py
 
 ### For Session 2 Development
 
-Session 2 materials are outlined in `Scaling_Deploying_on_Azure.md` and ready for development.
+Session 2 materials are outlined in `session-2-scaling-deploying/` and ready for development.
 
 ## 🛠️ Prerequisites
 
