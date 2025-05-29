@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Worker Agent Demo - Azure AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --azure-blue: #0078d4;
+            --azure-light: #106ebe;
+            --azure-dark: #005a9e;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 30px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--azure-blue);
+        }
+        
+        .header h1 {
+            color: var(--azure-blue);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .status-card {
+            background: linear-gradient(135deg, var(--azure-blue), var(--azure-light));
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .chat-container {
+            height: 400px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            padding: 12px 16px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+        
+        .user-message {
+            background: var(--azure-blue);
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+        
+        .agent-message {
+            background: #e9ecef;
+            color: #495057;
+        }
+        
+        .function-call {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 8px;
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        
+        .upload-area {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .upload-area:hover {
+            border-color: var(--azure-blue);
+            background: rgba(0, 120, 212, 0.05);
+        }
+        
+        .upload-area.dragover {
+            border-color: var(--azure-blue);
+            background: rgba(0, 120, 212, 0.1);
+        }
+        
+        .btn-azure {
+            background: var(--azure-blue);
+            border-color: var(--azure-blue);
+            color: white;
+        }
+        
+        .btn-azure:hover {
+            background: var(--azure-dark);
+            border-color: var(--azure-dark);
+            color: white;
+        }
+        
+        .demo-section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .section-title {
+            color: var(--azure-blue);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .loading {
+            display: none;
+        }
+        
+        .spinner-border-sm {
+            width: 1rem;
+            height: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main-container">
+            <div class="header">
+                <h1><i class="fas fa-robot"></i> Knowledge Worker Agent</h1>
+                <p class="lead">Azure AI-Powered Document Analysis and Question Answering</p>
+                <div id="status-indicator" class="status-card">
+                    <i class="fas fa-circle-notch fa-spin"></i> Checking Azure services status...
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Chat Interface -->
+                <div class="col-lg-8">
+                    <div class="demo-section">
+                        <h3 class="section-title"><i class="fas fa-comments"></i> Chat with the Agent</h3>
+                        <div id="chat-container" class="chat-container">
+                            <div class="message agent-message">
+                                <strong>🤖 Knowledge Worker Agent:</strong><br>
+                                Hello! I'm your AI knowledge worker. I can help you analyze documents, answer questions, and perform various tasks. 
+                                Upload some documents or ask me anything!
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="user-input" class="form-control" 
+                                   placeholder="Ask me anything about your documents..." 
+                                   onkeypress="handleKeyPress(event)">
+                            <button class="btn btn-azure" onclick="sendMessage()">
+                                <span id="send-loading" class="loading">
+                                    <i class="fas fa-circle-notch fa-spin"></i>
+                                </span>
+                                <span id="send-text">Send</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control Panel -->
+                <div class="col-lg-4">
+                    <!-- Document Upload -->
+                    <div class="demo-section">
+                        <h4 class="section-title"><i class="fas fa-upload"></i> Upload Documents</h4>
+                        <div class="upload-area" onclick="document.getElementById('file-input').click()">
+                            <i class="fas fa-cloud-upload-alt fa-3x text-muted"></i>
+                            <p class="mt-3">Click to upload or drag & drop files</p>
+                            <small class="text-muted">Supports PDF, DOCX, TXT, HTML</small>
+                        </div>
+                        <input type="file" id="file-input" style="display: none;" 
+                               multiple accept=".pdf,.docx,.txt,.html,.htm" onchange="uploadFiles()">
+                        
+                        <div class="mt-3">
+                            <label class="form-label">Category:</label>
+                            <select id="category-select" class="form-select">
+                                <option value="general">General</option>
+                                <option value="technical">Technical</option>
+                                <option value="business">Business</option>
+                                <option value="research">Research</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- URL Processing -->
+                    <div class="demo-section">
+                        <h4 class="section-title"><i class="fas fa-globe"></i> Process Web Content</h4>
+                        <div class="input-group mb-3">
+                            <input type="url" id="url-input" class="form-control" 
+                                   placeholder="Enter website URL...">
+                            <button class="btn btn-azure" onclick="processUrl()">
+                                <span id="url-loading" class="loading">
+                                    <i class="fas fa-circle-notch fa-spin"></i>
+                                </span>
+                                <span id="url-text">Process</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="demo-section">
+                        <h4 class="section-title"><i class="fas fa-bolt"></i> Quick Actions</h4>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-primary" onclick="searchDocuments()">
+                                <i class="fas fa-search"></i> Search All Documents
+                            </button>
+                            <button class="btn btn-outline-success" onclick="getStatistics()">
+                                <i class="fas fa-chart-bar"></i> View Statistics
+                            </button>
+                            <button class="btn btn-outline-warning" onclick="setupDemo()">
+                                <i class="fas fa-cog"></i> Setup Demo Data
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Statistics -->
+                    <div class="demo-section">
+                        <h4 class="section-title"><i class="fas fa-chart-pie"></i> Statistics</h4>
+                        <div id="stats-container">
+                            <p class="text-muted">Loading statistics...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        let conversationHistory = [];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            checkStatus();
+            getStatistics();
+            setupDragAndDrop();
+        });
+
+        // Check Azure services status
+        async function checkStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const status = await response.json();
+                
+                const statusDiv = document.getElementById('status-indicator');
+                if (status.agent_status === 'healthy') {
+                    statusDiv.innerHTML = `
+                        <i class="fas fa-check-circle"></i> Azure Services Connected
+                        <small class="d-block">OpenAI: ${status.services.azure_openai.status} | 
+                        Search: ${status.services.azure_search.document_count} docs | 
+                        Functions: ${status.services.azure_functions.status}</small>
+                    `;
+                    statusDiv.className = 'status-card bg-success';
+                } else {
+                    statusDiv.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Service Issues Detected`;
+                    statusDiv.className = 'status-card bg-warning';
+                }
+            } catch (error) {
+                const statusDiv = document.getElementById('status-indicator');
+                statusDiv.innerHTML = `<i class="fas fa-times-circle"></i> Connection Failed`;
+                statusDiv.className = 'status-card bg-danger';
+            }
+        }
+
+        // Send chat message
+        async function sendMessage() {
+            const input = document.getElementById('user-input');
+            const message = input.value.trim();
+            
+            if (!message) return;
+
+            // Show loading
+            document.getElementById('send-loading').style.display = 'inline';
+            document.getElementById('send-text').style.display = 'none';
+
+            // Add user message to chat
+            addMessageToChat(message, 'user');
+            input.value = '';
+
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        conversation_history: conversationHistory
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Add agent response
+                    addMessageToChat(result.response, 'agent', result.function_calls);
+                    
+                    // Update conversation history
+                    conversationHistory.push({role: 'user', content: message});
+                    conversationHistory.push({role: 'assistant', content: result.response});
+                } else {
+                    addMessageToChat(`Error: ${result.error}`, 'agent');
+                }
+            } catch (error) {
+                addMessageToChat(`Error: ${error.message}`, 'agent');
+            } finally {
+                // Hide loading
+                document.getElementById('send-loading').style.display = 'none';
+                document.getElementById('send-text').style.display = 'inline';
+            }
+        }
+
+        // Add message to chat container
+        function addMessageToChat(message, sender, functionCalls = []) {
+            const chatContainer = document.getElementById('chat-container');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+
+            let content = `<strong>${sender === 'user' ? '👤 You' : '🤖 Agent'}:</strong><br>${message}`;
+            
+            // Add function calls if any
+            if (functionCalls && functionCalls.length > 0) {
+                content += '<br><small><strong>Functions called:</strong></small>';
+                functionCalls.forEach(call => {
+                    content += `<div class="function-call">🔧 ${JSON.stringify(call.result)}</div>`;
+                });
+            }
+
+            messageDiv.innerHTML = content;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Handle Enter key in input
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        // Upload files
+        async function uploadFiles() {
+            const fileInput = document.getElementById('file-input');
+            const category = document.getElementById('category-select').value;
+            const files = fileInput.files;
+
+            for (let file of files) {
+                const formData = new FormData();
+                formData.append('file', file);
+                formData.append('category', category);
+
+                try {
+                    const response = await fetch('/api/upload', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        addMessageToChat(`✅ Successfully uploaded and indexed: ${result.filename}`, 'agent');
+                        getStatistics(); // Refresh stats
+                    } else {
+                        addMessageToChat(`❌ Failed to upload ${result.filename}: ${result.error}`, 'agent');
+                    }
+                } catch (error) {
+                    addMessageToChat(`❌ Error uploading ${file.name}: ${error.message}`, 'agent');
+                }
+            }
+        }
+
+        // Process URL
+        async function processUrl() {
+            const urlInput = document.getElementById('url-input');
+            const url = urlInput.value.trim();
+            
+            if (!url) return;
+
+            // Show loading
+            document.getElementById('url-loading').style.display = 'inline';
+            document.getElementById('url-text').style.display = 'none';
+
+            try {
+                const formData = new FormData();
+                formData.append('url', url);
+                formData.append('category', 'web');
+
+                const response = await fetch('/api/url', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    addMessageToChat(`✅ Successfully processed URL: ${url}`, 'agent');
+                    urlInput.value = '';
+                    getStatistics();
+                } else {
+                    addMessageToChat(`❌ Failed to process URL: ${result.error}`, 'agent');
+                }
+            } catch (error) {
+                addMessageToChat(`❌ Error processing URL: ${error.message}`, 'agent');
+            } finally {
+                // Hide loading
+                document.getElementById('url-loading').style.display = 'none';
+                document.getElementById('url-text').style.display = 'inline';
+            }
+        }
+
+        // Get statistics
+        async function getStatistics() {
+            try {
+                const response = await fetch('/api/documents/stats');
+                const stats = await response.json();
+                
+                const statsContainer = document.getElementById('stats-container');
+                statsContainer.innerHTML = `
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <h4 class="text-primary">${stats.total_documents || 0}</h4>
+                            <small>Documents</small>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="text-success">${stats.supported_file_types?.length || 0}</h4>
+                            <small>File Types</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <small class="text-muted">
+                        Storage: ${stats.storage_configured ? '✅ Connected' : '❌ Not configured'}<br>
+                        Supported: ${stats.supported_file_types?.join(', ') || 'None'}
+                    </small>
+                `;
+            } catch (error) {
+                console.error('Error getting statistics:', error);
+            }
+        }
+
+        // Setup drag and drop
+        function setupDragAndDrop() {
+            const uploadArea = document.querySelector('.upload-area');
+            
+            uploadArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadArea.classList.add('dragover');
+            });
+
+            uploadArea.addEventListener('dragleave', () => {
+                uploadArea.classList.remove('dragover');
+            });
+
+            uploadArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+                
+                const files = e.dataTransfer.files;
+                const fileInput = document.getElementById('file-input');
+                fileInput.files = files;
+                uploadFiles();
+            });
+        }
+
+        // Quick search
+        function searchDocuments() {
+            const query = prompt('Enter your search query:');
+            if (query) {
+                document.getElementById('user-input').value = `Search for: ${query}`;
+                sendMessage();
+            }
+        }
+
+        // Setup demo data
+        async function setupDemo() {
+            if (confirm('This will create the search index. Continue?')) {
+                try {
+                    const response = await fetch('/api/setup', { method: 'POST' });
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        addMessageToChat('✅ Demo setup completed successfully!', 'agent');
+                    } else {
+                        addMessageToChat(`❌ Demo setup failed: ${result.message}`, 'agent');
+                    }
+                } catch (error) {
+                    addMessageToChat(`❌ Setup error: ${error.message}`, 'agent');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
