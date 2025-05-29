@@ -321,7 +321,7 @@ class DocumentProcessor:
                 "content": content,
                 "source": blob_url or filename,
                 "category": category,
-                "created_date": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+                "created_date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "metadata": {
                     "original_filename": filename,
                     "file_size": len(file_content),

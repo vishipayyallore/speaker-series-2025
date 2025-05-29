@@ -182,9 +182,7 @@ class AzureSearchService:
             if not content_embedding:
                 logger.error("Failed to generate embeddings for document content")
                 return False
-            
             logger.info(f"Generated embeddings with {len(content_embedding)} dimensions")
-            
             # Prepare the document for indexing
             search_document = {
                 "id": document.get("id"),
@@ -196,6 +194,7 @@ class AzureSearchService:
                 "created_date": document.get("created_date"),
                 "metadata": json.dumps(document.get("metadata", {}))
             }
+            logger.debug(f"Document to be indexed: {json.dumps(search_document)[:1000]}")
             
             logger.info(f"Uploading document '{document.get('id')}' to search index...")
             
