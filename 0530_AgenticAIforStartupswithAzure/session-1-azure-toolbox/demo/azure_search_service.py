@@ -210,14 +210,16 @@ class AzureSearchService:
             else:
                 error_msg = upload_results[0].error_message if upload_results else "Unknown error"
                 logger.error(f"Failed to index document '{document.get('id')}': {error_msg}")
-                return False
+                # Return the error message for API response
+                return error_msg or False
             
         except Exception as e:
             logger.error(f"Error indexing document '{document.get('id', 'unknown')}': {str(e)}")
             logger.error(f"Exception type: {type(e).__name__}")
             import traceback
             logger.error(f"Traceback: {traceback.format_exc()}")
-            return False
+            # Return the exception message for API response
+            return str(e)
     
     def search_documents(self, query: str, top: int = 5, use_semantic_search: bool = True) -> List[Dict[str, Any]]:
         """Perform hybrid search (vector + keyword) with optional semantic ranking"""

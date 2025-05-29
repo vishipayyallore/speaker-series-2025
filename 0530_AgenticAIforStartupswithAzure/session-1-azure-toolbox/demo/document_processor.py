@@ -6,7 +6,7 @@ import os
 import hashlib
 import logging
 from typing import List, Dict, Any, Optional, BinaryIO
-from datetime import datetime
+from datetime import datetime, timezone
 import uuid
 import mimetypes
 
@@ -314,15 +314,14 @@ class DocumentProcessor:
             
             # Generate document ID
             document_id = self._generate_document_id(filename, content)
-            
-            # Prepare document for indexing
+              # Prepare document for indexing
             document = {
                 "id": document_id,
                 "title": os.path.splitext(filename)[0],
                 "content": content,
                 "source": blob_url or filename,
                 "category": category,
-                "created_date": datetime.now().isoformat(),
+                "created_date": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
                 "metadata": {
                     "original_filename": filename,
                     "file_size": len(file_content),
@@ -332,9 +331,8 @@ class DocumentProcessor:
             }
             
             # Index the document
-            indexing_success = self.search_service.index_document(document)
-            
-            if indexing_success:
+            indexing_result = self.search_service.index_document(document)
+            if indexing_result is True:
                 return {
                     "success": True,
                     "document_id": document_id,
@@ -347,7 +345,9 @@ class DocumentProcessor:
             else:
                 return {
                     "success": False,
-                    "error": "Failed to index document in search service"
+                    "document_id": document_id,
+                    "filename": filename,
+                    "error": indexing_result if isinstance(indexing_result, str) else "Failed to index document in search service"
                 }
                 
         except Exception as e:
