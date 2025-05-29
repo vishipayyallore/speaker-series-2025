@@ -205,7 +205,8 @@ AZURE_STORAGE_CONTAINER_NAME=documents
 AZURE_FUNCTION_APP_URL=https://rg-agentic-ai-dev-001-functions.azurewebsites.net
 AZURE_FUNCTION_KEY=your-function-key
 
-# Get function key with: az functionapp keys list --name rg-agentic-ai-dev-001-functions --resource-group rg-agentic-ai-dev-001
+# Get function key with:
+# az functionapp keys list --name rg-agentic-ai-dev-001-functions --resource-group rg-agentic-ai-dev-001
 ```
 
 ---
@@ -219,7 +220,8 @@ func azure functionapp publish rg-agentic-ai-dev-001-functions --python
 
 **Expected Output:**
 After successful deployment, you should see:
-```
+
+```text
 Functions in rg-agentic-ai-dev-001-functions:
     create_task - [httpTrigger]
         Invoke url: https://rg-agentic-ai-dev-001-functions.azurewebsites.net/api/create_task
@@ -229,20 +231,45 @@ Functions in rg-agentic-ai-dev-001-functions:
         Invoke url: https://rg-agentic-ai-dev-001-functions.azurewebsites.net/api/send_email
 ```
 
+**Get Function Keys for Testing:**
+
+```powershell
+# Get all function keys (includes default key and master key)
+az functionapp keys list --name rg-agentic-ai-dev-001-functions --resource-group rg-agentic-ai-dev-001
+
+# Get just the default function key
+az functionapp keys list --name rg-agentic-ai-dev-001-functions --resource-group rg-agentic-ai-dev-001 --query "functionKeys.default" --output tsv
+```
+
+**Update test-functions.ps1:**
+Replace `YourFunctionKeyHere` in the test script with the actual function key from the command above.
+
 **Note:** If you encounter language detection issues, the required configuration files (`local.settings.json` and `.funcignore`) are already included in the project.
 
 ---
 
 ### Step 6: Verification & Demo Start
 
+**Get Function Key and Update Test Script:**
+
+```powershell
+# Get the function key
+$functionKey = az functionapp keys list --name rg-agentic-ai-dev-001-functions --resource-group rg-agentic-ai-dev-001 --query "functionKeys.default" --output tsv
+
+# Update the test script
+cd demo
+# Edit test-functions.ps1 and replace "YourFunctionKeyHere" with the actual key
+(Get-Content test-functions.ps1) -replace 'YourFunctionKeyHere', $functionKey | Set-Content test-functions.ps1
+```
+
 **Test Azure Functions:**
 
 ```powershell
-cd demo
 .\test-functions.ps1
 ```
 
 **Expected Output:**
+
 ```text
 🧪 Testing Azure Functions with Authentication...
 📋 Testing Create Task Function...
@@ -445,7 +472,14 @@ A: Azure provides enterprise-grade security:
 6. **Azure Functions Testing Issues**:
    - **401 Unauthorized**: Add function key to URL: `?code=YOUR_FUNCTION_KEY`
    - **Function not found**: Verify function app name and deployment success
-   - **Get function keys**: `az functionapp keys list --name your-function-app --resource-group your-rg`
+   - **Get function keys**: 
+     ```powershell
+     az functionapp keys list --name rg-agentic-ai-dev-001-functions --resource-group rg-agentic-ai-dev-001
+     ```
+   - **Get just the default key**:
+     ```powershell
+     az functionapp keys list --name rg-agentic-ai-dev-001-functions --resource-group rg-agentic-ai-dev-001 --query "functionKeys.default" --output tsv
+     ```
 
 **Test Functions Independently:**
 Use the provided test script to validate all functions:
