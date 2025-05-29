@@ -66,7 +66,7 @@ This script will:
 **Create Resource Group:**
 
 ```powershell
-az group create --name "agentic-ai-demo-rg" --location "East US"
+az group create --name $ResourceGroupName --location $Location
 ```
 
 **Create Azure OpenAI Service:**
@@ -74,16 +74,16 @@ az group create --name "agentic-ai-demo-rg" --location "East US"
 ```powershell
 # Create OpenAI resource
 az cognitiveservices account create `
-  --name "agentic-ai-openai" `
-  --resource-group "agentic-ai-demo-rg" `
-  --location "East US" `
+  --name "$ResourceGroupName-openai" `
+  --resource-group $ResourceGroupName `
+  --location $Location `
   --kind "OpenAI" `
   --sku "S0"
 
 # Deploy GPT-4o model
 az cognitiveservices account deployment create `
-  --resource-group "agentic-ai-demo-rg" `
-  --name "agentic-ai-openai" `
+  --resource-group $ResourceGroupName `
+  --name "$ResourceGroupName-openai" `
   --deployment-name "gpt-4o" `
   --model-name "gpt-4o" `
   --model-version "2024-08-06" `
@@ -93,8 +93,8 @@ az cognitiveservices account deployment create `
 
 # Deploy embedding model
 az cognitiveservices account deployment create `
-  --resource-group "agentic-ai-demo-rg" `
-  --name "agentic-ai-openai" `
+  --resource-group $ResourceGroupName `
+  --name "$ResourceGroupName-openai" `
   --deployment-name "text-embedding-3-large" `
   --model-name "text-embedding-3-large" `
   --model-version "1" `
@@ -107,9 +107,9 @@ az cognitiveservices account deployment create `
 
 ```powershell
 az search service create `
-  --name "agentic-ai-search" `
-  --resource-group "agentic-ai-demo-rg" `
-  --location "East US" `
+  --name "$ResourceGroupName-search" `
+  --resource-group $ResourceGroupName `
+  --location $Location `
   --sku "Standard" `
   --partition-count 1 `
   --replica-count 1
@@ -118,16 +118,17 @@ az search service create `
 **Create Storage Account:**
 
 ```powershell
+$storageAccountName = ($ResourceGroupName -replace '[^a-zA-Z0-9]', '').ToLower() + "storage"
 az storage account create `
-  --name "agenticstorage$(Get-Random -Maximum 9999)" `
-  --resource-group "agentic-ai-demo-rg" `
-  --location "East US" `
+  --name $storageAccountName `
+  --resource-group $ResourceGroupName `
+  --location $Location `
   --sku "Standard_LRS" `
   --kind "StorageV2"
 
 az storage container create `
   --name "documents" `
-  --account-name "agenticstorage1234" `
+  --account-name $storageAccountName `
   --auth-mode login
 ```
 
@@ -135,8 +136,8 @@ az storage container create `
 
 ```powershell
 az functionapp create `
-  --name "agentic-ai-functions" `
-  --resource-group "agentic-ai-demo-rg" `
+  --name "$ResourceGroupName-functions" `
+  --resource-group $ResourceGroupName `
   --consumption-plan-location "eastus" `
   --runtime "python" `
   --runtime-version "3.11" `
@@ -184,25 +185,27 @@ copy .env.example .env
 
 ```env
 # Azure OpenAI Configuration
-AZURE_OPENAI_ENDPOINT=https://agentic-ai-openai.openai.azure.com/
+AZURE_OPENAI_ENDPOINT=https://rg-agentic-ai-dev-001-openai.openai.azure.com/
 AZURE_OPENAI_API_KEY=your-openai-api-key-from-deployment
 AZURE_OPENAI_API_VERSION=2024-06-01
 AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4o
 AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-large
 
 # Azure AI Search Configuration
-AZURE_SEARCH_ENDPOINT=https://agentic-ai-search.search.windows.net
+AZURE_SEARCH_ENDPOINT=https://rg-agentic-ai-dev-001-search.search.windows.net
 AZURE_SEARCH_API_KEY=your-search-api-key-from-deployment
 AZURE_SEARCH_INDEX_NAME=knowledge-base
 
 # Azure Storage Configuration
-AZURE_STORAGE_ACCOUNT_NAME=agenticstorage1234
+AZURE_STORAGE_ACCOUNT_NAME=rgagenticaidev001storage
 AZURE_STORAGE_ACCOUNT_KEY=your-storage-key-from-deployment
 AZURE_STORAGE_CONTAINER_NAME=documents
 
 # Azure Function App Configuration
-AZURE_FUNCTION_APP_URL=https://agentic-ai-functions.azurewebsites.net
+AZURE_FUNCTION_APP_URL=https://rg-agentic-ai-dev-001-functions.azurewebsites.net
 AZURE_FUNCTION_KEY=your-function-key
+
+# Get function key with: az functionapp keys list --name rg-agentic-ai-dev-001-functions --resource-group rg-agentic-ai-dev-001
 ```
 
 ---
@@ -211,17 +214,49 @@ AZURE_FUNCTION_KEY=your-function-key
 
 ```powershell
 cd demo/azure-functions
-func azure functionapp publish agentic-ai-functions
+func azure functionapp publish rg-agentic-ai-dev-001-functions --python
 ```
+
+**Expected Output:**
+After successful deployment, you should see:
+```
+Functions in rg-agentic-ai-dev-001-functions:
+    create_task - [httpTrigger]
+        Invoke url: https://rg-agentic-ai-dev-001-functions.azurewebsites.net/api/create_task
+    generate_report - [httpTrigger]
+        Invoke url: https://rg-agentic-ai-dev-001-functions.azurewebsites.net/api/generate_report
+    send_email - [httpTrigger]
+        Invoke url: https://rg-agentic-ai-dev-001-functions.azurewebsites.net/api/send_email
+```
+
+**Note:** If you encounter language detection issues, the required configuration files (`local.settings.json` and `.funcignore`) are already included in the project.
 
 ---
 
 ### Step 6: Verification & Demo Start
 
-**Verify setup:**
+**Test Azure Functions:**
 
 ```powershell
 cd demo
+.\test-functions.ps1
+```
+
+**Expected Output:**
+```text
+🧪 Testing Azure Functions with Authentication...
+📋 Testing Create Task Function...
+✅ Success: Task ID: TASK-20250529-180621
+📧 Testing Send Email Function...  
+✅ Success: Message ID: msg_20250529_180622
+📊 Testing Generate Report Function...
+✅ Success: Report ID: RPT-20250529-180622
+🎉 Function testing complete!
+```
+
+**Verify Python setup:**
+
+```powershell
 python verify_setup.py
 ```
 
@@ -311,19 +346,38 @@ python web_interface.py
 
 ### 5. Azure Functions as Agent Tools (8 minutes)
 
+**Pre-Demo Validation:**
+Before starting the demo, run the test script to verify all functions are working:
+```powershell
+.\demo\test-functions.ps1
+```
+
 **Demonstrate Function Calling:**
 
 1. "Send an email summary of the key findings to john@example.com"
-2. "Create a task to follow up on the recommendations"
+2. "Create a task to follow up on the recommendations"  
 3. "Generate a detailed report based on the analyzed documents"
+
+**Show Live Function Testing:**
+During the demo, you can also show the actual HTTP calls:
+
+1. Open the test script results
+2. Show the structured JSON responses:
+   - **Task Creation**: `TASK-{timestamp}` with assignee, priority, due date
+   - **Email Service**: Message ID with delivery confirmation
+   - **Report Generation**: Report ID with download URLs and metadata
 
 **Explain Each Function:**
 
-- **send_email**: Integrates with communication services
-- **create_task**: Project management integration
-- **generate_report**: Document generation pipeline
+- **send_email**: Integrates with communication services (SendGrid, Azure Communication Services)
+- **create_task**: Project management integration (Azure DevOps, Microsoft Planner)
+- **generate_report**: Document generation pipeline (Power BI, custom templates)
 
-**Show the JSON responses** to demonstrate structured data handling
+**Technical Details to Highlight:**
+- Functions use HTTP triggers with JSON payloads
+- Authentication via function keys for security
+- Scalable serverless execution model
+- Integration-ready responses with proper error handling
 
 ### 6. Azure AI Studio Integration (7 minutes)
 
@@ -384,6 +438,24 @@ A: Azure provides enterprise-grade security:
 2. **Search Index Not Found**: Run the setup endpoint first
 3. **Slow Responses**: Expected for first-time embedding generation
 4. **Function Calls Failing**: Check Azure Functions configuration
+5. **Azure Functions Deployment Issues**:
+   - If you get "Can't determine project language", ensure `local.settings.json` exists with `FUNCTIONS_WORKER_RUNTIME: python`
+   - Use `--python` flag: `func azure functionapp publish your-function-app --python`
+   - Verify Python version compatibility (local vs Azure)
+6. **Azure Functions Testing Issues**:
+   - **401 Unauthorized**: Add function key to URL: `?code=YOUR_FUNCTION_KEY`
+   - **Function not found**: Verify function app name and deployment success
+   - **Get function keys**: `az functionapp keys list --name your-function-app --resource-group your-rg`
+
+**Test Functions Independently:**
+Use the provided test script to validate all functions:
+
+```powershell
+cd demo
+.\test-functions.ps1
+```
+
+This script tests all three functions with proper authentication and provides detailed response validation.
 
 ### Backup Demo Data
 
@@ -395,6 +467,21 @@ If live upload fails, have pre-indexed sample documents ready from the `sample-d
 - **Monthly Reviews**: `reviews/201801.pdf` through `reviews/201852.pdf` - Historical business reviews
 
 **Pro tip**: Upload the AI strategy document first as it contains comprehensive business context perfect for demonstrating RAG capabilities.
+
+### Function Testing Backup
+
+If the main demo app fails, use the standalone function test script:
+
+```powershell
+.\demo\test-functions.ps1
+```
+
+**Show these successful responses:**
+- **Create Task**: Generates task ID `TASK-{timestamp}` with full project management metadata
+- **Send Email**: Returns message ID `msg_{timestamp}` with delivery status
+- **Generate Report**: Creates report ID `RPT-{timestamp}` with download URLs
+
+This provides concrete proof that the Azure Functions integration is working and ready for agent tool calling.
 
 ### Demo Tips
 
