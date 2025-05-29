@@ -465,11 +465,26 @@ A: Azure provides enterprise-grade security:
 2. **Search Index Not Found**: Run the setup endpoint first
 3. **Slow Responses**: Expected for first-time embedding generation
 4. **Function Calls Failing**: Check Azure Functions configuration
-5. **Azure Functions Deployment Issues**:
+5. **Environment Variable Conflicts**:
+   - **Issue**: If `verify_setup.py` shows wrong Azure OpenAI endpoint (e.g., `aoai-ai102-dev-001` instead of your resource)
+   - **Cause**: System environment variables are overriding `.env` file settings
+   - **Solution**: Set correct environment variables in your PowerShell session:
+
+     ```powershell
+     $env:AZURE_OPENAI_ENDPOINT = "https://rg-agentic-ai-dev-001-openai.openai.azure.com/"
+     $env:AZURE_OPENAI_API_KEY = "your-actual-api-key"
+     python verify_setup.py
+     python web_interface.py
+     ```
+
+   - **Permanent Fix**: Remove conflicting system environment variables or update them to match your demo resources
+
+6. **Azure Functions Deployment Issues**:
    - If you get "Can't determine project language", ensure `local.settings.json` exists with `FUNCTIONS_WORKER_RUNTIME: python`
    - Use `--python` flag: `func azure functionapp publish your-function-app --python`
    - Verify Python version compatibility (local vs Azure)
-6. **Azure Functions Testing Issues**:
+
+7. **Azure Functions Testing Issues**:
    - **401 Unauthorized**: Add function key to URL: `?code=YOUR_FUNCTION_KEY`
    - **Function not found**: Verify function app name and deployment success
    - **Get function keys**: 

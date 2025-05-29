@@ -7,8 +7,9 @@ Validates that all Azure services are properly configured and accessible.
 import os
 import sys
 import asyncio
+import logging
 from dotenv import load_dotenv
-from openai import AsyncAzureOpenAI
+from openai import AzureOpenAI
 from azure.search.documents import SearchClient
 from azure.core.credentials import AzureKeyCredential
 from azure.storage.blob import BlobServiceClient
@@ -16,6 +17,10 @@ import requests
 
 # Load environment variables
 load_dotenv()
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class Colors:
     GREEN = '\033[92m'
@@ -30,7 +35,7 @@ def print_status(service, status, message=""):
     status_text = "✅ PASS" if status else "❌ FAIL"
     print(f"{color}{status_text}{Colors.ENDC} {Colors.BOLD}{service}{Colors.ENDC}: {message}")
 
-async def verify_azure_openai():
+def verify_azure_openai():
     """Verify Azure OpenAI Service connectivity and models."""
     print(f"\n{Colors.BLUE}🧠 Verifying Azure OpenAI Service...{Colors.ENDC}")
     
@@ -44,14 +49,14 @@ async def verify_azure_openai():
             print_status("Azure OpenAI", False, "Missing endpoint or API key in environment")
             return False
         
-        client = AsyncAzureOpenAI(
+        client = AzureOpenAI(
             azure_endpoint=endpoint,
             api_key=api_key,
             api_version="2024-06-01"
         )
         
         # Test chat completion
-        response = await client.chat.completions.create(
+        response = client.chat.completions.create(
             model=deployment,
             messages=[{"role": "user", "content": "Hello, this is a test."}],
             max_tokens=10
@@ -59,7 +64,7 @@ async def verify_azure_openai():
         print_status("GPT Model", True, f"Deployment '{deployment}' is accessible")
         
         # Test embeddings
-        embedding_response = await client.embeddings.create(
+        embedding_response = client.embeddings.create(
             model=embedding_deployment,
             input="Test embedding"
         )
@@ -182,26 +187,27 @@ def verify_dependencies():
     """Verify Python dependencies are installed."""
     print(f"\n{Colors.BLUE}📦 Verifying Dependencies...{Colors.ENDC}")
     
-    required_packages = [
-        "openai",
-        "azure-search-documents", 
-        "azure-storage-blob",
-        "fastapi",
-        "uvicorn",
-        "python-dotenv",
-        "PyPDF2",
-        "python-docx",
-        "beautifulsoup4",
-        "requests"
-    ]
+    # Package name mappings for import vs pip install names
+    required_packages = {
+        "openai": "openai",
+        "azure-search-documents": "azure.search.documents", 
+        "azure-storage-blob": "azure.storage.blob",
+        "fastapi": "fastapi",
+        "uvicorn": "uvicorn",
+        "python-dotenv": "dotenv",
+        "PyPDF2": "PyPDF2",
+        "python-docx": "docx",
+        "beautifulsoup4": "bs4",
+        "requests": "requests"
+    }
     
     all_installed = True
-    for package in required_packages:
+    for package_name, import_name in required_packages.items():
         try:
-            __import__(package.replace("-", "_"))
-            print_status("Package", True, f"{package} is installed")
+            __import__(import_name)
+            print_status("Package", True, f"{package_name} is installed")
         except ImportError:
-            print_status("Package", False, f"{package} is missing")
+            print_status("Package", False, f"{package_name} is missing")
             all_installed = False
     
     return all_installed
@@ -222,7 +228,7 @@ async def main():
     
     # Run all verification tests
     results.append(verify_dependencies())
-    results.append(await verify_azure_openai())
+    results.append(verify_azure_openai())  # No longer async
     results.append(verify_azure_search())
     results.append(verify_azure_storage())
     results.append(verify_azure_functions())
