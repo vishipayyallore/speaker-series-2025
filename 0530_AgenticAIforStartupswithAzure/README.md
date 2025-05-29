@@ -31,6 +31,8 @@ Session focuses on production deployment topics:
 - Deployment options: Azure Container Apps, Azure Functions
 - Monitoring with Azure Monitor and Application Insights
 - Cost management and smart scaling strategies
+- Real-world insights and resource planning
+
 [📖 View Session 2 Materials →](./session-2-scaling-deploying/)
 
 ## 🎯 Speaker Series Overview
@@ -56,7 +58,7 @@ This series is designed for startup founders, developers, and technical leaders 
 ```bash
 cd session-1-azure-toolbox/demo
 python setup.py
-# Edit .env with your Azure credentials
+# Edit .env with your Azure credentials  
 python verify_setup.py
 python web_interface.py
 # Open http://localhost:8000
@@ -113,4 +115,4 @@ This repository contains presentation materials and demo code. If you're attendi
 
 ---
 
-**Happy coding with Azure AI! 🌟**
+Happy coding with Azure AI! 🌟
