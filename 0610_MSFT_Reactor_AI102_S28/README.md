@@ -92,14 +92,6 @@ Custom skills in Azure AI Search enable you to extend the AI enrichment pipeline
 3. **Machine Learning Custom Skills**: Integration with Azure ML models
 4. **Text Classification Skills**: Custom NLP processing
 
-## 3. Create Azure resources
-
-```powershell
-az login --output none
-
-az account list-locations -o table
-```
-
 ## 3. 🛠️ Define the custom skill schema
 
 Custom skills must implement a specific input/output contract to integrate with Azure AI Search enrichment pipelines.
