@@ -2,6 +2,211 @@
 
 ## Pre-Demo Setup (5 minutes)
 
+### Set up Azure Services
+
+Before configuring the demo, you need to create the required Azure resources. Here's how to set them up:
+
+#### 1. Create Resource Group
+
+**PowerShell:**
+
+```powershell
+# Create a resource group for all demo resources
+az group create --name "agentic-ai-demo-rg" --location "East US"
+```
+
+#### 2. Azure OpenAI Service
+
+**Create the service:**
+
+```powershell
+# Create Azure OpenAI resource
+az cognitiveservices account create `
+  --name "agentic-ai-openai" `
+  --resource-group "agentic-ai-demo-rg" `
+  --location "East US" `
+  --kind "OpenAI" `
+  --sku "S0"
+```
+
+**Deploy required models:**
+
+```powershell
+# Deploy GPT-4o model
+az cognitiveservices account deployment create `
+  --resource-group "agentic-ai-demo-rg" `
+  --name "agentic-ai-openai" `
+  --deployment-name "gpt-4o" `
+  --model-name "gpt-4o" `
+  --model-version "2024-08-06" `
+  --model-format "OpenAI" `
+  --scale-type "Standard" `
+  --capacity 10
+
+# Deploy embedding model
+az cognitiveservices account deployment create `
+  --resource-group "agentic-ai-demo-rg" `
+  --name "agentic-ai-openai" `
+  --deployment-name "text-embedding-3-large" `
+  --model-name "text-embedding-3-large" `
+  --model-version "1" `
+  --model-format "OpenAI" `
+  --scale-type "Standard" `
+  --capacity 10
+```
+
+**Get connection details:**
+
+```powershell
+# Get endpoint and key
+az cognitiveservices account show `
+  --name "agentic-ai-openai" `
+  --resource-group "agentic-ai-demo-rg" `
+  --query "properties.endpoint" --output tsv
+
+az cognitiveservices account keys list `
+  --name "agentic-ai-openai" `
+  --resource-group "agentic-ai-demo-rg" `
+  --query "key1" --output tsv
+```
+
+#### 3. Azure AI Search
+
+**Create the search service:**
+
+```powershell
+# Create Azure AI Search service
+az search service create `
+  --name "agentic-ai-search" `
+  --resource-group "agentic-ai-demo-rg" `
+  --location "East US" `
+  --sku "Standard" `
+  --partition-count 1 `
+  --replica-count 1
+```
+
+**Get connection details:**
+
+```powershell
+# Get search service URL
+az search service show `
+  --name "agentic-ai-search" `
+  --resource-group "agentic-ai-demo-rg" `
+  --query "hostName" --output tsv
+
+# Get admin key
+az search admin-key show `
+  --service-name "agentic-ai-search" `
+  --resource-group "agentic-ai-demo-rg" `
+  --query "primaryKey" --output tsv
+```
+
+#### 4. Azure Storage Account
+
+**Create storage account:**
+
+```powershell
+# Create storage account for documents
+az storage account create `
+  --name "agenticstorage$(Get-Random -Maximum 9999)" `
+  --resource-group "agentic-ai-demo-rg" `
+  --location "East US" `
+  --sku "Standard_LRS" `
+  --kind "StorageV2"
+
+# Create container for documents
+az storage container create `
+  --name "documents" `
+  --account-name "agenticstorage1234" `
+  --auth-mode login
+```
+
+**Get connection details:**
+
+```powershell
+# Get storage account key
+az storage account keys list `
+  --account-name "agenticstorage1234" `
+  --resource-group "agentic-ai-demo-rg" `
+  --query "[0].value" --output tsv
+```
+
+#### 5. Azure Function App
+
+**Create Function App:**
+
+```powershell
+# Create App Service Plan
+az appservice plan create `
+  --name "agentic-ai-plan" `
+  --resource-group "agentic-ai-demo-rg" `
+  --location "East US" `
+  --sku "Y1" `
+  --is-linux
+
+# Create Function App
+az functionapp create `
+  --name "agentic-ai-functions" `
+  --resource-group "agentic-ai-demo-rg" `
+  --consumption-plan-location "East US" `
+  --runtime "python" `
+  --runtime-version "3.11" `
+  --functions-version "4" `
+  --storage-account "agenticstorage1234"
+```
+
+**Deploy functions:**
+
+```powershell
+# Navigate to functions directory and deploy
+cd azure-functions
+func azure functionapp publish agentic-ai-functions
+```
+
+#### 6. Configure .env File
+
+**Create your .env file:**
+
+```powershell
+# Copy the example file
+copy .env.example .env
+```
+
+**Update with your values:**
+
+```env
+# Azure OpenAI Configuration
+AZURE_OPENAI_ENDPOINT=https://agentic-ai-openai.openai.azure.com/
+AZURE_OPENAI_API_KEY=your-openai-api-key-from-step-2
+AZURE_OPENAI_API_VERSION=2024-06-01
+AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4o
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-large
+
+# Azure AI Search Configuration
+AZURE_SEARCH_ENDPOINT=https://agentic-ai-search.search.windows.net
+AZURE_SEARCH_API_KEY=your-search-api-key-from-step-3
+AZURE_SEARCH_INDEX_NAME=knowledge-base
+
+# Azure Storage Configuration
+AZURE_STORAGE_ACCOUNT_NAME=agenticstorage1234
+AZURE_STORAGE_ACCOUNT_KEY=your-storage-key-from-step-4
+AZURE_STORAGE_CONTAINER_NAME=documents
+
+# Azure Function App Configuration
+AZURE_FUNCTION_APP_URL=https://agentic-ai-functions.azurewebsites.net
+AZURE_FUNCTION_KEY=your-function-key
+```
+
+#### 7. Verify Setup
+
+**Run verification script:**
+
+```powershell
+python verify_setup.py
+```
+
+This should show all services are connected and ready for the demo.
+
 ### Azure Services Configuration
 
 1. **Azure OpenAI Service**
@@ -30,11 +235,31 @@
    AZURE_STORAGE_CONTAINER_NAME=documents
    ```
 
-### Start the Demo
+### Environment Setup
+
+**For Windows 11 (PowerShell):**
+
+```powershell
+cd demo
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+**For macOS/Linux:**
 
 ```bash
 cd demo
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+### Start the Demo
+
+```bash
 python web_interface.py
 ```
 
@@ -114,7 +339,7 @@ python web_interface.py
 
 **Demonstrate Function Calling:**
 
-1. "Send an email summary of the key findings to john@example.com"
+1. "Send an email summary of the key findings to john at example.com"
 2. "Create a task to follow up on the recommendations"
 3. "Generate a detailed report based on the analyzed documents"
 
@@ -193,14 +418,14 @@ A: Multiple strategies:
 
 ## Live Demo Troubleshooting
 
-### Common Issues:
+### Common Issues
 
 1. **API Key Issues**: Double-check .env configuration
 2. **Search Index Not Found**: Run the setup endpoint first
 3. **Slow Responses**: Expected for first-time embedding generation
 4. **Function Calls Failing**: Check Azure Functions configuration
 
-### Backup Demo Data:
+### Backup Demo Data
 
 If live upload fails, have pre-indexed sample documents ready:
 
@@ -209,7 +434,7 @@ If live upload fails, have pre-indexed sample documents ready:
 - Market research report
 - Financial analysis
 
-### Demo Tips:
+### Demo Tips
 
 - Keep questions focused and specific
 - Explain what's happening "under the hood"
@@ -218,21 +443,21 @@ If live upload fails, have pre-indexed sample documents ready:
 
 ## Post-Demo Follow-up
 
-### Resources to Share:
+### Resources to Share
 
 1. GitHub repository with complete code
 2. Azure AI documentation links
 3. Cost calculator for planning
 4. Architecture decision templates
 
-### Next Steps for Attendees:
+### Next Steps for Attendees
 
 1. Sign up for Azure free tier
 2. Clone the demo repository
 3. Follow the setup guide
 4. Join the Azure AI community
 
-### Success Metrics:
+### Success Metrics
 
 - Audience engagement during Q&A
 - Number of follow-up questions
@@ -241,28 +466,28 @@ If live upload fails, have pre-indexed sample documents ready:
 
 ## Technical Deep-Dive Notes
 
-### Azure OpenAI Best Practices:
+### Azure OpenAI Best Practices
 
 - Use system prompts for consistency
 - Implement retry logic with exponential backoff
 - Monitor token usage and costs
 - Use streaming for real-time responses
 
-### Search Index Optimization:
+### Search Index Optimization
 
 - Design appropriate field mappings
 - Use semantic ranking for better results
 - Implement proper chunking strategies
 - Monitor search analytics
 
-### Function Design Patterns:
+### Function Design Patterns
 
 - Keep functions stateless
 - Implement proper error handling
 - Use managed identity for authentication
 - Design for idempotency
 
-### Production Considerations:
+### Production Considerations
 
 - Implement rate limiting
 - Add comprehensive logging
