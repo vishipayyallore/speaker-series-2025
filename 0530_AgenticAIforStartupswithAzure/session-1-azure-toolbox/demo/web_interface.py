@@ -84,7 +84,7 @@ async def get_status():
         logger.error(f"Error getting status: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/api/chat", response_model=ChatResponse)
+@app.post("/api/chat")
 async def chat(request: ChatRequest):
     """Chat with the knowledge worker agent"""
     try:
@@ -93,15 +93,17 @@ async def chat(request: ChatRequest):
             conversation_history=request.conversation_history
         )
         
-        return ChatResponse(**result)
+        # Return the result directly as JSON since it already matches the expected format
+        return JSONResponse(content=result)
     except Exception as e:
         logger.error(f"Error in chat: {str(e)}")
-        return ChatResponse(
-            success=False,
-            response="",
-            error=str(e),
-            timestamp=datetime.now().isoformat()
-        )
+        return JSONResponse(content={
+            "success": False,
+            "response": "",
+            "function_calls": [],
+            "error": str(e),
+            "timestamp": datetime.now().isoformat()
+        })
 
 @app.post("/api/upload", response_model=DocumentUploadResponse)
 async def upload_document(
