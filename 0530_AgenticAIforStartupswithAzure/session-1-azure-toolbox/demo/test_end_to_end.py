@@ -10,6 +10,10 @@ import requests
 import json
 import time
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Add the current directory to sys.path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -157,7 +161,8 @@ def main():
     """Run all tests"""
     print("🚀 Running End-to-End Tests for Knowledge Worker Agent Demo")
     print("=" * 60)
-      # Wait for server to be ready
+    
+    # Wait for server to be ready
     print("⏳ Waiting for server to be ready...")
     time.sleep(2)
     
