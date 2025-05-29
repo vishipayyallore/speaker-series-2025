@@ -1,7 +1,7 @@
 # Azure Toolbox for Smart Agents - Session Complete! 🎉
 
 ## 📋 Session Overview
-**Session 2 — The Azure Toolbox for Smart Agents** is now fully prepared and ready for delivery. This comprehensive session demonstrates how to build production-ready AI agents using Azure services, specifically targeting startups looking to implement intelligent automation.
+**Session 1 — The Azure Toolbox for Smart Agents** is now fully prepared and ready for delivery. This comprehensive session demonstrates how to build production-ready AI agents using Azure services, specifically targeting startups looking to implement intelligent automation.
 
 ## ✅ Completed Components
 

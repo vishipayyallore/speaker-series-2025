@@ -51,10 +51,10 @@ This series is designed for startup founders, developers, and technical leaders 
 
 ## 🚀 Quick Start
 
-### For Session 2 Demo
+### For Session 1 Demo
 
 ```bash
-cd session-2-azure-toolbox/demo
+cd session-1-azure-toolbox/demo
 python setup.py
 # Edit .env with your Azure credentials
 python verify_setup.py
@@ -62,9 +62,9 @@ python web_interface.py
 # Open http://localhost:8000
 ```
 
-### For Session 4 Development
+### For Session 2 Development
 
-Session 4 materials are outlined in `Scaling_Deploying_on_Azure.md` and ready for development.
+Session 2 materials are outlined in `Scaling_Deploying_on_Azure.md` and ready for development.
 
 ## 🛠️ Prerequisites
 
@@ -74,7 +74,7 @@ Session 4 materials are outlined in `Scaling_Deploying_on_Azure.md` and ready fo
 - Azure AI Search
 - Azure Storage Account
 - Azure Function App
-- Azure Container Apps (for Session 4)
+- Azure Container Apps (for Session 2)
 
 ### Development Environment
 
@@ -108,8 +108,8 @@ This repository contains presentation materials and demo code. If you're attendi
 
 ## 📅 Schedule
 
-- **May 30, 2025** - Session 2: The Azure Toolbox for Smart Agents (Ready!)
-- **TBD** - Session 4: Scaling & Deploying on Azure (In Development)
+- **May 30, 2025** - Session 1: The Azure Toolbox for Smart Agents (Ready!)
+- **TBD** - Session 2: Scaling & Deploying on Azure (In Development)
 
 ---
 

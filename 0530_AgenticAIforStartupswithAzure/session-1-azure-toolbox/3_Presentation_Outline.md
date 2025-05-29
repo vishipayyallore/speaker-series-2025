@@ -1,5 +1,5 @@
 # Presentation Slides Outline
-## Session 2: The Azure Toolbox for Smart Agents
+## Session 1: The Azure Toolbox for Smart Agents
 
 ### Slide 1: Title Slide
 **The Azure Toolbox for Smart Agents**
@@ -7,7 +7,7 @@
 
 Speaker: [Your Name]
 Date: [Date]
-Session 2 of Agentic AI for Startups Series
+Session 1 of Agentic AI for Startups Series
 
 ### Slide 2: Session Agenda
 **What We'll Cover Today (60 minutes)**

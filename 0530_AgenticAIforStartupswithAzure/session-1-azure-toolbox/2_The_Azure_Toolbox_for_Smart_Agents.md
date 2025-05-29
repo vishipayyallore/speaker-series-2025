@@ -1,10 +1,13 @@
-# Session 2 — The Azure Toolbox for Smart Agents (60 minutes)
+# Session 1 — The Azure Toolbox for Smart Agents (60 minutes)
 
 ## 🎯 Session Overview
+
 This session introduces you to the foundational tools within Azure for building AI agents and demonstrates how to create a practical knowledge worker agent that can answer questions from documents.
 
 ## 📋 Learning Objectives
+
 By the end of this session, you will:
+
 - Understand the key Azure services for building AI agents
 - Know how to orchestrate AI workflows using Azure AI Studio
 - Implement RAG (Retrieval-Augmented Generation) with Azure AI Search
@@ -107,6 +110,7 @@ A knowledge worker agent that can:
 ## 📈 Business Value for Startups
 
 ### Why This Matters for Your Startup
+
 - **Rapid Prototyping**: Get AI agents running in days, not months
 - **Cost-Effective**: Pay-per-use model scales with your business
 - **Enterprise-Ready**: Built-in security, compliance, and governance

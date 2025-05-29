@@ -1,6 +1,6 @@
-# Session 2: The Azure Toolbox for Smart Agents
+# Session 1: The Azure Toolbox for Smart Agents
 
-This folder contains all materials for **Session 2** of the "Agentic AI for Startups with Azure" speaker series.
+This folder contains all materials for **Session 1** of the "Agentic AI for Startups with Azure" speaker series.
 
 ## 📁 Folder Contents
 
@@ -157,4 +157,4 @@ This session demonstrates how startups can rapidly build sophisticated AI agents
 
 **Part of:** Agentic AI for Startups with Azure Speaker Series  
 **Session:** 2 of 4  
-**Next:** Session 4 - Scaling & Deploying on Azure
+**Next:** Session 2 - Scaling & Deploying on Azure
