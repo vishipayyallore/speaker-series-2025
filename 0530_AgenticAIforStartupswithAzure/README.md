@@ -4,9 +4,9 @@ This repository contains materials for the "Agentic AI for Startups with Azure" 
 
 ## 📁 Repository Structure
 
-### 🤖 Session 2: The Azure Toolbox for Smart Agents
+### 🤖 Session 1: The Azure Toolbox for Smart Agents
 
-**Location:** `session-2-azure-toolbox/`
+**Location:** `session-1-azure-toolbox/`
 **Status:** ✅ Complete and ready for delivery
 **Duration:** 60 minutes
 
@@ -18,9 +18,9 @@ Complete implementation of a Knowledge Worker Agent demo showcasing:
 - Production-ready web application
 - Comprehensive documentation and deployment guides
 
-[📖 View Session 2 Materials →](./session-2-azure-toolbox/)
+[📖 View Session 1 Materials →](./session-1-azure-toolbox/)
 
-### 🚀 Session 4: Scaling & Deploying on Azure
+### 🚀 Session 2: Scaling & Deploying on Azure
 
 **Location:** `Scaling_Deploying_on_Azure.md`
 **Status:** 📋 Outlined (ready for development)
@@ -39,10 +39,8 @@ This series is designed for startup founders, developers, and technical leaders 
 
 ### Session Topics
 
-1. ~~Session 1~~ - _Introduction to Agentic AI_ (not in this repo)
-2. **Session 2** - The Azure Toolbox for Smart Agents ✅
-3. ~~Session 3~~ - _Advanced Agent Patterns_ (not in this repo)
-4. **Session 4** - Scaling & Deploying on Azure 📋
+1. **Session 1** - The Azure Toolbox for Smart Agents ✅
+2. **Session 2** - Scaling & Deploying on Azure 📋
 
 ### Target Audience
 
