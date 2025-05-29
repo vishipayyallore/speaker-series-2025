@@ -190,13 +190,39 @@ async def setup_search_index():
 # Health check endpoint
 @app.get("/health")
 async def health_check():
-    """Health check endpoint"""
-    return {"status": "healthy", "timestamp": datetime.now().isoformat()}
+    """Health check endpoint for monitoring and container orchestration."""
+    health_status = {
+        "status": "healthy",
+        "timestamp": datetime.utcnow().isoformat(),
+        "services": {}
+    }
+    
+    # Check Azure OpenAI connectivity
+    try:
+        # Simple test call
+        test_response = await agent.chat("health check", max_tokens=5)
+        health_status["services"]["azure_openai"] = "healthy"
+    except Exception as e:
+        health_status["services"]["azure_openai"] = f"unhealthy: {str(e)}"
+        health_status["status"] = "degraded"
+    
+    # Check Azure Search connectivity  
+    try:
+        # Test search service
+        await search_service.search("health", top=1)
+        health_status["services"]["azure_search"] = "healthy"
+    except Exception as e:
+        health_status["services"]["azure_search"] = f"unhealthy: {str(e)}"
+        health_status["status"] = "degraded"
+    
+    # Return appropriate HTTP status
+    status_code = 200 if health_status["status"] == "healthy" else 503
+    return JSONResponse(content=health_status, status_code=status_code)
 
 # Error handlers
 @app.exception_handler(Exception)
-async def global_exception_handler(request: Request, exc: Exception):
-    logger.error(f"Global error handler: {str(exc)}")
+async def general_exception_handler(request: Request, exc: Exception):
+    logger.error(f"Unhandled exception: {exc}")
     return JSONResponse(
         status_code=500,
         content={"detail": "Internal server error", "error": str(exc)}
