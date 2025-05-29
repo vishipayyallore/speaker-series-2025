@@ -60,7 +60,8 @@ class DocumentProcessor:
         """Generate a unique document ID based on filename and content"""
         content_hash = hashlib.md5(content.encode()).hexdigest()[:8]
         return f"{filename}_{content_hash}"
-      def _process_pdf(self, file_content: bytes, filename: str) -> Dict[str, Any]:
+    
+    def _process_pdf(self, file_content: bytes, filename: str) -> Dict[str, Any]:
         """Extract text from PDF file"""
         try:
             import io

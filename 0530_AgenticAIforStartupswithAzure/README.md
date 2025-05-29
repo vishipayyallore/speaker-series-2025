@@ -116,3 +116,6 @@ This repository contains presentation materials and demo code. If you're attendi
 ---
 
 Happy coding with Azure AI! 🌟
+
+
+ python -m uvicorn web_interface:app --host 0.0.0.0 --port 8000 --reload
