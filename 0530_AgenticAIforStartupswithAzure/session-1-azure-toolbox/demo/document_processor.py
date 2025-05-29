@@ -68,12 +68,12 @@ class DocumentProcessor:
         # Remove multiple consecutive underscores
         sanitized_name = re.sub(r'_{2,}', '_', sanitized_name)
         # Ensure it doesn't start or end with underscore
-        sanitized_name = sanitized_name.strip('_')
-        # Truncate if too long (Azure Search has limits)
+        sanitized_name = sanitized_name.strip('_')        # Truncate if too long (Azure Search has limits)
         if len(sanitized_name) > 50:
             sanitized_name = sanitized_name[:50].rstrip('_')
         
         content_hash = hashlib.md5(content.encode()).hexdigest()[:8]
+        return f"{sanitized_name}_{content_hash}"
         return f"{sanitized_name}_{content_hash}"
     
     def _process_pdf(self, file_content: bytes, filename: str) -> Dict[str, Any]:
