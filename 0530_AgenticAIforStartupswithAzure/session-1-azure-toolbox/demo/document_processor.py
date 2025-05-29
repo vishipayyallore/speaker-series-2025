@@ -45,31 +45,58 @@ class DocumentProcessor:
         
         # Initialize search service
         self.search_service = AzureSearchService()
-        
-        # Supported file types
+          # Supported file types
         self.supported_types = {
             '.pdf': self._process_pdf,
             '.docx': self._process_docx,
             '.txt': self._process_text,
             '.html': self._process_html,
-            '.htm': self._process_html
+            '.htm': self._process_html,
+            '.md': self._process_markdown,
+            '.markdown': self._process_markdown
         }
     
     def _generate_document_id(self, filename: str, content: str) -> str:
         """Generate a unique document ID based on filename and content"""
         content_hash = hashlib.md5(content.encode()).hexdigest()[:8]
         return f"{filename}_{content_hash}"
-    
-    def _process_pdf(self, file_content: bytes, filename: str) -> Dict[str, Any]:
+      def _process_pdf(self, file_content: bytes, filename: str) -> Dict[str, Any]:
         """Extract text from PDF file"""
         try:
             import io
             pdf_file = io.BytesIO(file_content)
             pdf_reader = PyPDF2.PdfReader(pdf_file)
             
+            # Check if PDF is valid and has pages
+            if len(pdf_reader.pages) == 0:
+                logger.warning(f"PDF {filename} has no pages")
+                return {
+                    "success": False,
+                    "error": "PDF file has no pages"
+                }
+            
             text_content = ""
-            for page in pdf_reader.pages:
-                text_content += page.extract_text() + "\n"
+            pages_processed = 0
+            
+            for page_num, page in enumerate(pdf_reader.pages):
+                try:
+                    page_text = page.extract_text()
+                    if page_text:
+                        text_content += page_text + "\n"
+                        pages_processed += 1
+                except Exception as page_error:
+                    logger.warning(f"Error extracting text from page {page_num + 1} of {filename}: {str(page_error)}")
+                    continue
+            
+            # Check if we extracted any text
+            if not text_content.strip():
+                logger.warning(f"No text could be extracted from PDF {filename}")
+                return {
+                    "success": False,
+                    "error": "No extractable text found in PDF file. This might be a scanned PDF or image-based PDF."
+                }
+            
+            logger.info(f"Successfully extracted text from {pages_processed}/{len(pdf_reader.pages)} pages in {filename}")
             
             return {
                 "success": True,
@@ -77,6 +104,7 @@ class DocumentProcessor:
                 "page_count": len(pdf_reader.pages),
                 "metadata": {
                     "pages": len(pdf_reader.pages),
+                    "pages_processed": pages_processed,
                     "file_type": "pdf"
                 }
             }
@@ -84,7 +112,7 @@ class DocumentProcessor:
             logger.error(f"Error processing PDF {filename}: {str(e)}")
             return {
                 "success": False,
-                "error": str(e)
+                "error": f"PDF processing failed: {str(e)}"
             }
     
     def _process_docx(self, file_content: bytes, filename: str) -> Dict[str, Any]:
@@ -156,14 +184,75 @@ class DocumentProcessor:
             
             return {
                 "success": True,
-                "content": text_content,
-                "metadata": {
+                "content": text_content,                "metadata": {
                     "title": soup.title.string if soup.title else None,
                     "file_type": "html"
                 }
             }
         except Exception as e:
             logger.error(f"Error processing HTML {filename}: {str(e)}")
+            return {
+                "success": False,
+                "error": str(e)
+            }
+    
+    def _process_markdown(self, file_content: bytes, filename: str) -> Dict[str, Any]:
+        """Process markdown file"""
+        try:
+            text_content = file_content.decode('utf-8')
+            
+            # Extract title from first heading if available
+            lines = text_content.split('\n')
+            title = None
+            for line in lines:
+                if line.startswith('# '):
+                    title = line[2:].strip()
+                    break
+            
+            return {
+                "success": True,
+                "content": text_content.strip(),
+                "character_count": len(text_content),
+                "metadata": {
+                    "characters": len(text_content),
+                    "lines": len(text_content.split('\n')),
+                    "title": title,
+                    "file_type": "markdown"
+                }
+            }
+        except Exception as e:
+            logger.error(f"Error processing markdown file {filename}: {str(e)}")
+            return {
+                "success": False,
+                "error": str(e)
+            }
+    
+    def _process_markdown(self, file_content: bytes, filename: str) -> Dict[str, Any]:
+        """Process markdown file"""
+        try:
+            text_content = file_content.decode('utf-8')
+            
+            # Extract title from first heading if available
+            lines = text_content.split('\n')
+            title = None
+            for line in lines:
+                if line.startswith('# '):
+                    title = line[2:].strip()
+                    break
+            
+            return {
+                "success": True,
+                "content": text_content.strip(),
+                "character_count": len(text_content),
+                "metadata": {
+                    "characters": len(text_content),
+                    "lines": len(text_content.split('\n')),
+                    "title": title,
+                    "file_type": "markdown"
+                }
+            }
+        except Exception as e:
+            logger.error(f"Error processing markdown file {filename}: {str(e)}")
             return {
                 "success": False,
                 "error": str(e)
