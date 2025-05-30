@@ -1,6 +1,6 @@
-# Agentic AI for Startups with Azure - Speaker Series 2025
+# Building AI Agents for Startups with Azure - Speaker Series 2025
 
-This repository contains materials for the "Agentic AI for Startups with Azure" speaker series, part of the 2025 technical presentation series.
+This repository contains materials for the "Building AI Agents for Startups with Azure" speaker series, featuring production-ready AI agent implementations using Azure services.
 
 ## 📁 Repository Structure
 
@@ -10,13 +10,14 @@ This repository contains materials for the "Agentic AI for Startups with Azure" 
 **Status:** ✅ Complete and ready for delivery
 **Duration:** 60 minutes
 
-Complete implementation of a Knowledge Worker Agent demo showcasing:
+Complete implementation of an **AI Agent** (Knowledge Worker Agent) showcasing:
 
-- Azure OpenAI Service integration
-- Azure AI Search with RAG capabilities
-- Azure Functions for action execution
-- Production-ready web application
-- Comprehensive documentation and deployment guides
+- **Autonomous reasoning** with Azure OpenAI Service (GPT-4)
+- **Knowledge retrieval** using Azure AI Search with RAG capabilities
+- **Tool execution** via Azure Functions for actions
+- **Multi-modal document processing** (PDF, Markdown, Web content)
+- **Interactive chat interface** for natural language interaction
+- Production-ready web application with comprehensive guides
 
 [📖 View Session 1 Materials →](./session-1-azure-toolbox/)
 
@@ -37,31 +38,98 @@ Session focuses on production deployment topics:
 
 ## 🎯 Speaker Series Overview
 
-This series is designed for startup founders, developers, and technical leaders who want to implement AI agents using Azure services.
+This series is designed for startup founders, developers, and technical leaders who want to implement **AI Agents** using Azure services.
+
+The demos showcase production-ready AI agents that can:
+
+- **Reason** and make autonomous decisions
+- **Access and process** knowledge from documents
+- **Execute actions** in response to user requests
+- **Learn and adapt** through conversation context
+- **Scale** for enterprise workloads
+
+### 🤖 Core AI Agent Capabilities
+
+Our implementation demonstrates all the key characteristics of modern AI Agents:
+
+- **🧠 Autonomous Decision Making** - The agent decides when to search documents, summarize content, or execute actions based on user queries
+- **🛠️ Tool Use** - It can call multiple tools (search, summarization, action execution)
+- **💾 Memory & Context** - Maintains conversation history and context
+- **🎯 Goal-Oriented Behavior** - Works toward fulfilling user requests
+- **📄 Multi-Modal Capabilities** - Processes different document types (PDF, Markdown)
+- **⚡ Reasoning** - Uses Azure OpenAI to understand queries and formulate responses
+
+### 🏗️ AI Agent Architecture
+
+Our AI Agent implements a complete autonomous reasoning system:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                        AI Agent Architecture                        │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  👤 User Input                                                      │
+│       │                                                             │
+│       ▼                                                             │
+│  🧠 Azure OpenAI (GPT-4)                                           │
+│       │ ┌─────────────────────────────────────────────────────┐    │
+│       ├─│ • Natural Language Understanding                    │    │
+│       │ │ • Reasoning & Decision Making                       │    │
+│       │ │ • Tool Selection & Orchestration                    │    │
+│       │ └─────────────────────────────────────────────────────┘    │
+│       │                                                             │
+│       ▼                                                             │
+│  🛠️ Tool Execution Layer                                           │
+│       │                                                             │
+│   ┌───┴────┐  ┌─────────────┐  ┌──────────────┐                   │
+│   │ Search │  │ Summarize   │  │ Execute      │                   │
+│   │ Docs   │  │ Content     │  │ Actions      │                   │
+│   └───┬────┘  └─────┬───────┘  └──────┬───────┘                   │
+│       │             │                 │                           │
+│       ▼             ▼                 ▼                           │
+│  📚 Azure AI Search  📄 Doc Processor  ⚡ Azure Functions         │
+│  ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐      │
+│  │ • Vector Search │ │ • PDF Extract   │ │ • Email Tasks   │      │
+│  │ • RAG Pipeline  │ │ • Markdown Parse│ │ • Report Gen    │      │
+│  │ • Reranking     │ │ • Chunking      │ │ • Integrations  │      │
+│  └─────────────────┘ └─────────────────┘ └─────────────────┘      │
+│                                                                     │
+│  💾 Knowledge & Memory                                              │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ • Conversation History • Document Embeddings                │   │
+│  │ • Context Management   • Source Citations                   │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  🌐 Web Interface                                                   │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ • Interactive Chat • Document Upload • Real-time Responses │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────────┘
+```
 
 ### Session Topics
 
-1. **Session 1** - The Azure Toolbox for Smart Agents ✅
-2. **Session 2** - Scaling & Deploying on Azure 📋
+1. **Session 1** - Building AI Agents: The Azure Toolbox for Smart Agents ✅
+2. **Session 2** - Production AI Agents: Scaling & Deploying on Azure 📋
 
 ### Target Audience
 
-- Startup founders exploring AI implementation
-- Developers building AI-powered applications
-- Technical leaders planning AI strategy
-- Anyone interested in Azure AI services
+- Startup founders exploring AI Agent implementation
+- Developers building AI-powered autonomous systems
+- Technical leaders planning AI Agent strategy
+- Anyone interested in production-ready Azure AI services
 
 ## 🚀 Quick Start
 
-### For Session 1 Demo
+### Deploy Your First AI Agent (Session 1)
 
 ```bash
 cd session-1-azure-toolbox/demo
 python setup.py
-# Edit .env with your Azure credentials  
+# Edit .env with your Azure credentials
 python verify_setup.py
-python web_interface.py
-# Open http://localhost:8000
+python -m uvicorn web_interface:app --host 0.0.0.0 --port 8001 --reload
+# Open http://localhost:8001 and chat with your AI Agent
 ```
 
 ### For Session 2 Development
@@ -115,7 +183,4 @@ This repository contains presentation materials and demo code. If you're attendi
 
 ---
 
-Happy coding with Azure AI! 🌟
-
-
- python -m uvicorn web_interface:app --host 0.0.0.0 --port 8000 --reload
+Happy coding with Azure AI Agents! 🌟
