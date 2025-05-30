@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +13,13 @@
             --azure-light: #106ebe;
             --azure-dark: #005a9e;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
-        
+
         .main-container {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
@@ -26,20 +27,20 @@
             margin: 20px auto;
             padding: 30px;
         }
-        
+
         .header {
             text-align: center;
             margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 2px solid var(--azure-blue);
         }
-        
+
         .header h1 {
             color: var(--azure-blue);
             font-weight: 700;
             margin-bottom: 10px;
         }
-        
+
         .status-card {
             background: linear-gradient(135deg, var(--azure-blue), var(--azure-light));
             color: white;
@@ -47,7 +48,7 @@
             padding: 20px;
             margin-bottom: 20px;
         }
-        
+
         .chat-container {
             height: 400px;
             background: #f8f9fa;
@@ -57,26 +58,26 @@
             overflow-y: auto;
             margin-bottom: 20px;
         }
-        
+
         .message {
             margin-bottom: 15px;
             padding: 12px 16px;
             border-radius: 10px;
             max-width: 80%;
         }
-        
+
         .user-message {
             background: var(--azure-blue);
             color: white;
             margin-left: auto;
             text-align: right;
         }
-        
+
         .agent-message {
             background: #e9ecef;
             color: #495057;
         }
-        
+
         .function-call {
             background: #fff3cd;
             border: 1px solid #ffeaa7;
@@ -85,7 +86,7 @@
             margin: 5px 0;
             font-size: 0.9em;
         }
-        
+
         .upload-area {
             border: 2px dashed #ccc;
             border-radius: 10px;
@@ -94,29 +95,29 @@
             transition: all 0.3s ease;
             cursor: pointer;
         }
-        
+
         .upload-area:hover {
             border-color: var(--azure-blue);
             background: rgba(0, 120, 212, 0.05);
         }
-        
+
         .upload-area.dragover {
             border-color: var(--azure-blue);
             background: rgba(0, 120, 212, 0.1);
         }
-        
+
         .btn-azure {
             background: var(--azure-blue);
             border-color: var(--azure-blue);
             color: white;
         }
-        
+
         .btn-azure:hover {
             background: var(--azure-dark);
             border-color: var(--azure-dark);
             color: white;
         }
-        
+
         .demo-section {
             background: white;
             border-radius: 10px;
@@ -124,23 +125,24 @@
             margin-bottom: 20px;
             border: 1px solid #e9ecef;
         }
-        
+
         .section-title {
             color: var(--azure-blue);
             font-weight: 600;
             margin-bottom: 20px;
         }
-        
+
         .loading {
             display: none;
         }
-        
+
         .spinner-border-sm {
             width: 1rem;
             height: 1rem;
         }
     </style>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="main-container">
@@ -160,14 +162,15 @@
                         <div id="chat-container" class="chat-container">
                             <div class="message agent-message">
                                 <strong>🤖 Knowledge Worker Agent:</strong><br>
-                                Hello! I'm your AI knowledge worker. I can help you analyze documents, answer questions, and perform various tasks. 
+                                Hello! I'm your AI knowledge worker. I can help you analyze documents, answer questions,
+                                and perform various tasks.
                                 Upload some documents or ask me anything!
                             </div>
                         </div>
                         <div class="input-group">
-                            <input type="text" id="user-input" class="form-control" 
-                                   placeholder="Ask me anything about your documents..." 
-                                   onkeypress="handleKeyPress(event)">
+                            <input type="text" id="user-input" class="form-control"
+                                placeholder="Ask me anything about your documents..."
+                                onkeypress="handleKeyPress(event)">
                             <button class="btn btn-azure" onclick="sendMessage()">
                                 <span id="send-loading" class="loading">
                                     <i class="fas fa-circle-notch fa-spin"></i>
@@ -186,11 +189,11 @@
                         <div class="upload-area" onclick="document.getElementById('file-input').click()">
                             <i class="fas fa-cloud-upload-alt fa-3x text-muted"></i>
                             <p class="mt-3">Click to upload or drag & drop files</p>
-                            <small class="text-muted">Supports PDF, DOCX, TXT, HTML</small>
+                            <small class="text-muted">Supports .pdf, .docx, .txt, .html, .htm, .md, .markdown</small>
                         </div>
-                        <input type="file" id="file-input" style="display: none;" 
-                               multiple accept=".pdf,.docx,.txt,.html,.htm" onchange="uploadFiles()">
-                        
+                        <input type="file" id="file-input" style="display: none;" multiple
+                            accept=".pdf,.docx,.txt,.html,.htm,.md,.markdown" onchange="uploadFiles()">
+
                         <div class="mt-3">
                             <label class="form-label">Category:</label>
                             <select id="category-select" class="form-select">
@@ -206,8 +209,7 @@
                     <div class="demo-section">
                         <h4 class="section-title"><i class="fas fa-globe"></i> Process Web Content</h4>
                         <div class="input-group mb-3">
-                            <input type="url" id="url-input" class="form-control" 
-                                   placeholder="Enter website URL...">
+                            <input type="url" id="url-input" class="form-control" placeholder="Enter website URL...">
                             <button class="btn btn-azure" onclick="processUrl()">
                                 <span id="url-loading" class="loading">
                                     <i class="fas fa-circle-notch fa-spin"></i>
@@ -247,12 +249,12 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
         let conversationHistory = [];
 
         // Initialize the page
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             checkStatus();
             getStatistics();
             setupDragAndDrop();
@@ -263,7 +265,7 @@
             try {
                 const response = await fetch('/api/status');
                 const status = await response.json();
-                
+
                 const statusDiv = document.getElementById('status-indicator');
                 if (status.agent_status === 'healthy') {
                     statusDiv.innerHTML = `
@@ -288,7 +290,7 @@
         async function sendMessage() {
             const input = document.getElementById('user-input');
             const message = input.value.trim();
-            
+
             if (!message) return;
 
             // Show loading
@@ -312,14 +314,14 @@
                 });
 
                 const result = await response.json();
-                
+
                 if (result.success) {
                     // Add agent response
                     addMessageToChat(result.response, 'agent', result.function_calls);
-                    
+
                     // Update conversation history
-                    conversationHistory.push({role: 'user', content: message});
-                    conversationHistory.push({role: 'assistant', content: result.response});
+                    conversationHistory.push({ role: 'user', content: message });
+                    conversationHistory.push({ role: 'assistant', content: result.response });
                 } else {
                     addMessageToChat(`Error: ${result.error}`, 'agent');
                 }
@@ -339,14 +341,14 @@
             messageDiv.className = `message ${sender}-message`;
 
             let content = `<strong>${sender === 'user' ? '👤 You' : '🤖 Agent'}:</strong><br>${message}`;
-            
+
             // Add function calls if any
-            if (functionCalls && functionCalls.length > 0) {
-                content += '<br><small><strong>Functions called:</strong></small>';
-                functionCalls.forEach(call => {
-                    content += `<div class="function-call">🔧 ${JSON.stringify(call.result)}</div>`;
-                });
-            }
+            // if (functionCalls && functionCalls.length > 0) {
+            //     content += '<br><small><strong>Functions called:</strong></small>';
+            //     functionCalls.forEach(call => {
+            //         content += `<div class="function-call">🔧 ${JSON.stringify(call.result)}</div>`;
+            //     });
+            // }
 
             messageDiv.innerHTML = content;
             chatContainer.appendChild(messageDiv);
@@ -378,7 +380,7 @@
                     });
 
                     const result = await response.json();
-                    
+
                     if (result.success) {
                         addMessageToChat(`✅ Successfully uploaded and indexed: ${result.filename}`, 'agent');
                         getStatistics(); // Refresh stats
@@ -395,7 +397,7 @@
         async function processUrl() {
             const urlInput = document.getElementById('url-input');
             const url = urlInput.value.trim();
-            
+
             if (!url) return;
 
             // Show loading
@@ -413,7 +415,7 @@
                 });
 
                 const result = await response.json();
-                
+
                 if (result.success) {
                     addMessageToChat(`✅ Successfully processed URL: ${url}`, 'agent');
                     urlInput.value = '';
@@ -435,7 +437,7 @@
             try {
                 const response = await fetch('/api/documents/stats');
                 const stats = await response.json();
-                
+
                 const statsContainer = document.getElementById('stats-container');
                 statsContainer.innerHTML = `
                     <div class="row text-center">
@@ -462,7 +464,7 @@
         // Setup drag and drop
         function setupDragAndDrop() {
             const uploadArea = document.querySelector('.upload-area');
-            
+
             uploadArea.addEventListener('dragover', (e) => {
                 e.preventDefault();
                 uploadArea.classList.add('dragover');
@@ -475,7 +477,7 @@
             uploadArea.addEventListener('drop', (e) => {
                 e.preventDefault();
                 uploadArea.classList.remove('dragover');
-                
+
                 const files = e.dataTransfer.files;
                 const fileInput = document.getElementById('file-input');
                 fileInput.files = files;
@@ -498,7 +500,7 @@
                 try {
                     const response = await fetch('/api/setup', { method: 'POST' });
                     const result = await response.json();
-                    
+
                     if (result.success) {
                         addMessageToChat('✅ Demo setup completed successfully!', 'agent');
                     } else {
@@ -511,4 +513,5 @@
         }
     </script>
 </body>
+
 </html>
