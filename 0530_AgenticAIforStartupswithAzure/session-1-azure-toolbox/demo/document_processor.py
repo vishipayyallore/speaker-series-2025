@@ -51,15 +51,29 @@ class DocumentProcessor:
             '.docx': self._process_docx,
             '.txt': self._process_text,
             '.html': self._process_html,
-            '.htm': self._process_html,
-            '.md': self._process_markdown,
+            '.htm': self._process_html,            '.md': self._process_markdown,
             '.markdown': self._process_markdown
         }
-    
+        
     def _generate_document_id(self, filename: str, content: str) -> str:
-        """Generate a unique document ID based on filename and content"""
+        """Generate a unique document ID based on filename and content
+        Azure Search document keys can only contain letters, digits, underscore (_), 
+        dash (-), or equal sign (=). No spaces or special characters allowed.
+        """
+        import re
+        # Remove file extension and sanitize filename
+        base_name = os.path.splitext(filename)[0]
+        # Replace invalid characters with underscores (including periods)
+        sanitized_name = re.sub(r'[^a-zA-Z0-9_\-=]', '_', base_name)
+        # Remove multiple consecutive underscores
+        sanitized_name = re.sub(r'_{2,}', '_', sanitized_name)
+        # Ensure it doesn't start or end with underscore
+        sanitized_name = sanitized_name.strip('_')        # Truncate if too long (Azure Search has limits)
+        if len(sanitized_name) > 50:
+            sanitized_name = sanitized_name[:50].rstrip('_')
+        
         content_hash = hashlib.md5(content.encode()).hexdigest()[:8]
-        return f"{filename}_{content_hash}"
+        return f"{sanitized_name}_{content_hash}"
     
     def _process_pdf(self, file_content: bytes, filename: str) -> Dict[str, Any]:
         """Extract text from PDF file"""

@@ -275,9 +275,24 @@ Provide a structured summary including:
             )
             
             message = response.choices[0].message
-            
-            # Check if the model wants to call a function
+              # Check if the model wants to call a function
             if message.tool_calls:
+                # Add the assistant's message with tool_calls to the conversation
+                messages.append({
+                    "role": "assistant",
+                    "content": message.content,
+                    "tool_calls": [
+                        {
+                            "id": tc.id,
+                            "type": tc.type,
+                            "function": {
+                                "name": tc.function.name,
+                                "arguments": tc.function.arguments
+                            }
+                        } for tc in message.tool_calls
+                    ]
+                })
+                
                 # Process function calls
                 function_results = []
                 for tool_call in message.tool_calls:
