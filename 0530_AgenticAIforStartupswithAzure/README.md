@@ -63,7 +63,7 @@ Our implementation demonstrates all the key characteristics of modern AI Agents:
 
 Our AI Agent implements a complete autonomous reasoning system:
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────────┐
 │                        AI Agent Architecture                        │
 ├─────────────────────────────────────────────────────────────────────┤
