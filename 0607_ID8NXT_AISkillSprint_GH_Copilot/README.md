@@ -1,6 +1,6 @@
 # AI Skill Sprint - LAB303 Hands on with GitHub Copilot in VS Code
 
-## Date Time: 27-May-2025 at 03:30 PM IST
+## Date Time: 07-Jun-2025 at 10:00 AM IST
 
 ## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/307082897](https://www.meetup.com/microsoft-reactor-bengaluru/events/307082897)
 
