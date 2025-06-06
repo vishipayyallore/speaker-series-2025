@@ -1,4 +1,4 @@
-# AI-102 - Implementing Custom Skills in Azure AI Search
+# AI Skill Sprint - LAB303 Hands on with GitHub Copilot in VS Code
 
 ## Date Time: 27-May-2025 at 03:30 PM IST
 
