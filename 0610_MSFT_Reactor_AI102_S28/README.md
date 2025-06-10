@@ -171,12 +171,37 @@ Each projection type must be defined separately:
 - **Tables**: Include unique keys for relational joins
 - **Analysis**: Enable Power BI reporting and data integration
 
-### 🎯 Session Goals
+## 5. 🎯 Session Goals
 
-Create a knowledge store for **Margie's Travel** to:
-✅ Build knowledge store from AI Search pipeline  
-✅ View data projections  
-✅ Query enriched data
+In this hands-on session, we'll implement a knowledge store for **Margie's Travel** using Azure AI Search. You will learn to:
+
+### 🏗️ Build the Complete Pipeline
+
+✅ **Create Azure Resources** - Storage account, AI Services, and Search service  
+✅ **Configure Data Source** - Connect to travel documents in blob storage  
+✅ **Design Skillset** - Define AI enrichment pipeline with knowledge store projections  
+✅ **Build Search Index** - Create searchable document structure  
+✅ **Run Indexer** - Execute the pipeline to populate index and knowledge store
+
+### 📊 Explore Knowledge Store Projections
+
+✅ **Object Projections** - View JSON files with enriched travel document data  
+✅ **File Projections** - Access extracted images from travel brochures  
+✅ **Table Projections** - Query relational schema for analytics and reporting
+
+### 🔍 Analyze Enriched Data
+
+✅ **Document Insights** - Language detection, sentiment analysis, key phrases  
+✅ **Location Extraction** - Identify travel destinations and landmarks  
+✅ **Image Processing** - Extract and tag images from travel materials  
+✅ **Power BI Integration** - Connect relational projections for business intelligence
+
+### 🛠️ Hands-on Experience
+
+✅ **REST API Usage** - Submit JSON definitions via Azure AI Search REST interface  
+✅ **Azure Portal Navigation** - Monitor indexing progress and explore results  
+✅ **Storage Explorer** - Browse containers, tables, and projection outputs  
+✅ **Troubleshooting** - Debug common indexing and projection issues
 
 ---
 
