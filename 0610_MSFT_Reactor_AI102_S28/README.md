@@ -183,6 +183,10 @@ In this hands-on session, we'll implement a knowledge store for **Margie's Trave
 az group create --name rg-margies-travel-dev-001 --location eastus
 ```
 
+![New Resource Group | 100x100](./Documentation/Images/New_Resource_Group.PNG)
+
+![Setup Resources | 100x100](./Documentation/Images/Setup_Resources.PNG)
+
 ### 🏗️ Build the Complete Pipeline
 
 ✅ **Create Azure Resources** - Storage account, AI Services, and Search service  
