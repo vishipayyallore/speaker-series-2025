@@ -175,6 +175,14 @@ Each projection type must be defined separately:
 
 In this hands-on session, we'll implement a knowledge store for **Margie's Travel** using Azure AI Search. You will learn to:
 
+### Create Azure Resources
+
+```powershell
+ az account list-locations -o table
+
+az group create --name rg-margies-travel-dev-001 --location eastus
+```
+
 ### 🏗️ Build the Complete Pipeline
 
 ✅ **Create Azure Resources** - Storage account, AI Services, and Search service  
