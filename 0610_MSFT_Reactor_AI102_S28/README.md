@@ -60,7 +60,43 @@
 
 > 1. <https://aka.ms/Azure-AISearch>
 
----
+## 2. 🔍 Introduction to Knowledge Stores
+
+Azure AI Search enables you to create search solutions in which a pipeline of AI skills is used to enrich data and populate an index. The data enrichments performed by the skills in the pipeline supplement the source data with insights such as:
+
+- **Language Detection**: The language in which a document is written
+- **Key Phrases**: Main themes or topics discussed in a document
+- **Sentiment Analysis**: Sentiment score that quantifies how positive or negative a document is
+- **Entity Recognition**: Specific locations, people, organizations, or landmarks mentioned in the content
+- **OCR & Image Analysis**: AI-generated descriptions of images, or image text extracted by optical character recognition (OCR)
+
+The enriched data in the index makes it possible to create a comprehensive search solution that goes beyond basic full text search of the source content.
+
+### 🗄️ What are Knowledge Stores?
+
+While the index might be considered the primary output from an indexing process, the enriched data it contains might also be useful in other ways. For example:
+
+- **Data Integration**: Export objects as JSON files for integration into a data orchestration process using tools such as Azure Data Factory
+- **Analytics & Reporting**: Normalize the index records into a relational schema of tables for analysis and reporting with tools such as Microsoft Power BI
+- **File Storage**: Save extracted embedded images from documents as files
+
+### 🏗️ Knowledge Store Architecture
+
+Azure AI Search supports these scenarios by enabling you to define a **knowledge store** in the skillset that encapsulates your enrichment pipeline. The knowledge store consists of **projections** of the enriched data, which can be:
+
+1. **JSON Objects** - For data integration scenarios
+2. **Tables** - For relational analysis and reporting
+3. **Image Files** - For extracted images and media
+
+When an indexer runs the pipeline to create or update an index, the projections are generated and persisted in the knowledge store.
+
+### 🎯 Session Objectives
+
+In this session, you'll implement a knowledge store for **Margie's Travel**, a fictitious travel agency that uses information in brochures and hotel reviews to help customers plan trips. You will learn how to:
+
+✅ **Create a knowledge store** from an Azure AI Search pipeline  
+✅ **View data in projections** in a knowledge store  
+✅ **Query and analyze** enriched data from multiple perspectives
 
 ---
 
