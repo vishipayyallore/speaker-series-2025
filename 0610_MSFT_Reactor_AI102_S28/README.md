@@ -114,7 +114,62 @@ The **Shaper skill** simplifies complex documents into well-formed structures fo
 }
 ```
 
-This clean structure is easier to map to knowledge store projections than complex nested documents.
+## 4. 🗄️ Define Knowledge Store
+
+Create a **knowledgeStore** object in your skillset to specify Azure Storage connection and projection definitions.
+
+### 📋 Projection Types
+
+Each projection type must be defined separately:
+
+```json
+{
+  "knowledgeStore": {
+    "storageConnectionString": "<storage_connection_string>",
+    "projections": [
+      {
+        "objects": [
+          { "storageContainer": "travel-docs", "source": "/projection" }
+        ],
+        "tables": [],
+        "files": []
+      },
+      {
+        "objects": [],
+        "tables": [
+          {
+            "tableName": "TravelDocs",
+            "generatedKeyName": "doc_id",
+            "source": "/projection"
+          },
+          {
+            "tableName": "KeyPhrases",
+            "generatedKeyName": "phrase_id",
+            "source": "/projection/key_phrases/*"
+          }
+        ],
+        "files": []
+      },
+      {
+        "objects": [],
+        "tables": [],
+        "files": [
+          {
+            "storageContainer": "travel-images",
+            "source": "/document/normalized_images/*"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+### 🔗 Key Benefits
+
+- **Containers**: Created automatically if they don't exist
+- **Tables**: Include unique keys for relational joins
+- **Analysis**: Enable Power BI reporting and data integration
 
 ### 🎯 Session Goals
 
