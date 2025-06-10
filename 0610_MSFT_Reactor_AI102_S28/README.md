@@ -62,41 +62,66 @@
 
 ## 2. 🔍 Introduction to Knowledge Stores
 
-Azure AI Search enables you to create search solutions in which a pipeline of AI skills is used to enrich data and populate an index. The data enrichments performed by the skills in the pipeline supplement the source data with insights such as:
-
-- **Language Detection**: The language in which a document is written
-- **Key Phrases**: Main themes or topics discussed in a document
-- **Sentiment Analysis**: Sentiment score that quantifies how positive or negative a document is
-- **Entity Recognition**: Specific locations, people, organizations, or landmarks mentioned in the content
-- **OCR & Image Analysis**: AI-generated descriptions of images, or image text extracted by optical character recognition (OCR)
-
-The enriched data in the index makes it possible to create a comprehensive search solution that goes beyond basic full text search of the source content.
+Azure AI Search enriches data using AI skills (language detection, key phrases, sentiment analysis, entity recognition, OCR) and stores results in an index for comprehensive search beyond basic text search.
 
 ### 🗄️ What are Knowledge Stores?
 
-While the index might be considered the primary output from an indexing process, the enriched data it contains might also be useful in other ways. For example:
+`Knowledge stores` extend enriched data beyond the search index for:
 
-- **Data Integration**: Export objects as JSON files for integration into a data orchestration process using tools such as Azure Data Factory
-- **Analytics & Reporting**: Normalize the index records into a relational schema of tables for analysis and reporting with tools such as Microsoft Power BI
-- **File Storage**: Save extracted embedded images from documents as files
+- `Data Integration`: Export as JSON files for Azure Data Factory
+- `Analytics`: Normalize into tables for Power BI reporting
+- `File Storage`: Save extracted images as files
 
-### 🏗️ Knowledge Store Architecture
+### 🏗️ Projections
 
-Azure AI Search supports these scenarios by enabling you to define a **knowledge store** in the skillset that encapsulates your enrichment pipeline. The knowledge store consists of **projections** of the enriched data, which can be:
+Knowledge stores consist of `projections` of enriched data:
 
-1. **JSON Objects** - For data integration scenarios
-2. **Tables** - For relational analysis and reporting
-3. **Image Files** - For extracted images and media
+1. `JSON Objects` - Data integration
+2. `Tables` - Relational analysis
+3. `Image Files` - Extracted media
 
-When an indexer runs the pipeline to create or update an index, the projections are generated and persisted in the knowledge store.
+## 3. 🎯 Define Projections
 
-### 🎯 Session Objectives
+Projections define how enriched data is stored in your knowledge store. Each skill builds a JSON document, and you can persist fields as projections.
 
-In this session, you'll implement a knowledge store for **Margie's Travel**, a fictitious travel agency that uses information in brochures and hotel reviews to help customers plan trips. You will learn how to:
+### 🔧 Using the Shaper Skill
 
-✅ **Create a knowledge store** from an Azure AI Search pipeline  
-✅ **View data in projections** in a knowledge store  
-✅ **Query and analyze** enriched data from multiple perspectives
+The **Shaper skill** simplifies complex documents into well-formed structures for knowledge store projections.
+
+**Example Shaper Skill:**
+
+```json
+{
+  "@odata.type": "#Microsoft.Skills.Util.ShaperSkill",
+  "name": "define-projection",
+  "context": "/document",
+  "inputs": [
+    { "name": "file_name", "source": "/document/metadata_content_name" },
+    { "name": "sentiment", "source": "/document/sentimentScore" },
+    { "name": "key_phrases", "source": "/document/keyphrases" }
+  ],
+  "outputs": [{ "name": "output", "targetName": "projection" }]
+}
+```
+
+**Resulting Structure:**
+
+```json
+{
+  "file_name": "travel_brochure.pdf",
+  "sentiment": 0.85,
+  "key_phrases": ["luxury hotel", "beach resort", "customer review"]
+}
+```
+
+This clean structure is easier to map to knowledge store projections than complex nested documents.
+
+### 🎯 Session Goals
+
+Create a knowledge store for **Margie's Travel** to:
+✅ Build knowledge store from AI Search pipeline  
+✅ View data projections  
+✅ Query enriched data
 
 ---
 
