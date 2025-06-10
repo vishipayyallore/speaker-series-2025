@@ -194,6 +194,8 @@ az group create --name rg-margies-travel-dev-001 --location eastus
 > 1. An index that defines a searchable set of document records.
 > 1. An indexer that extracts the documents from the data source, applies the skillset, and populates the index. The process of indexing also persists the projections defined in the skillset in the knowledge store.
 
+![Create Search Solution | 100x100](./Documentation/Images/Create_Search.PNG)
+
 ### 🏗️ Build the Complete Pipeline
 
 ✅ **Create Azure Resources** - Storage account, AI Services, and Search service  
