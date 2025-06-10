@@ -35,13 +35,7 @@
 >    - Pre-requisites
 >    - Previous Session(s)
 >    - Microsoft Learn Module(s)
-> 2. 🔊 Introduction to Custom Skills
-> 3. 🛠️ Define the custom skill schema
-> 4. ➕ Add a custom skill to a skillset
-> 5. 🔤 Create a custom text classification skill
-> 6. 🤖 Build a machine learning custom skill
-> 7. 🧪 Hands-on Exercise - Create a Custom Skill
-> 8. 🔄 SUMMARY / RECAP / Q&A
+> 2. 🔄 SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
 
