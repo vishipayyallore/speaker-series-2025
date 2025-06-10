@@ -196,6 +196,8 @@ az group create --name rg-margies-travel-dev-001 --location eastus
 
 ![Create Search Solution | 100x100](./Documentation/Images/Create_Search.PNG)
 
+## 6. What we did today?
+
 ### 🏗️ Build the Complete Pipeline
 
 ✅ **Create Azure Resources** - Storage account, AI Services, and Search service  
