@@ -29,7 +29,7 @@
 
 ![Information | 100x100](../Documentation/Images/Information.PNG)
 
-## What are we doing today?
+## What we covered in this session
 
 > 1. 🔭 The Big Picture
 >    - Pre-requisites
@@ -38,8 +38,8 @@
 > 2. 🔍 Introduction to Knowledge Stores
 > 3. 🎯 Define Projections
 > 4. 🗄️ Define Knowledge Store
-> 5. 🎯 Session Goals
-> 6. 📝 What we did today?
+> 5. 🛠️ Hands-on Demo
+> 6. 📝 What we accomplished
 > 7. 🔄 SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
