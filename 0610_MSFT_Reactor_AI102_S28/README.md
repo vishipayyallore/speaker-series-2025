@@ -35,7 +35,12 @@
 >    - Pre-requisites
 >    - Previous Session(s)
 >    - Microsoft Learn Module(s)
-> 2. 🔄 SUMMARY / RECAP / Q&A
+> 2. 🔍 Introduction to Knowledge Stores
+> 3. 🎯 Define Projections
+> 4. 🗄️ Define Knowledge Store
+> 5. 🎯 Session Goals
+> 6. 📝 What we did today?
+> 7. 🔄 SUMMARY / RECAP / Q&A
 
 ### Please refer to the [**Source Code**](https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/learn-ai102) of today's session for more details
 
@@ -196,7 +201,7 @@ az group create --name rg-margies-travel-dev-001 --location eastus
 
 ![Create Search Solution | 100x100](./Documentation/Images/Create_Search.PNG)
 
-## 6. What we did today?
+## 6. 📝 What we did today?
 
 ### 🏗️ Build the Complete Pipeline
 
@@ -228,7 +233,7 @@ az group create --name rg-margies-travel-dev-001 --location eastus
 
 ---
 
-## 8. 🔄 SUMMARY / RECAP / Q&A
+## 7. 🔄 SUMMARY / RECAP / Q&A
 
 > 1. SUMMARY / RECAP / Q&A
 > 2. Any open queries, I will get back through meetup chat/twitter.
