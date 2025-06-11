@@ -212,7 +212,7 @@ The demo implemented a complete search solution with:
 ✅ **Knowledge Store Exploration** - Object, table, and file projections  
 ✅ **Power BI Integration** - Connecting to table projections
 
-## 6. 📝 What we did today?
+## 6. 📝 What we accomplished
 
 ### 🏗️ Build the Complete Pipeline
 
