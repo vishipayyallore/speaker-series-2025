@@ -176,15 +176,17 @@ Each projection type must be defined separately:
 - **Tables**: Include unique keys for relational joins
 - **Analysis**: Enable Power BI reporting and data integration
 
-## 5. 🎯 Session Goals
+## 5. 🛠️ Hands-on Demo
 
-In this hands-on session, we'll implement a knowledge store for **Margie's Travel** using Azure AI Search. You will learn to:
+In this hands-on demo session, we implemented a knowledge store for **Margie's Travel** using Azure AI Search. The demo covered:
 
-### Create Azure Resources
+### 🏗️ Azure Resources Setup
 
 ```powershell
- az account list-locations -o table
+# List available Azure regions
+az account list-locations -o table
 
+# Create resource group for the demo
 az group create --name rg-margies-travel-dev-001 --location eastus
 ```
 
@@ -192,14 +194,23 @@ az group create --name rg-margies-travel-dev-001 --location eastus
 
 ![Setup Resources | 100x100](./Documentation/Images/Setup_Resources.PNG)
 
-### Create a search solution
+### 📋 Search Solution Components
 
-> 1. A data source that references the documents in your Azure storage container.
-> 1. A skillset that defines an enrichment pipeline of skills to extract AI-generated fields from the documents. The skillset also defines the projections that will be generated in your knowledge store.
-> 1. An index that defines a searchable set of document records.
-> 1. An indexer that extracts the documents from the data source, applies the skillset, and populates the index. The process of indexing also persists the projections defined in the skillset in the knowledge store.
+The demo implemented a complete search solution with:
+
+> 1. **Data Source** - References travel documents in Azure storage container
+> 2. **Skillset** - Enrichment pipeline with AI skills and knowledge store projections
+> 3. **Index** - Searchable document records structure
+> 4. **Indexer** - Extracts documents, applies skillset, populates index and knowledge store
 
 ![Create Search Solution | 100x100](./Documentation/Images/Create_Search.PNG)
+
+### 🎯 Live Demo Highlights
+
+✅ **Real-time Resource Creation** - Azure portal walkthrough  
+✅ **REST API Demonstration** - JSON submissions and responses  
+✅ **Knowledge Store Exploration** - Object, table, and file projections  
+✅ **Power BI Integration** - Connecting to table projections
 
 ## 6. 📝 What we did today?
 
