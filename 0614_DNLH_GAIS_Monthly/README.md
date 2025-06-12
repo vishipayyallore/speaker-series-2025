@@ -1,6 +1,6 @@
 # 📢 AI Agents, Prompt Engineering, GitHub Copilot & .NET Aspire - for Developers
 
-## Date Time: 27-May-2025 at 03:30 PM IST
+## Date Time: 14-Jun-2025 at 10:00 AM IST
 
 ## Event URLs
 
