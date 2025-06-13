@@ -1,10 +1,13 @@
-# AI-102 - Implementing Custom Skills in Azure AI Search
+# 📢 AI Agents, Prompt Engineering, GitHub Copilot & .NET Aspire - for Developers
 
-## Date Time: 27-May-2025 at 03:30 PM IST
+## Date Time: 14-Jun-2025 at 10:00 AM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/307082897](https://www.meetup.com/microsoft-reactor-bengaluru/events/307082897)
+## Event URLs
 
-## YouTube URL: [https://www.youtube.com/watch?v=AIMWCLCpu4Q](https://www.youtube.com/watch?v=AIMWCLCpu4Q)
+DNLH: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/308109558](https://www.meetup.com/dot-net-learners-house-hyderabad/events/308109558)
+GAIS: [https://www.meetup.com/global-ai-secunderabad/events/308326071](https://www.meetup.com/global-ai-secunderabad/events/308326071)
+
+<!-- ## YouTube URL: [https://www.youtube.com/watch?v=AIMWCLCpu4Q](https://www.youtube.com/watch?v=AIMWCLCpu4Q) -->
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
