@@ -4,8 +4,8 @@
 
 ## Event URLs
 
-DNLH: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/308109558](https://www.meetup.com/dot-net-learners-house-hyderabad/events/308109558)
-GAIS: [https://www.meetup.com/global-ai-secunderabad/events/308326071](https://www.meetup.com/global-ai-secunderabad/events/308326071)
+> 1. DNLH: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/308109558](https://www.meetup.com/dot-net-learners-house-hyderabad/events/308109558)
+> 1. GAIS: [https://www.meetup.com/global-ai-secunderabad/events/308326071](https://www.meetup.com/global-ai-secunderabad/events/308326071)
 
 <!-- ## YouTube URL: [https://www.youtube.com/watch?v=AIMWCLCpu4Q](https://www.youtube.com/watch?v=AIMWCLCpu4Q) -->
 
